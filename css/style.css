@@ -9,3 +9,70 @@ html {
 *::after {
   box-sizing: border-box;
 }
+
+body {
+  font-family: Raleway sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.title-sub {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  font-weight: 300;
+}
+
+.navigation {
+  /* width: auto; */
+
+  /* margin: 0 auto; */
+}
+
+.navigation-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-item {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.link-icon {
+  font-size: 1.8rem;
+  margin-right: 2rem;
+}
+
+.link-icon.fa-twitter {
+  color: #00acee;
+}
+
+.link-icon.fa-youtube-play {
+  color: #c4302b;
+}
+
+.link-icon.fa-github {
+  color: #333;
+}
