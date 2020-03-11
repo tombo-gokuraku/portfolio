@@ -19,7 +19,11 @@ body {
   font-family: Raleway sans-serif;
 }
 
-a {
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
   text-decoration: none;
 }
 
@@ -28,7 +32,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.4);
   position: fixed;
   width: 100%;
 }
@@ -70,6 +74,9 @@ a {
 
 .link-icon {
   font-size: 1.8rem;
+}
+
+.link-icons .link-icon {
   margin-right: 2rem;
 }
 
@@ -85,8 +92,12 @@ a {
   color: #333;
 }
 
+.section {
+  margin-bottom: 10rem;
+  padding: 5rem;
+}
+
 .hero {
-  padding: 5rem 1rem 4rem;
   background-color: var(--primary-bg-color);
   display: flex;
   align-items: center;
@@ -110,4 +121,52 @@ a {
 .tombo-image {
   width: 200px;
   height: 200px;
+}
+
+.about {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.section-content {
+  width: 50%;
+  min-height: 100%;
+
+  /* line-height: 1.5; */
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 8rem;
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.section-text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.links {
+  font-size: 1.5rem;
+}
+
+.links > a {
+  margin-right: 1rem;
+}
+
+.about-image-container {
+  margin: 0;
+  width: 50%;
+  background-image: url("../images/branko-stancevic-GI1hwOGqGtE-unsplash.jpg");
+  background-size: cover;
+  opacity: 0.7;
+  filter: blur(2px);
 }
