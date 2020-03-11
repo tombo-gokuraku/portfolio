@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root {
+  --primary-color: #009688;
+  --primary-bg-color: #4db6ac;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -23,6 +28,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
 }
 
 .title-container {
@@ -75,4 +83,31 @@ a {
 
 .link-icon.fa-github {
   color: #333;
+}
+
+.hero {
+  padding: 5rem 1rem 4rem;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-text-container {
+  line-height: 1.5;
+  letter-spacing: 0.5rem;
+}
+
+.hero-text-profession {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.hero-text-name {
+  font-size: 3rem;
+}
+
+.tombo-image {
+  width: 200px;
+  height: 200px;
 }
