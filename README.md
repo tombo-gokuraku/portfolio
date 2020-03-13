@@ -63,5 +63,15 @@ ATA: 10m30s
 ### BreakPointごとにスタイリング
 ETA: 90m
 
+#### 1280pxのスタイリング
+ETA: 30m
+ATA: 9m
+
+#### 960pxのスタイリング
+ETA: 30m
+
+#### 600pxのスタイリング
+ETA: 30m
+
 ### AppBarを追加
 ETA: 45m

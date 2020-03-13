@@ -209,3 +209,25 @@ a:active {
   color: #333;
   padding: 32px;
 }
+
+@media (max-width: 1028px) {
+  .title-sub {
+    display: none;
+  }
+
+  .about .section-content {
+    width: 100%;
+  }
+
+  .about-image-container {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 600px) {
+
+}
