@@ -1,11 +1,52 @@
 # tombo gokuraku portfolio
+tombo gokurakuのポートフォリオサイト
+[STUDIO](https://tombo-gokuraku.studio.design/)でデザインし、HTML/Vanilla CSSでコーディングした。
 
-[sample](https://tombo-gokuraku.github.io/portfolio/)
+**[myportfolio](https://tombo-gokuraku.github.io/portfolio/)**
+
+## 反省
+### 良かった所
+* 見積もりをした
+
+作業前に作業工程を列挙し、それぞれの工程にどれくらいの時間を要するか予想した。
+おかげで作業の順番が最適化され、自分がどれくらい計画錯誤しているのか分かった。
+
+* スマホ版のナビゲーションをハンバーガーアイコンではなく、NavigationBottomを使った
+
+ハンバーガーアイコンのclickイベントを取らなくてよくなったので、単純にJavaScriptを書く必要がなくなった。
+(あくまで個人的には)ハンバーガーアイコンよりもNavigationBottomの方が押しやすい。
+
+### 悪かった所
+* クラス名に統一感がない
+
+containerだったりcontentだったりする。
+
+* 詳細度を増やすことで無理やりスタイリングしている箇所がある
+
+SASSの使用を検討しても良いかもしれない。むしろ、次回はSASSを使って構築してみるとかどうだろう。
+
+* Google Formのiframeの高さを取ってこれないと知らずに時間を浪費した
+
+GoogleがCORSを許可していないので不可能。
+知らなかったし、仕方ない。
+[ちゃんと勉強しよう](https://stackoverflow.com/questions/19009849/auto-height-for-iframe-containing-embedded-published-google-doc)
+
+* 問い合わせフォームがGoogleForm
+
+本当はちゃんとしたフォームを作りたいけど、phpとか知らんし、書きたくもない。
+netlifyとか使うと割と手軽にformが作れるっぽい?
+
+[【Netlify】Forms機能を利用して問い合わせフォームを作成する](https://qiita.com/NaokiIshimura/items/bce2f0b865ec1bc16a53)
+[netlify docs](https://docs.netlify.com/forms/setup/#html-forms)
 
 ## Todo
-ETA: 170+30+165=365m
+予想終了時間ETA(estimated time of arrival),
+実際の終了時間ATA(the actual time of arrived)
+として表記している
+
+ETA: 170+30+165=365m=6h5m
 ->
-ATA: 222+29+184=435m
+ATA: 222+29+184=435m=7h15m
 
 計画錯誤率:
 435/365 = 1.2
@@ -91,7 +132,7 @@ ETA: 30m
 ->
 ATA: 10+89=99m
 
-#### AppBarを追加
+#### NavigationBottomを追加
 ETA: 45m
 ->
 ATA: 54m
