@@ -32,7 +32,7 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
   width: 100%;
 }
@@ -71,7 +71,7 @@ a:active {
 }
 
 .link-icons .link-icon {
-  margin-right: 32px;
+  margin-left: 32px;
 }
 
 .link-icon.fa-twitter {
@@ -84,12 +84,6 @@ a:active {
 
 .link-icon.fa-github {
   color: #333;
-}
-
-.section {
-  max-width: 1440px;
-  margin: 0 auto 64px;
-  padding: 64px;
 }
 
 .hero {
@@ -117,6 +111,12 @@ a:active {
 .tombo-image {
   width: 200px;
   height: 200px;
+}
+
+.section {
+  max-width: 1440px;
+  margin: 0 auto 64px;
+  padding: 64px;
 }
 
 .section-contents {
@@ -171,7 +171,7 @@ a:active {
 .background-icon {
   position: absolute;
   left: 0;
-  top: calc(100% / 4);
+  top: 25%;
   width: 100%;
   text-align: center;
   font-size: 20rem;
@@ -205,7 +205,7 @@ a:active {
 
 .contact-form {
   width: 100%;
-  height: 1000px;
+  height: 900px;
 }
 
 .footer {
@@ -215,7 +215,7 @@ a:active {
   padding: 32px;
 }
 
-.appbar {
+.bottom-navigation {
   display: none;
 }
 
@@ -255,50 +255,153 @@ a:active {
     width: 100%;
   }
 
-  .contact-form {
-    height: 900px;
-  }
-
   .footer {
     margin-bottom: 64px;
   }
 
-  .appbar {
+  .bottom-navigation {
     padding: 8px 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--primary-color);
     position: fixed;
     width: 100%;
     bottom: 0;
   }
 
-  .appbar-items {
+  .bottom-navigation-items {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
   }
 
-  .appbar-item {
+  .bottom-navigation-item {
     text-align: center;
     padding: 0 8px;
     margin: 0 auto;
   }
 
-  .appbar-icon {
+  .bottom-navigation-icon {
     font-size: 2.4rem;
-    color: var(--primary-color);
+    color: white;
     margin-bottom: 4px;
   }
 
-  .appbar-text {
+  .bottom-navigation-text {
     font-size: 1.6rem;
-    color: var(--primary-color);
+    color: white;
   }
 }
 
 @media (max-width: 600px) {
+  .header {
+    padding: 8px 16px;
+  }
 
+  .title {
+    font-size: 1.2rem;
+    margin-right: 16px;
+  }
+
+  .link-icons .link-icon {
+    margin-left: 18px;
+  }
+
+  .hero {
+    padding: 48px 16px 32px;
+  }
+
+  .hero-text-container {
+    line-height: 1.8;
+    letter-spacing: 0.4rem;
+  }
+
+  .hero-text-profession {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .hero-text-name {
+    font-size: 1.4rem;
+  }
+
+  .tombo-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .section {
+    max-width: 1440px;
+    margin: 0 auto 32px;
+    padding: 16px;
+  }
+
+  .section-content {
+    padding: 8px;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 16px;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .section-text {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.4rem;
+    line-height: 1.6;
+  }
+
+  .links {
+    font-size: 1.2rem;
+  }
+
+  .links .link-icon {
+    font-size: 1.2rem;
+  }
+
+  .links > a {
+    margin-right: 12px;
+  }
+
+  .background-icon {
+    font-size: 16rem;
+  }
+
+  .contact-btn {
+    margin-bottom: 24px;
+  }
+
+  .fab.fa-twitter.contact-btn-icon {
+    font-size: 2rem;
+  }
+
+  .contact-btn-text {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    /* フォームを画面いっぱいに広げる */
+    margin-left: calc(((100vw - 100%) / 2) * -1);
+    margin-right: calc(((100vw - 100%) / 2) * -1);
+  }
+
+  .bottom-navigation-item {
+    padding: 0 12px;
+  }
+
+  .bottom-navigation-icon {
+    font-size: 2rem;
+  }
+
+  .bottom-navigation-text {
+    font-size: 1.2rem;
+  }
 }

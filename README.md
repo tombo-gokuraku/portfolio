@@ -3,56 +3,67 @@
 [sample](https://tombo-gokuraku.github.io/portfolio/)
 
 ## Todo
+ETA: 170+30+165=365m
+->
+ATA: 222+29+184=435m
+
+計画錯誤率:
+435/365 = 1.2
+
+### PC向けデザイン
 ETA: 170m
+->
+ATA: 44+175+3 = 222m
 
-ATA: 44m22s+176m12s+3m = 223m+34s
-
-### header
+#### header
 ETA: 45m
+->
+ATA: 44m
 
-ATA: 44m22s
-
-### main
+#### main
 ETA: 120m
+->
+ATA: 29m+81m+32m+33m = 175m
 
-ATA: 29m14s+81m56s+32m02s+33m = 176m12s
-
-#### hero
+##### hero
 ETA: 30m
+->
+ATA: 29m
 
-ATA: 29m14s
-
-#### ABOUT
+##### ABOUT
 ETA: 30m
+->
+ATA: 81m
 
-ATA: 81m56s
-
-#### SKILLS
+##### SKILLS
 ETA: 30m
+->
+ATA: 32m
 
-ATA: 32m02s
-
-#### CONTACT
+##### CONTACT
 ETA: 30m
-
+->
 ATA: 33m
 
-### footer
+#### footer
 ETA: 5m
-
+->
 ATA: 3m
 
-## Refactoring
+### Refactoring
 ETA: 30m
+->
+ATA: 29m
 
-ATA: 29m46s
-
-## Responsive Design
+### Responsive Design
 ETA: 165m
+->
+ATA: 10+120+54=184m
 
-### BreakPointを決める
+#### BreakPointを決める
 ETA: 30m
-ATA: 10m30s
+->
+ATA: 10m
 
 1280px, 960px, 600px
 
@@ -60,23 +71,27 @@ ATA: 10m30s
 
 [material design Breakpoint system](https://material.io/design/layout/responsive-layout-grid.html#breakpoints)
 
-### BreakPointごとにスタイリング
+#### BreakPointごとにスタイリング
 ETA: 90m
+->
+ATA: 9+12+99m = 120m
 
-#### 1280pxのスタイリング
+##### 1280pxのスタイリング
 ETA: 30m
-
+->
 ATA: 9m
 
-#### 960pxのスタイリング
+##### 960pxのスタイリング
 ETA: 30m
+->
+ATA: 12m
 
-ATA: 12m39s
-
-#### 600pxのスタイリング
+##### 600pxのスタイリング
 ETA: 30m
+->
+ATA: 10+89=99m
 
-### AppBarを追加
+#### AppBarを追加
 ETA: 45m
-
+->
 ATA: 54m
