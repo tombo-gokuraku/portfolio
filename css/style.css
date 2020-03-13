@@ -187,3 +187,27 @@ a:active {
   color: var(--primary-color);
   opacity: 0.3;
 }
+
+.contact {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: #00acee;
+  text-align: center;
+  padding: 8px 16px;
+  margin-bottom: 32px;
+  border-radius: 16px;
+}
+
+.fa.fa-twitter.contact-btn-icon {
+  font-size: 3.2rem;
+  color: white;
+}
+
+.contact-btn-text {
+  font-size: 3.2rem;
+  color: white;
+}
