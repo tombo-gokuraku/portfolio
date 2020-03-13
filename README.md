@@ -52,6 +52,7 @@ ETA: 165m
 
 ### BreakPointを決める
 ETA: 30m
+ATA: 10m30s
 
 1280px, 960px, 600px
 
