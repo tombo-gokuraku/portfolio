@@ -26,3 +26,9 @@ ATA: 33m
 ### footer
 ETA: 5m
 ATA: 3m
+
+## Refactoring
+ETA: 30m
+ATA: 29m46s
+
+## Responsive Design

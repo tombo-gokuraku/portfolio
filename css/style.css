@@ -44,19 +44,13 @@ a:active {
 
 .title {
   font-size: 2rem;
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 
 .title-sub {
-  font-size: 1.5rem;
-  margin-right: 1rem;
+  font-size: 1.6rem;
+  margin-right: 16px;
   font-weight: 300;
-}
-
-.navigation {
-  /* width: auto; */
-
-  /* margin: 0 auto; */
 }
 
 .navigation-items {
@@ -66,8 +60,8 @@ a:active {
 }
 
 .navigation-item {
-  font-size: 1.2rem;
-  margin: 0 1rem;
+  font-size: 1.6rem;
+  margin: 0 16px;
   font-weight: bold;
   color: black;
 }
@@ -77,7 +71,7 @@ a:active {
 }
 
 .link-icons .link-icon {
-  margin-right: 2rem;
+  margin-right: 32px;
 }
 
 .link-icon.fa-twitter {
@@ -93,11 +87,13 @@ a:active {
 }
 
 .section {
-  margin-bottom: 10rem;
-  padding: 5rem;
+  max-width: 1440px;
+  margin: 0 auto 64px;
+  padding: 64px;
 }
 
 .hero {
+  padding: 96px 64px 32px;
   background-color: var(--primary-bg-color);
   display: flex;
   align-items: center;
@@ -110,12 +106,12 @@ a:active {
 }
 
 .hero-text-profession {
-  font-size: 3rem;
+  font-size: 4.8rem;
   font-weight: 400;
 }
 
 .hero-text-name {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .tombo-image {
@@ -123,7 +119,7 @@ a:active {
   height: 200px;
 }
 
-.about {
+.section-contents {
   display: flex;
   align-items: stretch;
   justify-content: space-around;
@@ -138,43 +134,38 @@ a:active {
 }
 
 .section-title {
-  font-size: 8rem;
-  margin-bottom: 3rem;
+  font-size: 6rem;
+  margin-bottom: 32px;
 }
 
 .section-heading {
   font-size: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 16px;
 }
 
 .section-text {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 16px;
   letter-spacing: 0.3rem;
   line-height: 1.5;
 }
 
 .links {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .links > a {
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 
 .about-image-container {
-  margin: 0;
   width: 50%;
+  margin: 0;
+  padding: 0;
   background-image: url("../images/branko-stancevic-GI1hwOGqGtE-unsplash.jpg");
   background-size: cover;
   opacity: 0.7;
   filter: blur(2px);
-}
-
-.section-contents {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-around;
 }
 
 .background-icon {
