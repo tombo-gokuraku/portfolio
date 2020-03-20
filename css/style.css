@@ -230,14 +230,6 @@ input#submit {
   .title-sub {
     display: none;
   }
-
-  .about .section-content {
-    width: 100%;
-  }
-
-  .about-image-container {
-    display: none;
-  }
 }
 
 @media (max-width: 960px) {
@@ -247,6 +239,10 @@ input#submit {
 
   .hero-text-profession {
     font-size: 2.4rem;
+  }
+
+  .about-image-container {
+    display: none;
   }
 
   .section {
