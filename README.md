@@ -39,6 +39,10 @@ netlifyとか使うと割と手軽にformが作れるっぽい?
 [【Netlify】Forms機能を利用して問い合わせフォームを作成する](https://qiita.com/NaokiIshimura/items/bce2f0b865ec1bc16a53)
 [netlify docs](https://docs.netlify.com/forms/setup/#html-forms)
 
+ちょっとしたハックでGoogleFormに直接データを送れることが分かった。
+https://github.com/toperkin/staticFormEmails/blob/e269a7fab2828fb04d83b2961777872c1a124263/README.md
+これで自分でform要素を作れるのでstyleを当てられる。
+
 ## Todo
 予想終了時間ETA(estimated time of arrival),
 実際の終了時間ATA(the actual time of arrived)
