@@ -285,7 +285,7 @@ input#submit {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: var(--primary-bg-color);
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -307,13 +307,13 @@ input#submit {
 
   .bottom-navigation-icon {
     font-size: 2.4rem;
-    color: white;
+    color: #333;
     margin-bottom: 4px;
   }
 
   .bottom-navigation-text {
     font-size: 1.6rem;
-    color: white;
+    color: #333;
   }
 }
 
