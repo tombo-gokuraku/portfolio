@@ -136,12 +136,13 @@ a:active {
 
 .section-title {
   font-size: 6rem;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .section-heading {
   font-size: 4rem;
   margin-bottom: 16px;
+  padding-top: 8px;
 }
 
 .section-text {
@@ -180,23 +181,8 @@ a:active {
   opacity: 0.3;
 }
 
-.contact-btn {
-  display: inline-block;
-  background-color: #00acee;
-  text-align: center;
-  padding: 8px 16px;
-  margin-bottom: 32px;
-  border-radius: 16px;
-}
-
-.fab.fa-twitter.contact-btn-icon {
-  font-size: 3.2rem;
-  color: white;
-}
-
-.contact-btn-text {
-  font-size: 3.2rem;
-  color: white;
+.twitter-highlight {
+  border-bottom: 3px solid #00acee;
 }
 
 #inqform {
