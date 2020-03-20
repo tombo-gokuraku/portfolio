@@ -226,7 +226,7 @@ input#submit {
   display: none;
 }
 
-@media (max-width: 1028px) {
+@media (max-width: 1280px) {
   .title-sub {
     display: none;
   }
