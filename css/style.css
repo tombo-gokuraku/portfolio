@@ -128,7 +128,7 @@ a:active {
 
 .section-content {
   width: 50%;
-  padding: 16px;
+  margin-right: 16px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -178,11 +178,6 @@ a:active {
   font-size: 20rem;
   color: var(--primary-color);
   opacity: 0.3;
-}
-
-.contact {
-  width: 100%;
-  text-align: center;
 }
 
 .contact-btn {
@@ -341,17 +336,17 @@ a:active {
   }
 
   .section-content {
-    padding: 8px;
+    margin-bottom: 16px;
   }
 
   .section-title {
     font-size: 3rem;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .section-heading {
     font-size: 2rem;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 
   .section-text {
