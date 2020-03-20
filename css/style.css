@@ -201,6 +201,7 @@ a:active {
 
 #inqform {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -213,9 +214,19 @@ a:active {
 #inqform input,
 textarea {
   font-size: 1.6rem;
+  border: 2px solid #eee;
   border-radius: 5px;
   margin-bottom: 12px;
   padding: 8px;
+}
+
+input#submit {
+  align-self: center;
+  width: 200px;
+  border: none;
+  color: #333;
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 4px 8px rgba(30, 30, 30, 0.5);
 }
 
 .footer {
