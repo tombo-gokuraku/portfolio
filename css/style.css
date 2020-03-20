@@ -379,24 +379,6 @@ input#submit {
     font-size: 16rem;
   }
 
-  .contact-btn {
-    margin-bottom: 24px;
-  }
-
-  .fab.fa-twitter.contact-btn-icon {
-    font-size: 2rem;
-  }
-
-  .contact-btn-text {
-    font-size: 2rem;
-  }
-
-  .contact-form {
-    /* フォームを画面いっぱいに広げる */
-    margin-left: calc(((100vw - 100%) / 2) * -1);
-    margin-right: calc(((100vw - 100%) / 2) * -1);
-  }
-
   .bottom-navigation-item {
     padding: 0 12px;
   }
