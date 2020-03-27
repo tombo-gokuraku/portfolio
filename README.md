@@ -146,8 +146,33 @@ ATA: 54m
 #### cssからSCSSにスタイルをコピーする
 3m -> 8m
 #### クラス名をBEM形式に変更する
-60m -> 75m+
+60m -> 75m+23m
 #### 変数,extend,mixinなどでまとめる
 45m ->
-メディアクエリなどをまとめる
+##### 変数を定義する
+primary-colorなど
+
+##### ブレイクポイントの編集とブレイクポイントに合わせたスタイリング
+メディアクエリをまとめる
 https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
+```scss
+@mixin for-xs {
+  @media (max-width: 599px) { @content; }
+}
+
+@mixin for-sm {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin for-md {
+  @media (min-width: 960px) { @content; }
+}
+
+@mixin for-lg {
+  @media (min-width: 1280px) { @content; }
+}
+
+@mixin for-xl {
+  @media (min-width: 1920px) { @content; }
+}
+```
