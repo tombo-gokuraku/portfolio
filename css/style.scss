@@ -77,9 +77,27 @@ a:active {
       font-size: 1.6rem;
       margin-right: 16px;
       font-weight: 300;
-      @include for-lg{ display: none;
+
+      @include for-lg {
+        display: none;
       }
     }
+  }
+}
+
+.navigation {
+  // bottom-navigationと統合する
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    margin: 0 16px;
+    font-weight: bold;
+    color: black;
   }
 }
 
@@ -323,7 +341,6 @@ input#submit {
 }
 
 @media (max-width: 600px) {
-
   .link-icons .link-icon {
     margin-left: 18px;
   }

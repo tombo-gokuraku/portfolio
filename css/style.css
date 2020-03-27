@@ -60,6 +60,18 @@ a:active {
   }
 }
 
+.navigation__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation__item {
+  font-size: 1.6rem;
+  margin: 0 16px;
+  font-weight: bold;
+  color: black;
+}
+
 .navigation-items {
   display: flex;
   align-items: center;
