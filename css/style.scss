@@ -1,3 +1,8 @@
+@charset "UTF-8";
+
+$primary-color: #009688;
+$primary-bg-color: #4db6ac;
+
 html {
   font-size: 62.5%;
 }
@@ -82,7 +87,7 @@ a:active {
 
 .hero {
   padding: 96px 64px 32px;
-  background-color: #4db6ac;
+  background-color: $primary-bg-color;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -224,6 +229,7 @@ input#submit {
     display: none;
   }
 }
+
 @media (max-width: 960px) {
   .navigation {
     display: none;
@@ -290,6 +296,7 @@ input#submit {
     color: #333;
   }
 }
+
 @media (max-width: 600px) {
   .header {
     padding: 8px 16px;
@@ -382,5 +389,3 @@ input#submit {
     font-size: 1.2rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
