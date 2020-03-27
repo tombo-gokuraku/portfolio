@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio site",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint": "^13.2.1",
+    "stylelint-scss": "^3.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tombo-gokuraku/portfolio.git"
+  },
+  "author": "tombo gokuraku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tombo-gokuraku/portfolio/issues"
+  },
+  "homepage": "https://github.com/tombo-gokuraku/portfolio#readme"
+}
