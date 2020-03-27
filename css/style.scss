@@ -55,9 +55,18 @@ a:active {
   width: 100%;
   z-index: 10;
 
+  @include for-sm {
+    padding: 8px 16px;
+  }
+
   &__title {
     display: flex;
     align-items: center;
+
+    @include for-sm {
+      font-size: 1.2rem;
+      margin-right: 16px;
+    }
 
     &--main {
       font-size: 2rem;
@@ -68,6 +77,8 @@ a:active {
       font-size: 1.6rem;
       margin-right: 16px;
       font-weight: 300;
+      @include for-lg{ display: none;
+      }
     }
   }
 }
@@ -260,12 +271,6 @@ input#submit {
   display: none;
 }
 
-@media (max-width: 1280px) {
-  .title-sub {
-    display: none;
-  }
-}
-
 @media (max-width: 960px) {
   .navigation {
     display: none;
@@ -334,14 +339,6 @@ input#submit {
 }
 
 @media (max-width: 600px) {
-  .header {
-    padding: 8px 16px;
-  }
-
-  .title {
-    font-size: 1.2rem;
-    margin-right: 16px;
-  }
 
   .link-icons .link-icon {
     margin-left: 18px;
