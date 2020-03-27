@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+@mixin for-xs {
+  @media (max-width: 600px) { @content; }
+}
+
+@mixin for-sm {
+  @media (max-width: 600px) { @content; }
+}
+
+@mixin for-md {
+  @media (max-width: 960px) { @content; }
+}
+
+@mixin for-lg {
+  @media (max-width: 1280px) { @content; }
+}
+
+@mixin for-xl {
+  @media (max-width: 1920px) { @content; }
+}
+
 $primary-color: #009688;
 $primary-bg-color: #4db6ac;
 
@@ -34,6 +54,22 @@ a:active {
   position: fixed;
   width: 100%;
   z-index: 10;
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    &--main {
+      font-size: 2rem;
+      margin-right: 16px;
+    }
+
+    &--sub {
+      font-size: 1.6rem;
+      margin-right: 16px;
+      font-weight: 300;
+    }
+  }
 }
 
 .title-container {

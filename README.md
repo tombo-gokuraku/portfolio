@@ -149,3 +149,5 @@ ATA: 54m
 60m ->
 #### 変数,extend,mixinなどでまとめる
 45m ->
+メディアクエリなどをまとめる
+https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
