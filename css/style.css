@@ -337,7 +337,7 @@ input#submit {
   width: 200px;
   border: none;
   color: #333;
-  background-color: var(--primary-bg-color);
+  background-color: #4db6ac;
   box-shadow: 0 4px 8px rgba(30, 30, 30, 0.5);
 }
 
@@ -346,11 +346,11 @@ input#submit {
   font-size: 1.2rem;
   color: #333;
   padding: 32px;
+  margin-bottom: 64px;
 }
-
-@media (max-width: 960px) {
+@media (min-width: 960px) {
   .footer {
-    margin-bottom: 64px;
+    margin-bottom: 0;
   }
 }
 

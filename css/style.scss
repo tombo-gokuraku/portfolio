@@ -22,6 +22,9 @@
 
 $primary-color: #009688;
 $primary-bg-color: #4db6ac;
+$twitter-color: #00acee;
+$youtube-color: #c4302b;
+$github-color: #333;
 
 html {
   font-size: 62.5%;
@@ -164,15 +167,15 @@ a:active {
 }
 
 .fa-twitter {
-  color: #00acee;
+  color: $twitter-color;
 }
 
 .fa-youtube {
-  color: #c4302b;
+  color: $youtube-color;
 }
 
 .fa-github {
-  color: #333;
+  color: $github-color;
 }
 
 .hero {
@@ -337,7 +340,7 @@ a:active {
 }
 
 .twitter-highlight {
-  border-bottom: 3px solid #00acee;
+  border-bottom: 3px solid $twitter-color;
 }
 
 #inqform {
@@ -366,7 +369,7 @@ input#submit {
   width: 200px;
   border: none;
   color: #333;
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
   box-shadow: 0 4px 8px rgba(30, 30, 30, 0.5);
 }
 
@@ -375,10 +378,9 @@ input#submit {
   font-size: 1.2rem;
   color: #333;
   padding: 32px;
-}
+  margin-bottom: 64px;
 
-@media (max-width: 960px) {
-  .footer {
-    margin-bottom: 64px;
+  @include for-md {
+    margin-bottom: 0;
   }
 }
