@@ -86,31 +86,74 @@ a:active {
 
 .navigation {
   // bottom-navigationと統合する
+
+  padding: 8px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-bg-color;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  @include for-md {
+    position: static;
+    background-color: transparent;
+    width: auto;
+  }
+
   &__menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+
+    @include for-md {
+      justify-content: space-between;
+    }
   }
 
   &__item {
-    font-size: 1.6rem;
-    margin: 0 16px;
-    font-weight: bold;
-    color: black;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 12px;
+
+    @include for-md {
+      padding: 0 8px;
+    }
   }
-}
 
-.navigation-items {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  &__icon {
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 4px;
 
-.navigation-item {
-  font-size: 1.6rem;
-  margin: 0 16px;
-  font-weight: bold;
-  color: black;
+    @include for-md {
+      font-size: 2rem;
+    }
+
+    @include for-md {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: #333;
+
+    @include for-md {
+      font-size: 1.2rem;
+    }
+
+    @include for-md {
+      font-size: 1.6rem;
+      margin: 0 16px;
+      font-weight: bold;
+      color: black;
+    }
+  }
 }
 
 .link-icon {
@@ -273,9 +316,9 @@ input#submit {
 }
 
 @media (max-width: 960px) {
-  .navigation {
-    display: none;
-  }
+  // .navigation {
+  //   display: none;
+  // }
 
   .hero-text-profession {
     font-size: 2.4rem;
@@ -408,17 +451,5 @@ input#submit {
 
   .background-icon {
     font-size: 16rem;
-  }
-
-  .bottom-navigation-item {
-    padding: 0 12px;
-  }
-
-  .bottom-navigation-icon {
-    font-size: 2rem;
-  }
-
-  .bottom-navigation-text {
-    font-size: 1.2rem;
   }
 }

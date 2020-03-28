@@ -147,6 +147,10 @@ ATA: 54m
 3m -> 8m
 #### クラス名をBEM形式に変更する
 60m -> 75m+23m
+
+#### navigationとBottomNavigationの統合
+45m -> 47m
+
 #### 変数,extend,mixinなどでまとめる
 45m ->
 ##### 変数を定義する
