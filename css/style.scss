@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
 @mixin for-xs {
-  @media (max-width: 600px) { @content; }
+  @media (min-width: 0) { @content; }
 }
 
 @mixin for-sm {
-  @media (max-width: 600px) { @content; }
+  @media (min-width: 600px) { @content; }
 }
 
 @mixin for-md {
-  @media (max-width: 960px) { @content; }
+  @media (min-width: 960px) { @content; }
 }
 
 @mixin for-lg {
-  @media (max-width: 1280px) { @content; }
+  @media (min-width: 1280px) { @content; }
 }
 
 @mixin for-xl {
-  @media (max-width: 1920px) { @content; }
+  @media (min-width: 1920px) { @content; }
 }
 
 $primary-color: #009688;
@@ -46,7 +46,7 @@ a:active {
 }
 
 .header {
-  padding: 16px 32px;
+  padding: 8px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,17 +56,12 @@ a:active {
   z-index: 10;
 
   @include for-sm {
-    padding: 8px 16px;
+    padding: 16px 32px;
   }
 
   &__title {
     display: flex;
     align-items: center;
-
-    @include for-sm {
-      font-size: 1.2rem;
-      margin-right: 16px;
-    }
 
     &--main {
       font-size: 2rem;
@@ -78,8 +73,12 @@ a:active {
       margin-right: 16px;
       font-weight: 300;
 
-      @include for-lg {
+      @include for-xs {
         display: none;
+      }
+
+      @include for-lg {
+        display: block;
       }
     }
   }

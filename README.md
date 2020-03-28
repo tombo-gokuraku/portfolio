@@ -153,11 +153,12 @@ ATA: 54m
 primary-colorなど
 
 ##### ブレイクポイントの編集とブレイクポイントに合わせたスタイリング
+30m -> 17m
 メディアクエリをまとめる
 https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
 ```scss
 @mixin for-xs {
-  @media (max-width: 599px) { @content; }
+  @media (min-width: 0px) { @content; }
 }
 
 @mixin for-sm {

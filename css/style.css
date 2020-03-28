@@ -21,7 +21,7 @@ a:active {
 }
 
 .header {
-  padding: 16px 32px;
+  padding: 8px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,20 +30,14 @@ a:active {
   width: 100%;
   z-index: 10;
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .header {
-    padding: 8px 16px;
+    padding: 16px 32px;
   }
 }
 .header__title {
   display: flex;
   align-items: center;
-}
-@media (max-width: 600px) {
-  .header__title {
-    font-size: 1.2rem;
-    margin-right: 16px;
-  }
 }
 .header__title--main {
   font-size: 2rem;
@@ -54,9 +48,14 @@ a:active {
   margin-right: 16px;
   font-weight: 300;
 }
-@media (max-width: 1280px) {
+@media (min-width: 0) {
   .header__title--sub {
     display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .header__title--sub {
+    display: block;
   }
 }
 
