@@ -142,19 +142,32 @@ ETA: 45m
 ATA: 54m
 
 ### SCSSで書き直す
-63m ->
+333m ->
 #### cssからSCSSにスタイルをコピーする
 3m -> 8m
-#### クラス名をBEM形式に変更する
+#### header
 60m -> 75m+23m
 
 #### navigationとBottomNavigationの統合
 45m -> 47m
 
+#### link-icon
+30m -> 10m
+
+#### hero
+30m
+
+#### about
+30m
+
+#### skills
+30m
+
+#### contact
+30m
+
 #### 変数,extend,mixinなどでまとめる
 45m ->
-##### 変数を定義する
-primary-colorなど
 
 ##### ブレイクポイントの編集とブレイクポイントに合わせたスタイリング
 30m -> 17m

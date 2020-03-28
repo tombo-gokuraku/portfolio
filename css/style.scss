@@ -156,23 +156,26 @@ a:active {
   }
 }
 
-.link-icon {
-  font-size: 1.8rem;
+.link {
+  &__icon {
+    margin-left: 18px;
+    font-size: 1.8rem;
+
+    @include for-sm {
+      margin-left: 32px;
+    }
+  }
 }
 
-.link-icons .link-icon {
-  margin-left: 32px;
-}
-
-.link-icon.fa-twitter {
+.fa-twitter {
   color: #00acee;
 }
 
-.link-icon.fa-youtube {
+.fa-youtube {
   color: #c4302b;
 }
 
-.link-icon.fa-github {
+.fa-github {
   color: #333;
 }
 
@@ -383,10 +386,6 @@ input#submit {
 }
 
 @media (max-width: 600px) {
-  .link-icons .link-icon {
-    margin-left: 18px;
-  }
-
   .hero {
     padding: 48px 16px 32px;
   }
