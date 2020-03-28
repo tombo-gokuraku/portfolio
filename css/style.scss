@@ -69,13 +69,10 @@ a:active {
     }
 
     &--sub {
+      display: none;
       font-size: 1.6rem;
       margin-right: 16px;
       font-weight: 300;
-
-      @include for-xs {
-        display: none;
-      }
 
       @include for-lg {
         display: block;
@@ -132,9 +129,6 @@ a:active {
 
     @include for-md {
       font-size: 2rem;
-    }
-
-    @include for-md {
       display: none;
     }
   }
@@ -144,11 +138,6 @@ a:active {
     color: #333;
 
     @include for-md {
-      font-size: 1.2rem;
-    }
-
-    @include for-md {
-      font-size: 1.6rem;
       margin: 0 16px;
       font-weight: bold;
       color: black;
@@ -157,13 +146,20 @@ a:active {
 }
 
 .link {
-  &__icon {
-    margin-left: 18px;
-    font-size: 1.8rem;
+  &__container {
+    margin-right: 16px;
 
     @include for-sm {
-      margin-left: 32px;
+      margin-right: 24px;
     }
+  }
+
+  &__icon {
+    font-size: 1.8rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
   }
 }
 
@@ -236,58 +232,85 @@ a:active {
 
 .section {
   max-width: 1440px;
-  margin: 0 auto 64px;
-  padding: 64px;
-}
+  margin: 0 auto 32px;
+  padding: 32px 16px;
 
-.section-contents {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-around;
-}
+  @include for-sm {
+    padding: 64px 32px;
+  }
 
-.section-content {
-  width: 50%;
-  margin-right: 16px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
+  @include for-md {
+    margin: 0 auto 64px;
+    padding: 64px;
+  }
 
-.section-title {
-  font-size: 6rem;
-  margin-bottom: 16px;
-}
+  &__container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
 
-.section-heading {
-  font-size: 4rem;
-  margin-bottom: 16px;
-  padding-top: 8px;
-}
+    @include for-md {
+      flex-wrap: nowrap;
+    }
+  }
 
-.section-text {
-  font-size: 2rem;
-  margin-bottom: 16px;
-  letter-spacing: 0.3rem;
-  line-height: 1.5;
-}
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
-.links {
-  font-size: 2rem;
-}
+    @include for-md {
+      width: 50%;
+      margin-right: 16px;
+    }
 
-.links > a {
-  margin-right: 16px;
-}
+    &--bg-image {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      background-image: url("../images/branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg");
+      background-size: cover;
+      opacity: 0.7;
+      filter: blur(2px);
+    }
+  }
 
-.about-image-container {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  background-image: url("../images/branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg");
-  background-size: cover;
-  opacity: 0.7;
-  filter: blur(2px);
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 12px;
+
+    @include for-md {
+      font-size: 6rem;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+    margin-bottom: 8px;
+
+    @include for-md {
+      font-size: 4rem;
+      margin-bottom: 16px;
+      padding-top: 8px;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.4rem;
+    line-height: 1.6;
+
+    @include for-md {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      letter-spacing: 0.3rem;
+      line-height: 1.5;
+    }
+  }
 }
 
 .background-icon {
@@ -342,136 +365,13 @@ input#submit {
   padding: 32px;
 }
 
-.bottom-navigation {
-  display: none;
-}
-
 @media (max-width: 960px) {
-  // .hero-text-profession {
-  //   font-size: 2.4rem;
-  // }
-
-  .about-image-container {
-    display: none;
-  }
-
-  .section {
-    margin: 0 auto 32px;
-    padding: 64px 32px;
-  }
-
-  .section-contents {
-    flex-wrap: wrap;
-  }
-
-  .section-content {
-    width: 100%;
-  }
-
   .footer {
     margin-bottom: 64px;
-  }
-
-  .bottom-navigation {
-    padding: 8px 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-bg-color);
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    bottom: 0;
-  }
-
-  .bottom-navigation-items {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  .bottom-navigation-item {
-    text-align: center;
-    padding: 0 8px;
-    margin: 0 auto;
-  }
-
-  .bottom-navigation-icon {
-    font-size: 2.4rem;
-    color: #333;
-    margin-bottom: 4px;
-  }
-
-  .bottom-navigation-text {
-    font-size: 1.6rem;
-    color: #333;
   }
 }
 
 @media (max-width: 600px) {
-  // .hero {
-  //   padding: 48px 16px 32px;
-  // }
-  //
-  // .hero__container {
-  //   line-height: 1.8;
-  //   letter-spacing: 0.4rem;
-  // }
-  //
-  // .hero-text-profession {
-  //   font-size: 1.2rem;
-  //   font-weight: 400;
-  // }
-  //
-  // .hero-text-name {
-  //   font-size: 1.4rem;
-  // }
-
-  // .tombo-image {
-  //   width: 100px;
-  //   height: 100px;
-  // }
-
-  .section {
-    max-width: 1440px;
-    margin: 0 auto 32px;
-    padding: 32px 16px;
-  }
-
-  .section-content {
-    margin-bottom: 16px;
-  }
-
-  .section-title {
-    font-size: 3rem;
-    margin-bottom: 12px;
-  }
-
-  .section-heading {
-    font-size: 2rem;
-    margin-bottom: 8px;
-  }
-
-  .section-text {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    letter-spacing: 0.4rem;
-    line-height: 1.6;
-  }
-
-  .links {
-    font-size: 1.2rem;
-  }
-
-  .links .link-icon {
-    font-size: 1.2rem;
-  }
-
-  .links > a {
-    margin-right: 12px;
-  }
-
   .background-icon {
     font-size: 16rem;
   }

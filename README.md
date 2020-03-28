@@ -158,7 +158,7 @@ ATA: 54m
 30m -> 29m
 
 #### about
-30m
+30m -> 56m
 
 #### skills
 30m
