@@ -180,30 +180,58 @@ a:active {
 }
 
 .hero {
-  padding: 96px 64px 32px;
   background-color: $primary-bg-color;
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
+  padding: 48px 16px 32px;
 
-.hero-text-container {
-  line-height: 1.5;
-  letter-spacing: 0.5rem;
-}
+  @include for-md {
+    padding: 96px 64px 32px;
+  }
 
-.hero-text-profession {
-  font-size: 4.8rem;
-  font-weight: 400;
-}
+  &__container {
+    &--text {
+      width: 60%;
+      line-height: 1.8;
+      letter-spacing: 0.4rem;
 
-.hero-text-name {
-  font-size: 4rem;
-}
+      @include for-md {
+        line-height: 1.5;
+        letter-spacing: 0.5rem;
+      }
+    }
 
-.tombo-image {
-  width: 200px;
-  height: 200px;
+    &--image {
+      width: 30%;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+
+    @include for-md {
+      font-size: 4rem;
+    }
+
+    &--large {
+      font-weight: 400;
+      font-size: 1.4rem;
+
+      @include for-sm {
+        font-size: 2.4rem;
+      }
+
+      @include for-md {
+        font-size: 4.8rem;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 250px;
+  }
 }
 
 .section {
@@ -319,13 +347,9 @@ input#submit {
 }
 
 @media (max-width: 960px) {
-  // .navigation {
-  //   display: none;
+  // .hero-text-profession {
+  //   font-size: 2.4rem;
   // }
-
-  .hero-text-profession {
-    font-size: 2.4rem;
-  }
 
   .about-image-container {
     display: none;
@@ -386,28 +410,28 @@ input#submit {
 }
 
 @media (max-width: 600px) {
-  .hero {
-    padding: 48px 16px 32px;
-  }
+  // .hero {
+  //   padding: 48px 16px 32px;
+  // }
+  //
+  // .hero__container {
+  //   line-height: 1.8;
+  //   letter-spacing: 0.4rem;
+  // }
+  //
+  // .hero-text-profession {
+  //   font-size: 1.2rem;
+  //   font-weight: 400;
+  // }
+  //
+  // .hero-text-name {
+  //   font-size: 1.4rem;
+  // }
 
-  .hero-text-container {
-    line-height: 1.8;
-    letter-spacing: 0.4rem;
-  }
-
-  .hero-text-profession {
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
-
-  .hero-text-name {
-    font-size: 1.4rem;
-  }
-
-  .tombo-image {
-    width: 100px;
-    height: 100px;
-  }
+  // .tombo-image {
+  //   width: 100px;
+  //   height: 100px;
+  // }
 
   .section {
     max-width: 1440px;

@@ -155,30 +155,56 @@ a:active {
 }
 
 .hero {
-  padding: 96px 64px 32px;
   background-color: #4db6ac;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 48px 16px 32px;
 }
-
-.hero-text-container {
-  line-height: 1.5;
-  letter-spacing: 0.5rem;
+@media (min-width: 960px) {
+  .hero {
+    padding: 96px 64px 32px;
+  }
 }
-
-.hero-text-profession {
-  font-size: 4.8rem;
+.hero__container--text {
+  width: 60%;
+  line-height: 1.8;
+  letter-spacing: 0.4rem;
+}
+@media (min-width: 960px) {
+  .hero__container--text {
+    line-height: 1.5;
+    letter-spacing: 0.5rem;
+  }
+}
+.hero__container--image {
+  width: 30%;
+}
+.hero__text {
+  font-size: 1.4rem;
+}
+@media (min-width: 960px) {
+  .hero__text {
+    font-size: 4rem;
+  }
+}
+.hero__text--large {
   font-weight: 400;
+  font-size: 1.4rem;
 }
-
-.hero-text-name {
-  font-size: 4rem;
+@media (min-width: 600px) {
+  .hero__text--large {
+    font-size: 2.4rem;
+  }
 }
-
-.tombo-image {
-  width: 200px;
-  height: 200px;
+@media (min-width: 960px) {
+  .hero__text--large {
+    font-size: 4.8rem;
+  }
+}
+.hero__image {
+  width: 100%;
+  max-width: 250px;
 }
 
 .section {
@@ -294,10 +320,6 @@ input#submit {
 }
 
 @media (max-width: 960px) {
-  .hero-text-profession {
-    font-size: 2.4rem;
-  }
-
   .about-image-container {
     display: none;
   }
@@ -356,29 +378,6 @@ input#submit {
   }
 }
 @media (max-width: 600px) {
-  .hero {
-    padding: 48px 16px 32px;
-  }
-
-  .hero-text-container {
-    line-height: 1.8;
-    letter-spacing: 0.4rem;
-  }
-
-  .hero-text-profession {
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
-
-  .hero-text-name {
-    font-size: 1.4rem;
-  }
-
-  .tombo-image {
-    width: 100px;
-    height: 100px;
-  }
-
   .section {
     max-width: 1440px;
     margin: 0 auto 32px;
