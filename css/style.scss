@@ -275,6 +275,29 @@ a:active {
       opacity: 0.7;
       filter: blur(2px);
     }
+
+    &--bg-icon {
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 100%;
+      font-size: 14rem;
+      text-align: center;
+      color: $primary-color;
+      opacity: 0.3;
+
+      @include for-sm {
+        font-size: 12rem;
+      }
+
+      @include for-md {
+        font-size: 18rem;
+      }
+
+      @include for-lg {
+        font-size: 20rem;
+      }
+    }
   }
 
   &__title {
@@ -311,17 +334,6 @@ a:active {
       line-height: 1.5;
     }
   }
-}
-
-.background-icon {
-  position: absolute;
-  left: 0;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  font-size: 20rem;
-  color: var(--primary-color);
-  opacity: 0.3;
 }
 
 .twitter-highlight {
@@ -368,11 +380,5 @@ input#submit {
 @media (max-width: 960px) {
   .footer {
     margin-bottom: 64px;
-  }
-}
-
-@media (max-width: 600px) {
-  .background-icon {
-    font-size: 16rem;
   }
 }
