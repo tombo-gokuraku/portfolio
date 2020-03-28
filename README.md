@@ -140,3 +140,60 @@ ATA: 10+89=99m
 ETA: 45m
 ->
 ATA: 54m
+
+### SCSSで書き直す
+333m -> 298m
+計画錯誤率 298/333 = 0.89
+目標より早く終わった。BEMの--modifierを使って、これまで共通化できていなかったスタイルをまとめられたのが大きかった。
+後半にいくにしたがって作業量が減っていったことも良かった。
+#### cssからSCSSにスタイルをコピーする
+3m -> 8m
+#### header
+60m -> 75m+23m=98m
+
+#### navigationとBottomNavigationの統合
+45m -> 47m
+
+#### link-icon
+30m -> 10m
+
+#### hero
+30m -> 29m
+
+#### about
+30m -> 56m
+
+#### skills
+30m -> 25m
+
+#### contact
+30m -> 5m
+
+#### 変数,extend,mixinなどでまとめる
+45m -> 3m
+
+##### ブレイクポイントの編集とブレイクポイントに合わせたスタイリング
+30m -> 17m
+メディアクエリをまとめる
+https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
+```scss
+@mixin for-xs {
+  @media (min-width: 0px) { @content; }
+}
+
+@mixin for-sm {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin for-md {
+  @media (min-width: 960px) { @content; }
+}
+
+@mixin for-lg {
+  @media (min-width: 1280px) { @content; }
+}
+
+@mixin for-xl {
+  @media (min-width: 1920px) { @content; }
+}
+```

@@ -1,0 +1,386 @@
+@charset "UTF-8";
+
+@mixin for-xs {
+  @media (min-width: 0) { @content; }
+}
+
+@mixin for-sm {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin for-md {
+  @media (min-width: 960px) { @content; }
+}
+
+@mixin for-lg {
+  @media (min-width: 1280px) { @content; }
+}
+
+@mixin for-xl {
+  @media (min-width: 1920px) { @content; }
+}
+
+$primary-color: #009688;
+$primary-bg-color: #4db6ac;
+$twitter-color: #00acee;
+$youtube-color: #c4302b;
+$github-color: #333;
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.header {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  @include for-sm {
+    padding: 16px 32px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    &--main {
+      font-size: 2rem;
+      margin-right: 16px;
+    }
+
+    &--sub {
+      display: none;
+      font-size: 1.6rem;
+      margin-right: 16px;
+      font-weight: 300;
+
+      @include for-lg {
+        display: block;
+      }
+    }
+  }
+}
+
+.navigation {
+  // bottom-navigationと統合する
+
+  padding: 8px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-bg-color;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  @include for-md {
+    position: static;
+    background-color: transparent;
+    width: auto;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    @include for-md {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 12px;
+
+    @include for-md {
+      padding: 0 8px;
+    }
+  }
+
+  &__icon {
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 4px;
+
+    @include for-md {
+      font-size: 2rem;
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: #333;
+
+    @include for-md {
+      margin: 0 16px;
+      font-weight: bold;
+      color: black;
+    }
+  }
+}
+
+.link {
+  &__container {
+    margin-right: 16px;
+
+    @include for-sm {
+      margin-right: 24px;
+    }
+  }
+
+  &__icon {
+    font-size: 1.8rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+  }
+}
+
+.fa-twitter {
+  color: $twitter-color;
+}
+
+.fa-youtube {
+  color: $youtube-color;
+}
+
+.fa-github {
+  color: $github-color;
+}
+
+.hero {
+  background-color: $primary-bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 48px 16px 32px;
+
+  @include for-md {
+    padding: 96px 64px 32px;
+  }
+
+  &__container {
+    &--text {
+      width: 60%;
+      line-height: 1.8;
+      letter-spacing: 0.4rem;
+
+      @include for-md {
+        line-height: 1.5;
+        letter-spacing: 0.5rem;
+      }
+    }
+
+    &--image {
+      width: 30%;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+
+    @include for-md {
+      font-size: 4rem;
+    }
+
+    &--large {
+      font-weight: 400;
+      font-size: 1.4rem;
+
+      @include for-sm {
+        font-size: 2.4rem;
+      }
+
+      @include for-md {
+        font-size: 4.8rem;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+.section {
+  max-width: 1440px;
+  margin: 0 auto 32px;
+  padding: 32px 16px;
+
+  @include for-sm {
+    padding: 64px 32px;
+  }
+
+  @include for-md {
+    margin: 0 auto 64px;
+    padding: 64px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+    @include for-md {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include for-md {
+      width: 50%;
+      margin-right: 16px;
+    }
+
+    &--bg-image {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      background-image: url("../images/branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg");
+      background-size: cover;
+      opacity: 0.7;
+      filter: blur(2px);
+    }
+
+    &--bg-icon {
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 100%;
+      font-size: 14rem;
+      text-align: center;
+      color: $primary-color;
+      opacity: 0.3;
+
+      @include for-sm {
+        font-size: 12rem;
+      }
+
+      @include for-md {
+        font-size: 18rem;
+      }
+
+      @include for-lg {
+        font-size: 20rem;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 12px;
+
+    @include for-md {
+      font-size: 6rem;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+    margin-bottom: 8px;
+
+    @include for-md {
+      font-size: 4rem;
+      margin-bottom: 16px;
+      padding-top: 8px;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.4rem;
+    line-height: 1.6;
+
+    @include for-md {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      letter-spacing: 0.3rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.twitter-highlight {
+  border-bottom: 3px solid $twitter-color;
+}
+
+#inqform {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inq-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+#inqform input,
+textarea {
+  font-size: 1.6rem;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  padding: 8px;
+}
+
+input#submit {
+  align-self: center;
+  width: 200px;
+  border: none;
+  color: #333;
+  background-color: $primary-bg-color;
+  box-shadow: 0 4px 8px rgba(30, 30, 30, 0.5);
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 32px;
+  margin-bottom: 64px;
+
+  @include for-md {
+    margin-bottom: 0;
+  }
+}
