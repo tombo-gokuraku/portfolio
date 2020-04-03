@@ -201,6 +201,8 @@ https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
 ### A11yの改善
 Lighthouseを実行したらA11yが58しかなかったので、修正して80くらいにはする
 #### <html> element does not have a [lang] attribute
+`<html lang="ja">` を追加した
+
 #### Form elements do not have associated labels
 #### Links do not have a discernible name
 #### Lists do not contain only <li> elements and script supporting elements (<script> and <template>).
