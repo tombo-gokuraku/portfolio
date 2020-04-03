@@ -225,4 +225,19 @@ https://stackoverflow.com/questions/51683761/how-to-fix-lighthouse-links-do-not-
 https://dequeuniversity.com/rules/axe/3.1/link-name?application=lighthouse
 
 #### Lists do not contain only <li> elements and script supporting elements (<script> and <template>).
+下のように`<ul>`の直下に`<li`が挿入されるように変更した
+```
+<ul class="navigation__menu">
+  <li class="navigation__item">
+    <i class="navigation__icon fas fa-address-card"></i>
+    <a class="navigation__text" href="#about" aria-label="go to ABOUT"
+      >ABOUT</a
+    >
+  </li>
+```
+https://dequeuniversity.com/rules/axe/3.1/list?application=lighthouse
+https://web.dev/list/
+
 #### List items (<li>) are not contained within <ul> or <ol> parent elements.
+上記と同様の対策をした
+この時点でA11yが100になった
