@@ -207,5 +207,22 @@ Lighthouseを実行したらA11yが58しかなかったので、修正して80�
 `<label for="entry.872297108">メールアドレス:</label>`のように`<label>`を追加した
 
 #### Links do not have a discernible name
+スクリーンリーダーに読めるように`aria-label`を追加する
+例)
+```
+<a
+  href="https://twitter.com/Tombo__Gokuraku"
+  class="link__container"
+  aria-label="Twitter"
+  target="_blank"
+  rel="noopener"
+  ><i class="fab fa-twitter link__icon"></i>
+  <span class="link__text">Twitter</span>
+</a>
+```
+
+https://stackoverflow.com/questions/51683761/how-to-fix-lighthouse-links-do-not-have-a-discernible-name
+https://dequeuniversity.com/rules/axe/3.1/link-name?application=lighthouse
+
 #### Lists do not contain only <li> elements and script supporting elements (<script> and <template>).
 #### List items (<li>) are not contained within <ul> or <ol> parent elements.
