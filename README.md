@@ -204,6 +204,8 @@ Lighthouseを実行したらA11yが58しかなかったので、修正して80�
 `<html lang="ja">` を追加した
 
 #### Form elements do not have associated labels
+`<label for="entry.872297108">メールアドレス:</label>`のように`<label>`を追加した
+
 #### Links do not have a discernible name
 #### Lists do not contain only <li> elements and script supporting elements (<script> and <template>).
 #### List items (<li>) are not contained within <ul> or <ol> parent elements.
