@@ -240,7 +240,7 @@ https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
 
 ### A11yの改善
 Lighthouseを実行したらA11yが58しかなかったので、修正して80くらいにはする
-#### <html> element does not have a [lang] attribute
+#### `<html>` element does not have a [lang] attribute
 `<html lang="ja">` を追加した
 
 #### Form elements do not have associated labels
@@ -264,7 +264,7 @@ Lighthouseを実行したらA11yが58しかなかったので、修正して80�
 https://stackoverflow.com/questions/51683761/how-to-fix-lighthouse-links-do-not-have-a-discernible-name
 https://dequeuniversity.com/rules/axe/3.1/link-name?application=lighthouse
 
-#### Lists do not contain only <li> elements and script supporting elements (<script> and <template>).
+#### Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).
 下のように`<ul>`の直下に`<li>`が挿入されるように変更した
 ```html
 <ul class="navigation__menu">
@@ -278,7 +278,7 @@ https://dequeuniversity.com/rules/axe/3.1/link-name?application=lighthouse
 https://dequeuniversity.com/rules/axe/3.1/list?application=lighthouse
 https://web.dev/list/
 
-#### List items (<li>) are not contained within <ul> or <ol> parent elements.
+#### List items `<li>` are not contained within `<ul>` or `<ol>` parent elements.
 上記と同様の対策をした
 この時点でA11yが100になった
 
