@@ -302,6 +302,8 @@ https://web.dev/list/
 
 #### Footerを作る
 
+#### GitHub Pagesにホスティング
+
 ### v1.3(styled-componentsでスタイリング)
 
 ### v1.4(Netlifyにホスティング)
