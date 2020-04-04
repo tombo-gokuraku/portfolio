@@ -249,7 +249,7 @@ Lighthouseを実行したらA11yが58しかなかったので、修正して80�
 #### Links do not have a discernible name
 スクリーンリーダーに読めるように`aria-label`を追加する
 例)
-```
+```html
 <a
   href="https://twitter.com/Tombo__Gokuraku"
   class="link__container"
@@ -265,8 +265,8 @@ https://stackoverflow.com/questions/51683761/how-to-fix-lighthouse-links-do-not-
 https://dequeuniversity.com/rules/axe/3.1/link-name?application=lighthouse
 
 #### Lists do not contain only <li> elements and script supporting elements (<script> and <template>).
-下のように`<ul>`の直下に`<li`が挿入されるように変更した
-```
+下のように`<ul>`の直下に`<li>`が挿入されるように変更した
+```html
 <ul class="navigation__menu">
   <li class="navigation__item">
     <i class="navigation__icon fas fa-address-card"></i>
