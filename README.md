@@ -1,243 +1,68 @@
-# tombo gokuraku portfolio
-tombo gokurakuのポートフォリオサイト
-[STUDIO](https://tombo-gokuraku.studio.design/)でデザインし、HTML/Vanilla CSSでコーディングした。
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**[myportfolio](https://tombo-gokuraku.github.io/portfolio/)**
+## Available Scripts
 
-## 反省
-### 良かった所
-* 見積もりをした
+In the project directory, you can run:
 
-作業前に作業工程を列挙し、それぞれの工程にどれくらいの時間を要するか予想した。
-おかげで作業の順番が最適化され、自分がどれくらい計画錯誤しているのか分かった。
+### `npm start`
 
-* スマホ版のナビゲーションをハンバーガーアイコンではなく、Bottom Navigationを使った
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-ハンバーガーアイコンのclickイベントを取らなくてよくなったので、単純にJavaScriptを書く必要がなくなった。
-(あくまで個人的には)ハンバーガーアイコンよりもBottom Navigationの方が押しやすい。
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-### 悪かった所
-* クラス名に統一感がない
+### `npm test`
 
-containerだったりcontentだったりする。
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-* 詳細度を増やすことで無理やりスタイリングしている箇所がある
+### `npm run build`
 
-SASSの使用を検討しても良いかもしれない。むしろ、次回はSASSを使って構築してみるとかどうだろう。
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* Google Formのiframeの高さを取ってこれないと知らずに時間を浪費した
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-GoogleがCORSを許可していないので不可能。
-知らなかったし、仕方ない。
-[ちゃんと勉強しよう](https://stackoverflow.com/questions/19009849/auto-height-for-iframe-containing-embedded-published-google-doc)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* 問い合わせフォームがGoogleForm
+### `npm run eject`
 
-本当はちゃんとしたフォームを作りたいけど、phpとか知らんし、書きたくもない。
-netlifyとか使うと割と手軽にformが作れるっぽい?
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-[【Netlify】Forms機能を利用して問い合わせフォームを作成する](https://qiita.com/NaokiIshimura/items/bce2f0b865ec1bc16a53)
-[netlify docs](https://docs.netlify.com/forms/setup/#html-forms)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-ちょっとしたハックでGoogleFormに直接データを送れることが分かった。
-https://github.com/toperkin/staticFormEmails/blob/e269a7fab2828fb04d83b2961777872c1a124263/README.md
-これで自分でform要素を作れるのでstyleを当てられる。
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Todo
-予想終了時間ETA(estimated time of arrival),
-実際の終了時間ATA(the actual time of arrived)
-として表記している
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-ETA: 170+30+165=365m=6h5m
-->
-ATA: 222+29+184=435m=7h15m
+## Learn More
 
-計画錯誤率:
-435/365 = 1.2
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### PC向けデザイン
-ETA: 170m
-->
-ATA: 44+175+3 = 222m
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-#### header
-ETA: 45m
-->
-ATA: 44m
+### Code Splitting
 
-#### main
-ETA: 120m
-->
-ATA: 29m+81m+32m+33m = 175m
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-##### hero
-ETA: 30m
-->
-ATA: 29m
+### Analyzing the Bundle Size
 
-##### ABOUT
-ETA: 30m
-->
-ATA: 81m
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-##### SKILLS
-ETA: 30m
-->
-ATA: 32m
+### Making a Progressive Web App
 
-##### CONTACT
-ETA: 30m
-->
-ATA: 33m
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-#### footer
-ETA: 5m
-->
-ATA: 3m
+### Advanced Configuration
 
-### Refactoring
-ETA: 30m
-->
-ATA: 29m
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Responsive Design
-ETA: 165m
-->
-ATA: 10+120+54=184m
+### Deployment
 
-#### BreakPointを決める
-ETA: 30m
-->
-ATA: 10m
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-1280px, 960px, 600px
+### `npm run build` fails to minify
 
-[material-ui](https://material-ui.com/customization/breakpoints/)
-
-[material design Breakpoint system](https://material.io/design/layout/responsive-layout-grid.html#breakpoints)
-
-#### BreakPointごとにスタイリング
-ETA: 90m
-->
-ATA: 9+12+99m = 120m
-
-##### 1280pxのスタイリング
-ETA: 30m
-->
-ATA: 9m
-
-##### 960pxのスタイリング
-ETA: 30m
-->
-ATA: 12m
-
-##### 600pxのスタイリング
-ETA: 30m
-->
-ATA: 10+89=99m
-
-#### Bottom Navigationを追加
-ETA: 45m
-->
-ATA: 54m
-
-### SCSSで書き直す
-333m -> 298m
-計画錯誤率 298/333 = 0.89
-目標より早く終わった。BEMの--modifierを使って、これまで共通化できていなかったスタイルをまとめられたのが大きかった。
-後半にいくにしたがって作業量が減っていったことも良かった。
-#### cssからSCSSにスタイルをコピーする
-3m -> 8m
-#### header
-60m -> 75m+23m=98m
-
-#### navigationとBottomNavigationの統合
-45m -> 47m
-
-#### link-icon
-30m -> 10m
-
-#### hero
-30m -> 29m
-
-#### about
-30m -> 56m
-
-#### skills
-30m -> 25m
-
-#### contact
-30m -> 5m
-
-#### 変数,extend,mixinなどでまとめる
-45m -> 3m
-
-##### ブレイクポイントの編集とブレイクポイントに合わせたスタイリング
-30m -> 17m
-メディアクエリをまとめる
-https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
-```scss
-@mixin for-xs {
-  @media (min-width: 0px) { @content; }
-}
-
-@mixin for-sm {
-  @media (min-width: 600px) { @content; }
-}
-
-@mixin for-md {
-  @media (min-width: 960px) { @content; }
-}
-
-@mixin for-lg {
-  @media (min-width: 1280px) { @content; }
-}
-
-@mixin for-xl {
-  @media (min-width: 1920px) { @content; }
-}
-```
-
-### A11yの改善
-Lighthouseを実行したらA11yが58しかなかったので、修正して80くらいにはする
-#### <html> element does not have a [lang] attribute
-`<html lang="ja">` を追加した
-
-#### Form elements do not have associated labels
-`<label for="entry.872297108">メールアドレス:</label>`のように`<label>`を追加した
-
-#### Links do not have a discernible name
-スクリーンリーダーに読めるように`aria-label`を追加する
-例)
-```
-<a
-  href="https://twitter.com/Tombo__Gokuraku"
-  class="link__container"
-  aria-label="Twitter"
-  target="_blank"
-  rel="noopener"
-  ><i class="fab fa-twitter link__icon"></i>
-  <span class="link__text">Twitter</span>
-</a>
-```
-
-https://stackoverflow.com/questions/51683761/how-to-fix-lighthouse-links-do-not-have-a-discernible-name
-https://dequeuniversity.com/rules/axe/3.1/link-name?application=lighthouse
-
-#### Lists do not contain only <li> elements and script supporting elements (<script> and <template>).
-下のように`<ul>`の直下に`<li`が挿入されるように変更した
-```
-<ul class="navigation__menu">
-  <li class="navigation__item">
-    <i class="navigation__icon fas fa-address-card"></i>
-    <a class="navigation__text" href="#about" aria-label="go to ABOUT"
-      >ABOUT</a
-    >
-  </li>
-```
-https://dequeuniversity.com/rules/axe/3.1/list?application=lighthouse
-https://web.dev/list/
-
-#### List items (<li>) are not contained within <ul> or <ol> parent elements.
-上記と同様の対策をした
-この時点でA11yが100になった
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
