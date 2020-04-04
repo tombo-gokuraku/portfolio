@@ -60,7 +60,7 @@ function App() {
                 class="navigation__text"
                 href="https://tombomemo.com/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 aria-label="go to BLOG"
               >
                 <FontAwesomeIcon
@@ -91,7 +91,7 @@ function App() {
             class="link__container"
             aria-label="Twitter"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               className="link__icon"
@@ -103,7 +103,7 @@ function App() {
             aria-label="Youtube"
             class="link__container"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               className="link__icon"
@@ -115,7 +115,7 @@ function App() {
             class="link__container"
             aria-label="GitHub"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               className="link__icon"
@@ -156,7 +156,7 @@ function App() {
                   class="link__container"
                   aria-label="Twitter"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon
                     className="link__icon"
@@ -169,7 +169,7 @@ function App() {
                   class="link__container"
                   aria-label="Youtube"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon
                     className="link__icon"
@@ -182,7 +182,7 @@ function App() {
                   class="link__container"
                   aria-label="GitHub"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon
                     className="link__icon"
