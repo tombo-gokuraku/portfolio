@@ -296,6 +296,7 @@ function App() {
 
           {/* <!-- リダイレクトをブロックする --> */}
           <iframe
+            title="hidden_iframe"
             name="hidden_iframe"
             id="hidden_iframe"
             onload="if(submitted) {}"
