@@ -1,4 +1,20 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAddressCard,
+  faTools,
+  faBlog,
+  faComment,
+  faCode,
+  faPaintBrush
+} from "@fortawesome/free-solid-svg-icons";
+
+import {
+  faTwitter,
+  faYoutube,
+  faGithub
+} from "@fortawesome/free-brands-svg-icons";
+
 import "./App.scss";
 // import bgImage from "./branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg";
 import tomboImage from "./tombo_icon_red_resized.png";
@@ -19,7 +35,11 @@ function App() {
                 href="#about"
                 aria-label="go to ABOUT"
               >
-                <i class="navigation__icon fas fa-address-card"></i>ABOUT
+                <FontAwesomeIcon
+                  className="navigation__icon"
+                  icon={faAddressCard}
+                ></FontAwesomeIcon>
+                ABOUT
               </a>
             </li>
             <li class="navigation__item">
@@ -28,7 +48,11 @@ function App() {
                 href="#skills"
                 aria-label="go to SKILLS"
               >
-                <i class="navigation__icon fas fa-tools"></i>SKILLS
+                <FontAwesomeIcon
+                  className="navigation__icon"
+                  icon={faTools}
+                ></FontAwesomeIcon>
+                SKILLS
               </a>
             </li>
             <li class="navigation__item">
@@ -39,7 +63,11 @@ function App() {
                 rel="noopener"
                 aria-label="go to BLOG"
               >
-                <i class="navigation__icon fas fa-blog"></i>BLOG
+                <FontAwesomeIcon
+                  className="navigation__icon"
+                  icon={faBlog}
+                ></FontAwesomeIcon>
+                BLOG
               </a>
             </li>
             <li class="navigation__item">
@@ -48,7 +76,11 @@ function App() {
                 href="#contact"
                 aria-label="go to CONTACT"
               >
-                <i class="navigation__icon fas fa-comment"></i>CONTACT
+                <FontAwesomeIcon
+                  className="navigation__icon"
+                  icon={faComment}
+                ></FontAwesomeIcon>
+                CONTACT
               </a>
             </li>
           </ul>
@@ -61,7 +93,10 @@ function App() {
             target="_blank"
             rel="noopener"
           >
-            <i class="fab fa-twitter link__icon"></i>
+            <FontAwesomeIcon
+              className="link__icon"
+              icon={faTwitter}
+            ></FontAwesomeIcon>
           </a>
           <a
             href="https://www.youtube.com/channel/UCUVOtxzJS6kiIhDo1CEW4Og"
@@ -70,7 +105,10 @@ function App() {
             target="_blank"
             rel="noopener"
           >
-            <i class="fab fa-youtube link__icon"></i>
+            <FontAwesomeIcon
+              className="link__icon"
+              icon={faYoutube}
+            ></FontAwesomeIcon>
           </a>
           <a
             href="https://github.com/tombo-gokuraku"
@@ -79,7 +117,10 @@ function App() {
             target="_blank"
             rel="noopener"
           >
-            <i class="fab fa-github link__icon"></i>
+            <FontAwesomeIcon
+              className="link__icon"
+              icon={faGithub}
+            ></FontAwesomeIcon>
           </a>
         </div>
       </header>
@@ -117,7 +158,10 @@ function App() {
                   target="_blank"
                   rel="noopener"
                 >
-                  <i class="fab fa-twitter link__icon"></i>
+                  <FontAwesomeIcon
+                    className="link__icon"
+                    icon={faTwitter}
+                  ></FontAwesomeIcon>
                   <span class="link__text">Twitter</span>
                 </a>
                 <a
@@ -127,7 +171,10 @@ function App() {
                   target="_blank"
                   rel="noopener"
                 >
-                  <i class="fab fa-youtube link__icon"></i>
+                  <FontAwesomeIcon
+                    className="link__icon"
+                    icon={faYoutube}
+                  ></FontAwesomeIcon>
                   <span class="link__text">Youtube</span>
                 </a>
                 <a
@@ -137,7 +184,10 @@ function App() {
                   target="_blank"
                   rel="noopener"
                 >
-                  <i class="fab fa-github link__icon"></i>
+                  <FontAwesomeIcon
+                    className="link__icon"
+                    icon={faGithub}
+                  ></FontAwesomeIcon>
                   <span class="link__text">GitHub</span>
                 </a>
               </div>
@@ -168,7 +218,11 @@ function App() {
                 プロジェクトにてデザインとコーディングを担当しています。
                 <wbr />
               </p>
-              <i class="fas fa-code section__content--bg-icon"></i>
+
+              <FontAwesomeIcon
+                className="section__content--bg-icon"
+                icon={faCode}
+              ></FontAwesomeIcon>
             </div>
             <div class="section__content">
               <h3 class="section__heading">Design</h3>
@@ -186,7 +240,10 @@ function App() {
                 Webサイト作成なども手がけています。
                 <wbr />
               </p>
-              <i class="fas fa-paint-brush section__content--bg-icon"></i>
+              <FontAwesomeIcon
+                className="section__content--bg-icon"
+                icon={faPaintBrush}
+              ></FontAwesomeIcon>
             </div>
           </div>
         </section>
