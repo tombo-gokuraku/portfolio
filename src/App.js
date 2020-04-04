@@ -1,5 +1,7 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
+// import bgImage from "./branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg";
+import tomboImage from "./tombo_icon_red_resized.png";
 
 function App() {
   return (
@@ -88,11 +90,7 @@ function App() {
             <h2 class="hero__text">Tombo Gokuraku</h2>
           </div>
           <div class="hero__container--image">
-            <img
-              class="hero__image"
-              src="images/tombo_icon_red_resized.png"
-              alt="トンボの画像"
-            />
+            <img class="hero__image" src={tomboImage} alt="トンボの画像" />
           </div>
         </section>
         <section id="about" class="about section">
