@@ -283,7 +283,10 @@ https://web.dev/list/
 この時点でA11yが100になった
 
 ### v1.2(Reactで作り直し)
-400m
+430m
+
+#### CSS Reset or Normalizeをかける
+30m->13m
 
 #### Formコンポーネントを作る
 60m
