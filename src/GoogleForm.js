@@ -3,11 +3,23 @@ import React from "react";
 class GoogleForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { email: "", name: "", content: "" };
-    // this.handleInputChange = this.handleInputChange.bind(this);
+    this.state = {
+      "entry.872297108": "",
+      "entry.814221295": "",
+      "entry.733628667": ""
+    };
+    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
-  handleInputChange(event) {}
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+    console.log(target, name, value);
+    this.setState({
+      [name]: value
+    });
+  }
 
   render() {
     return (
@@ -23,20 +35,22 @@ class GoogleForm extends React.Component {
           <label for="entry.872297108">メールアドレス:</label>
           <input
             type="email"
-            value=""
+            value={this.state["entry.872297108"]}
             name="entry.872297108"
             id="entry.872297108"
             placeholder="メールアドレス"
             required
+            onChange={this.handleInputChange}
           />
           <label for="entry.814221295">お名前:</label>
           <input
             type="text"
-            value=""
+            value={this.state["entry.814221295"]}
             name="entry.814221295"
             id="entry.814221295"
             placeholder="お名前"
             required
+            onChange={this.handleInputChange}
           />
           <label for="entry.733628667">お問い合わせ内容:</label>
           <textarea
@@ -45,7 +59,9 @@ class GoogleForm extends React.Component {
             rows="6"
             placeholder="お問い合わせ内容"
             required
-          ></textarea>
+            onChange={this.handleInputChange}
+            value={this.state["entry.733628667"]}
+          />
           <input type="submit" name="" id="submit" value="送信" />
         </form>
         {/* <!-- リダイレクトをブロックする --> */}
