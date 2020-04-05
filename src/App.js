@@ -12,10 +12,62 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./App.scss";
-// import bgImage from "./branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg";
 import tomboImage from "./tombo_icon_red_resized.png";
 
 function App() {
+  // SocialLinkのデータをmapで処理して、一気に描画する
+  // ariaLabelがそのままlink__textになる
+  const socialLinkData = [
+    {
+      hrefLink: "https://twitter.com/Tombo__Gokuraku",
+      ariaLabel: "Twitter",
+      fontawesomeIcon: faTwitter
+    },
+    {
+      hrefLink: "https://www.youtube.com/channel/UCUVOtxzJS6kiIhDo1CEW4Og",
+      ariaLabel: "Youtube",
+      fontawesomeIcon: faYoutube
+    },
+    {
+      hrefLink: "https://github.com/tombo-gokuraku",
+      ariaLabel: "GitHub",
+      fontawesomeIcon: faGithub
+    }
+  ];
+
+  // Header用のリンクアイコンのJSX
+  const socialLinksForHeader = socialLinkData.map(item => {
+    return (
+      <SocialLink
+        href={item.hrefLink}
+        ariaLabel={item.ariaLabel}
+        key={item.hrefLink}
+      >
+        <FontAwesomeIcon
+          className="link__icon"
+          icon={item.fontawesomeIcon}
+        ></FontAwesomeIcon>
+      </SocialLink>
+    );
+  });
+
+  // About用のリンクアイコンのJSX
+  const socialLinksForAbout = socialLinkData.map(item => {
+    return (
+      <SocialLink
+        href={item.hrefLink}
+        ariaLabel={item.ariaLabel}
+        key={item.hrefLink}
+      >
+        <FontAwesomeIcon
+          className="link__icon"
+          icon={item.fontawesomeIcon}
+        ></FontAwesomeIcon>
+        <span className="link__text">{item.ariaLabel}</span>
+      </SocialLink>
+    );
+  });
+
   return (
     <div className="App">
       <header class="header">
@@ -25,35 +77,7 @@ function App() {
         </div>
         <Navigation />
 
-        <div class="link">
-          <SocialLink
-            href="https://twitter.com/Tombo__Gokuraku"
-            ariaLabel="Twitter"
-          >
-            <FontAwesomeIcon
-              className="link__icon"
-              icon={faTwitter}
-            ></FontAwesomeIcon>
-          </SocialLink>
-          <SocialLink
-            href="https://www.youtube.com/channel/UCUVOtxzJS6kiIhDo1CEW4Og"
-            ariaLabel="Youtube"
-          >
-            <FontAwesomeIcon
-              className="link__icon"
-              icon={faYoutube}
-            ></FontAwesomeIcon>
-          </SocialLink>
-          <SocialLink
-            href="https://github.com/tombo-gokuraku"
-            ariaLabel="GitHub"
-          >
-            <FontAwesomeIcon
-              className="link__icon"
-              icon={faGithub}
-            ></FontAwesomeIcon>
-          </SocialLink>
-        </div>
+        <div class="link">{socialLinksForHeader}</div>
       </header>
       <main>
         <section class="hero">
@@ -81,47 +105,7 @@ function App() {
                 <wbr />
               </p>
               <h3 class="section__heading">LINKS</h3>
-              <div class="link">
-                <a
-                  href="https://twitter.com/Tombo__Gokuraku"
-                  class="link__container"
-                  aria-label="Twitter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className="link__icon"
-                    icon={faTwitter}
-                  ></FontAwesomeIcon>
-                  <span class="link__text">Twitter</span>
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCUVOtxzJS6kiIhDo1CEW4Og"
-                  class="link__container"
-                  aria-label="Youtube"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className="link__icon"
-                    icon={faYoutube}
-                  ></FontAwesomeIcon>
-                  <span class="link__text">Youtube</span>
-                </a>
-                <a
-                  href="https://github.com/tombo-gokuraku"
-                  class="link__container"
-                  aria-label="GitHub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className="link__icon"
-                    icon={faGithub}
-                  ></FontAwesomeIcon>
-                  <span class="link__text">GitHub</span>
-                </a>
-              </div>
+              <div class="link">{socialLinksForAbout}</div>
             </div>
             <div class="section__content section__content--bg-image"></div>
           </div>
