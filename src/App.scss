@@ -21,8 +21,9 @@
   @media (min-width: 1920px) { @content; }
 }
 
-$primary-color: #009688;
-$primary-bg-color: #4db6ac;
+$material-color-teal-500: #009688;
+$material-color-teal-300: #4db6ac;
+$material-color-teal-100: #b2dfdb;
 $twitter-color: #00acee;
 $youtube-color: #c4302b;
 $github-color: #333;
@@ -45,14 +46,12 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: black;
   text-decoration: none;
 }
 
 .header {
   padding: 8px 16px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
@@ -60,7 +59,7 @@ a:active {
   z-index: 10;
 
   @include for-sm {
-    padding: 16px 32px;
+    padding: 0 32px;
   }
 
   &__title {
@@ -87,12 +86,13 @@ a:active {
 
 .navigation {
   // bottom-navigationと統合する
+  // 960px(for-md)より大きい場合は普通のNavigation
+  // 小さい場合はBottom Navigation
 
-  padding: 8px 32px;
+  padding: 0 32px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $primary-bg-color;
+  align-items: stretch; //headerいっぱいにnavigation__menuを広げる
+  background-color: $material-color-teal-300;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -103,27 +103,48 @@ a:active {
     position: static;
     background-color: transparent;
     width: auto;
+    flex-grow: 1;
   }
 
   &__menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: flex; // navigation__itemを横に並べる
     width: 100%;
+    padding: 0;
+    margin: 0;
     list-style-type: none;
 
     @include for-md {
-      justify-content: space-between;
+      // justify-content: space-between;
     }
   }
 
   &__item {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 12px;
+    flex-grow: 1; // navigation__itemをmenuいっぱいになるまで伸ばす
+
+    &:hover {
+      background-color: $material-color-teal-100;
+    }
 
     @include for-md {
-      padding: 0 8px;
+      // padding: 0 8px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    font-size: 1.6rem;
+    color: #333;
+
+    @include for-md {
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+      font-weight: bold;
+      color: black;
     }
   }
 
@@ -133,19 +154,7 @@ a:active {
     margin-bottom: 4px;
 
     @include for-md {
-      font-size: 2rem;
       display: none;
-    }
-  }
-
-  &__text {
-    font-size: 1.6rem;
-    color: #333;
-
-    @include for-md {
-      margin: 0 16px;
-      font-weight: bold;
-      color: black;
     }
   }
 }
@@ -181,7 +190,7 @@ a:active {
 }
 
 .hero {
-  background-color: $primary-bg-color;
+  background-color: $material-color-teal-300;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -288,7 +297,7 @@ a:active {
       width: 100%;
       font-size: 14rem;
       text-align: center;
-      color: $primary-color;
+      color: $material-color-teal-500;
       opacity: 0.3;
 
       @include for-sm {
@@ -363,7 +372,7 @@ a:active {
     align-self: center;
     width: 200px;
     color: #333;
-    background-color: $primary-bg-color;
+    background-color: $material-color-teal-300;
     font-size: 1.6rem;
     padding: 8px;
     border: none;

@@ -9,10 +9,14 @@ import {
 
 function Navigation() {
   return (
-    <nav class="navigation">
-      <ul class="navigation__menu">
-        <li class="navigation__item">
-          <a class="navigation__text" href="#about" aria-label="go to ABOUT">
+    <nav className="navigation">
+      <ul className="navigation__menu">
+        <li className="navigation__item">
+          <a
+            className="navigation__link"
+            href="#about"
+            aria-label="go to ABOUT"
+          >
             <FontAwesomeIcon
               className="navigation__icon"
               icon={faAddressCard}
@@ -20,8 +24,12 @@ function Navigation() {
             ABOUT
           </a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__text" href="#skills" aria-label="go to SKILLS">
+        <li className="navigation__item">
+          <a
+            className="navigation__link"
+            href="#skills"
+            aria-label="go to SKILLS"
+          >
             <FontAwesomeIcon
               className="navigation__icon"
               icon={faTools}
@@ -29,9 +37,9 @@ function Navigation() {
             SKILLS
           </a>
         </li>
-        <li class="navigation__item">
+        <li className="navigation__item">
           <a
-            class="navigation__text"
+            className="navigation__link"
             href="https://tombomemo.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -44,9 +52,9 @@ function Navigation() {
             BLOG
           </a>
         </li>
-        <li class="navigation__item">
+        <li className="navigation__item">
           <a
-            class="navigation__text"
+            className="navigation__link"
             href="#contact"
             aria-label="go to CONTACT"
           >
