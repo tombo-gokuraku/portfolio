@@ -6,18 +6,25 @@ class GoogleForm extends React.Component {
     this.state = {
       "entry.872297108": "",
       "entry.814221295": "",
-      "entry.733628667": ""
+      "entry.733628667": "",
+      submitted: false
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleInputChange(event) {
     const target = event.target;
     const value = target.value;
     const name = target.name;
-    console.log(target, name, value);
     this.setState({
       [name]: value
+    });
+  }
+
+  handleSubmit(event) {
+    this.setState({
+      submitted: true
     });
   }
 
@@ -28,11 +35,12 @@ class GoogleForm extends React.Component {
           name="inqform"
           id="inqform"
           action="https://docs.google.com/forms/d/e/1FAIpQLSdx4N9cWfy-Ny2d6mub4hR1crMSZXDL9TnYrxnM9S4slkG5sA/formResponse?"
-          onsubmit="submitted=true;"
+          onSubmit={this.handleSubmit}
           target="hidden_iframe"
+          className="form"
         >
-          <h3 class="section__heading">お問い合わせ</h3>
-          <label for="entry.872297108">メールアドレス:</label>
+          <h3 className="section__heading">お問い合わせ</h3>
+          <label htmlFor="entry.872297108">メールアドレス:</label>
           <input
             type="email"
             value={this.state["entry.872297108"]}
@@ -41,8 +49,9 @@ class GoogleForm extends React.Component {
             placeholder="メールアドレス"
             required
             onChange={this.handleInputChange}
+            className="form__input"
           />
-          <label for="entry.814221295">お名前:</label>
+          <label htmlFor="entry.814221295">お名前:</label>
           <input
             type="text"
             value={this.state["entry.814221295"]}
@@ -51,8 +60,9 @@ class GoogleForm extends React.Component {
             placeholder="お名前"
             required
             onChange={this.handleInputChange}
+            className="form__input"
           />
-          <label for="entry.733628667">お問い合わせ内容:</label>
+          <label htmlFor="entry.733628667">お問い合わせ内容:</label>
           <textarea
             name="entry.733628667"
             id="entry.733628667"
@@ -61,27 +71,28 @@ class GoogleForm extends React.Component {
             required
             onChange={this.handleInputChange}
             value={this.state["entry.733628667"]}
+            className="form__input"
           />
-          <input type="submit" name="" id="submit" value="送信" />
+          <input
+            type="submit"
+            name=""
+            id="submit"
+            value={this.state.submitted ? "送信済み" : "送信"}
+            style={
+              this.state.submitted
+                ? { opacity: 0.8, boxShadow: "none" }
+                : { opacity: 1.0 }
+            }
+            className="form__submit"
+          />
         </form>
         {/* <!-- リダイレクトをブロックする --> */}
         <iframe
           title="hidden_iframe"
           name="hidden_iframe"
           id="hidden_iframe"
-          onload="if(submitted) {}"
+          style={{ display: "none" }}
         ></iframe>
-        {/* <script type="text/javascript" charset="utf-8"> */}
-        {/*   let submitted = false; */}
-        {/*   let inqform = document.getElementById("inqform"); */}
-        {/*   inqform.addEventListener("submit", (event) => { */}
-        {/*     let submitted_notifyer = document.createElement("p"); {" "} */}
-        {/*  */}
-        {/*     submitted_notifyer.className = "section__text"; */}
-        {/*     submitted_notifyer.innerText = "送信しました。"; */}
-        {/*     inqform.appendChild(submitted_notifyer); */}
-        {/*   }); */}
-        {/* </script> */}
       </React.Fragment>
     );
   }
