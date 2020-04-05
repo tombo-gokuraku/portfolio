@@ -289,7 +289,7 @@ https://web.dev/list/
 30m->13m
 
 #### Formコンポーネントを作る
-60m
+60m->59m
 
 #### Headerコンポーネントを作る
 30 + 45m
