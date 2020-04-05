@@ -283,26 +283,37 @@ https://web.dev/list/
 この時点でA11yが100になった
 
 ### v1.2(Reactで作り直し)
+400m
 
 #### Formコンポーネントを作る
+60m
 
 #### Headerコンポーネントを作る
+30 + 45m
 
 ##### Navigationコンポーネントを作る
+45m
 
 #### heroコンポーネントを作る
+45m
 
 #### Sectionコンポーネントを作る
+60m
 
 #### ABOUTを作る
+30m
 
 #### SKILLSを作る
+30m
 
 #### CONTACTを作る
+30m
 
 #### Footerを作る
+10m
 
 #### GitHub Pagesにホスティング
+15m
 
 ### v1.3(styled-componentsでスタイリング)
 
