@@ -70,31 +70,31 @@ function App() {
 
   return (
     <div className="App">
-      <header class="header">
-        <div class="header__title">
-          <h1 class="header__title__main">Tombo Gokuraku</h1>
-          <span class="header__title__sub"> - Portfolio site</span>
+      <header className="header">
+        <div className="header__title">
+          <h1 className="header__title__main">Tombo Gokuraku</h1>
+          <span className="header__title__sub"> - Portfolio site</span>
         </div>
         <Navigation />
 
-        <div class="link">{socialLinksForHeader}</div>
+        <div className="link">{socialLinksForHeader}</div>
       </header>
       <main>
-        <section class="hero">
-          <div class="hero__container--text">
-            <h2 class="hero__text--large">Web Engineer && VTuber</h2>
-            <h2 class="hero__text">Tombo Gokuraku</h2>
+        <section className="hero">
+          <div className="hero__container--text">
+            <h2 className="hero__text--large">Web Engineer && VTuber</h2>
+            <h2 className="hero__text">Tombo Gokuraku</h2>
           </div>
-          <div class="hero__container--image">
-            <img class="hero__image" src={tomboImage} alt="トンボの画像" />
+          <div className="hero__container--image">
+            <img className="hero__image" src={tomboImage} alt="トンボの画像" />
           </div>
         </section>
-        <section id="about" class="about section">
-          <div class="section__container">
-            <div class="section__content">
-              <h2 class="section__title">ABOUT</h2>
-              <h3 class="section__heading">Tombo Gokuraku</h3>
-              <p class="section__text">
+        <section id="about" className="about section">
+          <div className="section__container">
+            <div className="section__content">
+              <h2 className="section__title">ABOUT</h2>
+              <h3 className="section__heading">Tombo Gokuraku</h3>
+              <p className="section__text">
                 大企業を目指して大学院に進学し、
                 <wbr />
                 情報工学・ロボティクスを専攻するも、無い内定
@@ -104,22 +104,22 @@ function App() {
                 Web系エンジニア && VTuberとして転生
                 <wbr />
               </p>
-              <h3 class="section__heading">LINKS</h3>
-              <div class="link">{socialLinksForAbout}</div>
+              <h3 className="section__heading">LINKS</h3>
+              <div className="link">{socialLinksForAbout}</div>
             </div>
-            <div class="section__content section__content--bg-image"></div>
+            <div className="section__content section__content--bg-image"></div>
           </div>
         </section>
-        <section id="skills" class="skills section">
-          <h2 class="section__title">SKILLS</h2>
-          <div class="section__container">
-            <div class="section__content">
-              <h3 class="section__heading">Coding</h3>
-              <p class="section__text">
+        <section id="skills" className="skills section">
+          <h2 className="section__title">SKILLS</h2>
+          <div className="section__container">
+            <div className="section__content">
+              <h3 className="section__heading">Coding</h3>
+              <p className="section__text">
                 HTML / CSS / SASS(SCSS) / JavaScript / Vue / AWS / Amplify /
                 Python / NeoVim / tmux / Linux / Git
               </p>
-              <p class="section__text">
+              <p className="section__text">
                 大学院時代に培ったC++/Pythonによる
                 <wbr />
                 ROSを使ったロボット制御の経験を活かし、
@@ -139,13 +139,13 @@ function App() {
                 icon={faCode}
               ></FontAwesomeIcon>
             </div>
-            <div class="section__content">
-              <h3 class="section__heading">Design</h3>
-              <p class="section__text">
+            <div className="section__content">
+              <h3 className="section__heading">Design</h3>
+              <p className="section__text">
                 Figma / Gimp / Inkscape / Adobe Illustrator / Adobe Photoshop /
                 Adobe Premiere Pro / Kdenlive / STUDIO
               </p>
-              <p class="section__text">
+              <p className="section__text">
                 Figmaを使ったWebサイトのデザインや
                 <wbr /> Adobe Premiere Proを用いた
                 <wbr /> 動画編集などを得意としています。
@@ -162,20 +162,20 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="contact" class="contact section">
-          <h2 class="section__title">CONTACT</h2>
-          <p class="section__text">
+        <section id="contact" className="contact section">
+          <h2 className="section__title">CONTACT</h2>
+          <p className="section__text">
             ご依頼・お問い合わせは
             <wbr /> フォームまたは
             <a href="https://twitter.com/Tombo__Gokuraku">
-              <span class="twitter-highlight">Twitter DM</span>
+              <span className="twitter-highlight">Twitter DM</span>
             </a>
             でご連絡ください。
           </p>
           <GoogleForm />
         </section>
       </main>
-      <footer class="footer">©2020 TOMBO GOKURAKU PORTFOLIO.</footer>
+      <footer className="footer">©2020 TOMBO GOKURAKU PORTFOLIO.</footer>
     </div>
   );
 }
