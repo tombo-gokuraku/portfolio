@@ -3,7 +3,7 @@ import React from "react";
 function SocialLink(props) {
   return (
     <a
-      className="link__container"
+      className="link__item"
       href={props.href}
       aria-label={props.ariaLabel}
       target="_blank"

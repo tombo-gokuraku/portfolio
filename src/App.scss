@@ -160,7 +160,10 @@ a:active {
 }
 
 .link {
-  &__container {
+  display: flex;
+  align-items: center;
+
+  &__item {
     margin-right: 8px;
 
     @include for-sm {
