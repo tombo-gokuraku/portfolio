@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
+import SocialLink from "./SocialLink";
 import GoogleForm from "./GoogleForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
@@ -25,42 +26,33 @@ function App() {
         <Navigation />
 
         <div class="link">
-          <a
+          <SocialLink
             href="https://twitter.com/Tombo__Gokuraku"
-            class="link__container"
-            aria-label="Twitter"
-            target="_blank"
-            rel="noopener noreferrer"
+            ariaLabel="Twitter"
           >
             <FontAwesomeIcon
               className="link__icon"
               icon={faTwitter}
             ></FontAwesomeIcon>
-          </a>
-          <a
+          </SocialLink>
+          <SocialLink
             href="https://www.youtube.com/channel/UCUVOtxzJS6kiIhDo1CEW4Og"
-            aria-label="Youtube"
-            class="link__container"
-            target="_blank"
-            rel="noopener noreferrer"
+            ariaLabel="Youtube"
           >
             <FontAwesomeIcon
               className="link__icon"
               icon={faYoutube}
             ></FontAwesomeIcon>
-          </a>
-          <a
+          </SocialLink>
+          <SocialLink
             href="https://github.com/tombo-gokuraku"
-            class="link__container"
-            aria-label="GitHub"
-            target="_blank"
-            rel="noopener noreferrer"
+            ariaLabel="GitHub"
           >
             <FontAwesomeIcon
               className="link__icon"
               icon={faGithub}
             ></FontAwesomeIcon>
-          </a>
+          </SocialLink>
         </div>
       </header>
       <main>

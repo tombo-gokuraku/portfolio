@@ -292,13 +292,16 @@ https://web.dev/list/
 60m->59m
 
 #### Headerコンポーネントを作る
-30 + 45m
+30 + 45m->146+
 
 ##### Navigationコンポーネントを作る
 45m->12+74+60=146m
 FlexBoxで要素の横幅を親要素いっぱいになるように調整するのに手間取った。
 `align-items: stretch`とか`align-content: stretch`とか色々試したけど、結局、`flex-grow: 1`で目的が達成されそう。イマイチ、FlexBoxが分からない。
 flex-directionがrowなのかcolumnなのかで、justify-contentの配置する軸が変わることに気づくのに時間がかかった。
+
+#### SocialLinkコンポーネントを作る
+30m->33m
 
 #### heroコンポーネントを作る
 45m

@@ -161,7 +161,7 @@ a:active {
 
 .link {
   &__container {
-    margin-right: 16px;
+    margin-right: 8px;
 
     @include for-sm {
       margin-right: 24px;
@@ -170,10 +170,12 @@ a:active {
 
   &__icon {
     font-size: 1.8rem;
+    margin-right: 8px;
   }
 
   &__text {
     font-size: 1.8rem;
+    color: black;
   }
 }
 
