@@ -1,14 +1,8 @@
 import React from "react";
+import Navigation from "./Navigation";
 import GoogleForm from "./GoogleForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAddressCard,
-  faTools,
-  faBlog,
-  faComment,
-  faCode,
-  faPaintBrush
-} from "@fortawesome/free-solid-svg-icons";
+import { faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 
 import {
   faTwitter,
@@ -28,64 +22,8 @@ function App() {
           <h1 class="header__title__main">Tombo Gokuraku</h1>
           <span class="header__title__sub"> - Portfolio site</span>
         </div>
-        <nav class="navigation">
-          <ul class="navigation__menu">
-            <li class="navigation__item">
-              <a
-                class="navigation__text"
-                href="#about"
-                aria-label="go to ABOUT"
-              >
-                <FontAwesomeIcon
-                  className="navigation__icon"
-                  icon={faAddressCard}
-                ></FontAwesomeIcon>
-                ABOUT
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__text"
-                href="#skills"
-                aria-label="go to SKILLS"
-              >
-                <FontAwesomeIcon
-                  className="navigation__icon"
-                  icon={faTools}
-                ></FontAwesomeIcon>
-                SKILLS
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__text"
-                href="https://tombomemo.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="go to BLOG"
-              >
-                <FontAwesomeIcon
-                  className="navigation__icon"
-                  icon={faBlog}
-                ></FontAwesomeIcon>
-                BLOG
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__text"
-                href="#contact"
-                aria-label="go to CONTACT"
-              >
-                <FontAwesomeIcon
-                  className="navigation__icon"
-                  icon={faComment}
-                ></FontAwesomeIcon>
-                CONTACT
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <Navigation />
+
         <div class="link">
           <a
             href="https://twitter.com/Tombo__Gokuraku"
