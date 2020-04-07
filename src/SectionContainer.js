@@ -2,7 +2,7 @@ import React from "react";
 
 function SectionContainer(props) {
   return (
-    <section
+    <div
       id={props.id}
       className={
         props.className === undefined
@@ -11,7 +11,7 @@ function SectionContainer(props) {
       }
     >
       {props.children}
-    </section>
+    </div>
   );
 }
 

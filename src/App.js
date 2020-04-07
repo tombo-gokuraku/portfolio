@@ -5,6 +5,7 @@ import SocialLink from "./SocialLink";
 import Section from "./Section";
 import SectionContainer from "./SectionContainer";
 import SectionContent from "./SectionContent";
+import SectionTitle from "./SectionTitle";
 import socialLinkData from "./SocialLinkData";
 import GoogleForm from "./GoogleForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -39,7 +40,7 @@ function App() {
         <Section id="about" className="about">
           <SectionContainer>
             <SectionContent>
-              <h2 className="section__title">ABOUT</h2>
+              <SectionTitle>ABOUT</SectionTitle>
               <h3 className="section__heading">Tombo Gokuraku</h3>
               <p className="section__text">
                 大企業を目指して大学院に進学し、
