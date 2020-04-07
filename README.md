@@ -319,7 +319,7 @@ flex-directionがrowなのかcolumnなのかで、justify-contentの配置する
 30m->7m
 
 #### Footerを作る
-10m
+10m->3m
 
 #### GitHub Pagesにホスティング
 15m

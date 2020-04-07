@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 import "./App.scss";
 
@@ -17,7 +18,7 @@ function App() {
         <Skills />
         <Contact />
       </main>
-      <footer className="footer">©2020 TOMBO GOKURAKU PORTFOLIO.</footer>
+      <Footer />
     </div>
   );
 }
