@@ -313,7 +313,7 @@ flex-directionがrowなのかcolumnなのかで、justify-contentの配置する
 30m->10m
 
 #### SKILLSを作る
-30m
+30m->19m
 
 #### CONTACTを作る
 30m
