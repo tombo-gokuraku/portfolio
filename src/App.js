@@ -1,57 +1,17 @@
 import React from "react";
-import Navigation from "./Navigation";
+import Header from "./Header";
 import SocialLink from "./SocialLink";
+import socialLinkData from "./SocialLinkData";
 import GoogleForm from "./GoogleForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
-
-import {
-  faTwitter,
-  faYoutube,
-  faGithub
-} from "@fortawesome/free-brands-svg-icons";
 
 import "./App.scss";
 import tomboImage from "./tombo_icon_red_resized.png";
 
 function App() {
-  // SocialLinkのデータをmapで処理して、一気に描画する
-  // ariaLabelがそのままlink__textになる
-  const socialLinkData = [
-    {
-      hrefLink: "https://twitter.com/Tombo__Gokuraku",
-      ariaLabel: "Twitter",
-      fontawesomeIcon: faTwitter
-    },
-    {
-      hrefLink: "https://www.youtube.com/channel/UCUVOtxzJS6kiIhDo1CEW4Og",
-      ariaLabel: "Youtube",
-      fontawesomeIcon: faYoutube
-    },
-    {
-      hrefLink: "https://github.com/tombo-gokuraku",
-      ariaLabel: "GitHub",
-      fontawesomeIcon: faGithub
-    }
-  ];
-
-  // Header用のリンクアイコンのJSX
-  const socialLinksForHeader = socialLinkData.map(item => {
-    return (
-      <SocialLink
-        href={item.hrefLink}
-        ariaLabel={item.ariaLabel}
-        key={item.hrefLink}
-      >
-        <FontAwesomeIcon
-          className="link__icon"
-          icon={item.fontawesomeIcon}
-        ></FontAwesomeIcon>
-      </SocialLink>
-    );
-  });
-
   // About用のリンクアイコンのJSX
+  // ariaLabelがそのままlink__textになる
   const socialLinksForAbout = socialLinkData.map(item => {
     return (
       <SocialLink
@@ -70,15 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="header">
-        <div className="header__title">
-          <h1 className="header__title__main">Tombo Gokuraku</h1>
-          <span className="header__title__sub"> - Portfolio site</span>
-        </div>
-        <Navigation />
-
-        <div className="link">{socialLinksForHeader}</div>
-      </header>
+      <Header />
       <main>
         <section className="hero">
           <div className="hero__container--text">
