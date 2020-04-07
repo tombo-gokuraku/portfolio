@@ -66,12 +66,12 @@ a:active {
     display: flex;
     align-items: center;
 
-    &--main {
+    &__main {
       font-size: 2rem;
       margin-right: 16px;
     }
 
-    &--sub {
+    &__sub {
       display: none;
       font-size: 1.6rem;
       margin-right: 16px;
