@@ -6,6 +6,7 @@ import Section from "./Section";
 import SectionContainer from "./SectionContainer";
 import SectionContent from "./SectionContent";
 import SectionTitle from "./SectionTitle";
+import SectionHeading from "./SectionHeading";
 import socialLinkData from "./SocialLinkData";
 import GoogleForm from "./GoogleForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -41,7 +42,7 @@ function App() {
           <SectionContainer>
             <SectionContent>
               <SectionTitle>ABOUT</SectionTitle>
-              <h3 className="section__heading">Tombo Gokuraku</h3>
+              <SectionHeading>Tombo Gokuraku</SectionHeading>
               <p className="section__text">
                 大企業を目指して大学院に進学し、
                 <wbr />
@@ -52,7 +53,7 @@ function App() {
                 Web系エンジニア && VTuberとして転生
                 <wbr />
               </p>
-              <h3 className="section__heading">LINKS</h3>
+              <SectionHeading>LINKS</SectionHeading>
               <div className="link">{socialLinksForAbout}</div>
             </SectionContent>
             <SectionContent className="section__content--bg-image"></SectionContent>
