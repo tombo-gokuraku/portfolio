@@ -1,14 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Hero from "./Hero";
-import SocialLink from "./SocialLink";
-import Section from "./Section";
-import SectionContainer from "./SectionContainer";
-import SectionContent from "./SectionContent";
-import SectionTitle from "./SectionTitle";
-import SectionHeading from "./SectionHeading";
-import SectionText from "./SectionText";
-import socialLinkData from "./SocialLinkData";
+import About from "./About";
 import GoogleForm from "./GoogleForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
@@ -16,50 +9,13 @@ import { faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 import "./App.scss";
 
 function App() {
-  // About用のリンクアイコンのJSX
-  // ariaLabelがそのままlink__textになる
-  const socialLinksForAbout = socialLinkData.map(item => {
-    return (
-      <SocialLink
-        href={item.hrefLink}
-        ariaLabel={item.ariaLabel}
-        key={item.hrefLink}
-      >
-        <FontAwesomeIcon
-          className="link__icon"
-          icon={item.fontawesomeIcon}
-        ></FontAwesomeIcon>
-        <span className="link__text">{item.ariaLabel}</span>
-      </SocialLink>
-    );
-  });
-
   return (
     <div className="App">
       <Header />
       <main>
         <Hero />
-        <Section id="about" className="about">
-          <SectionContainer>
-            <SectionContent>
-              <SectionTitle>ABOUT</SectionTitle>
-              <SectionHeading>Tombo Gokuraku</SectionHeading>
-              <SectionText>
-                大企業を目指して大学院に進学し、
-                <wbr />
-                情報工学・ロボティクスを専攻するも、無い内定
-                <br />
-                オリジナルアプリを作るという野望を叶えるため、
-                <wbr />
-                Web系エンジニア && VTuberとして転生
-                <wbr />
-              </SectionText>
-              <SectionHeading>LINKS</SectionHeading>
-              <div className="link">{socialLinksForAbout}</div>
-            </SectionContent>
-            <SectionContent className="section__content--bg-image"></SectionContent>
-          </SectionContainer>
-        </Section>
+        <About />
+
         <section id="skills" className="skills section">
           <h2 className="section__title">SKILLS</h2>
           <div className="section__container">

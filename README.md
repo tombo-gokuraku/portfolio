@@ -307,10 +307,10 @@ flex-directionがrowなのかcolumnなのかで、justify-contentの配置する
 45m->11m
 
 #### Sectionコンポーネントを作る
-60m
+60m->38m
 
 #### ABOUTを作る
-30m
+30m->10m
 
 #### SKILLSを作る
 30m
