@@ -325,6 +325,15 @@ flex-directionがrowなのかcolumnなのかで、justify-contentの配置する
 15m
 
 #### manifest.jsonを書き直す
+30m
+https://developer.mozilla.org/ja/docs/Web/Manifest
+https://web.dev/add-manifest-react/
+
+#### Ralewayを入れる
+30m
+https://stackoverflow.com/questions/41676054/how-to-add-fonts-to-create-react-app-based-projects
+https://create-react-app.dev/docs/adding-images-fonts-and-files/
+https://scotch.io/@micwanyoike/how-to-add-fonts-to-a-react-project
 
 ### v1.3(styled-componentsでスタイリング)
 
