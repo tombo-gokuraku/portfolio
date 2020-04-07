@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Hero from "./Hero";
 import SocialLink from "./SocialLink";
+import Section from "./Section";
 import socialLinkData from "./SocialLinkData";
 import GoogleForm from "./GoogleForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -33,8 +34,8 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <section id="about" className="about section">
           <div className="section__container">
+        <Section id="about" className="about">
             <div className="section__content">
               <h2 className="section__title">ABOUT</h2>
               <h3 className="section__heading">Tombo Gokuraku</h3>
@@ -53,7 +54,7 @@ function App() {
             </div>
             <div className="section__content section__content--bg-image"></div>
           </div>
-        </section>
+        </Section>
         <section id="skills" className="skills section">
           <h2 className="section__title">SKILLS</h2>
           <div className="section__container">
