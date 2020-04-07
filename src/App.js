@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Hero from "./Hero";
 import SocialLink from "./SocialLink";
 import socialLinkData from "./SocialLinkData";
 import GoogleForm from "./GoogleForm";
@@ -7,7 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 
 import "./App.scss";
-import tomboImage from "./tombo_icon_red_resized.png";
 
 function App() {
   // About用のリンクアイコンのJSX
@@ -32,15 +32,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <section className="hero">
-          <div className="hero__container--text">
-            <h2 className="hero__text--large">Web Engineer && VTuber</h2>
-            <h2 className="hero__text">Tombo Gokuraku</h2>
-          </div>
-          <div className="hero__container--image">
-            <img className="hero__image" src={tomboImage} alt="トンボの画像" />
-          </div>
-        </section>
+        <Hero />
         <section id="about" className="about section">
           <div className="section__container">
             <div className="section__content">

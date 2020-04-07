@@ -304,7 +304,7 @@ flex-directionがrowなのかcolumnなのかで、justify-contentの配置する
 30m->33m
 
 #### heroコンポーネントを作る
-45m
+45m->11m
 
 #### Sectionコンポーネントを作る
 60m
