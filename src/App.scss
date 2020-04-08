@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import-normalize;
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 @mixin for-xs {
   @media (min-width: 0) { @content; }
 }
