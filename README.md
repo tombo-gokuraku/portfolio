@@ -27,6 +27,8 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy`
+GitHub Pagesにmasterブランチのソースをbuildして`gh-pages`ブランチとしてホスティングする。
 
 ## Change Log
 
@@ -322,8 +324,9 @@ flex-directionがrowなのかcolumnなのかで、justify-contentの配置する
 10m->3m
 
 #### GitHub Pagesにホスティング
-15m
+15m->24m
 feature/craをmasterにマージする
+リポジトリ設定のGitHub Pagesの項目で、Sourceを `gh-pages branch`に設定する
 
 #### manifest.jsonを書き直す
 30m
