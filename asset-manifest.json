@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.5d07dc63.chunk.css",
+    "main.js": "/portfolio/static/js/main.42a97651.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.42a97651.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.b37861ed.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b37861ed.js.map",
+    "static/js/2.914ad977.chunk.js": "/portfolio/static/js/2.914ad977.chunk.js",
+    "static/js/2.914ad977.chunk.js.map": "/portfolio/static/js/2.914ad977.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.ed3517fdf721f58f277e82029df19d41.js": "/portfolio/precache-manifest.ed3517fdf721f58f277e82029df19d41.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.5d07dc63.chunk.css.map": "/portfolio/static/css/main.5d07dc63.chunk.css.map",
+    "static/js/2.914ad977.chunk.js.LICENSE.txt": "/portfolio/static/js/2.914ad977.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/portfolio/static/media/branko-stancevic-GI1hwOGqGtE-unsplash_resize.15cb41db.jpg",
+    "static/media/tombo_icon_red_resized.png": "/portfolio/static/media/tombo_icon_red_resized.d423be1e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b37861ed.js",
+    "static/js/2.914ad977.chunk.js",
+    "static/css/main.5d07dc63.chunk.css",
+    "static/js/main.42a97651.chunk.js"
+  ]
+}
