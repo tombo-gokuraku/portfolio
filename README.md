@@ -323,6 +323,7 @@ flex-directionがrowなのかcolumnなのかで、justify-contentの配置する
 
 #### GitHub Pagesにホスティング
 15m
+feature/craをmasterにマージする
 
 #### manifest.jsonを書き直す
 30m
