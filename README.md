@@ -44,10 +44,50 @@ create-react-appを使って、Reactで作り直した
 ## Todo
 
 ### v1.3(styled-componentsでスタイリング)
+515m
+
+#### normalize.css, createGlobalStyleを使ってCSS Resetをかける
+30m
+https://pagepro.co/blog/moving-best-scss-practices-to-styled-components-part-1/
+
+#### Header
+30+45+45=120m
+
+##### Navigation
+45m
+
+##### SocialLink
+45m
+
+#### Hero
+30m
+
+#### Section
+45m
+* Section関連のコンポーネントをまとめて1つのファイルにする
+
+#### About
+30m
+
+#### Skills
+30m
+
+#### Contact
+30+45=75m
+
+##### GoogleForm
+45m
+
+#### Footer
+5m
+
+#### GitHub Pagesにホスティング
+15m
 
 ### v1.4(Netlifyにホスティング)
-Netlifyのホスティング設定をする
-FormをNetlifyに送るように変更する
+* create-react-appをNetlifyにホスティングできるようにする
+* Netlifyのホスティング設定をする
+* FormをNetlifyに送るように変更する
 
 ### v1.5(GatsbyでSSG)
 
