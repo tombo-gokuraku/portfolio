@@ -10,17 +10,20 @@ const socialLinkData = [
   {
     hrefLink: "https://twitter.com/Tombo__Gokuraku",
     ariaLabel: "Twitter",
-    fontawesomeIcon: faTwitter
+    fontawesomeIcon: faTwitter,
+    color: "#00acee"
   },
   {
     hrefLink: "https://www.youtube.com/channel/UCUVOtxzJS6kiIhDo1CEW4Og",
     ariaLabel: "Youtube",
-    fontawesomeIcon: faYoutube
+    fontawesomeIcon: faYoutube,
+    color: "#c4302b"
   },
   {
     hrefLink: "https://github.com/tombo-gokuraku",
     ariaLabel: "GitHub",
-    fontawesomeIcon: faGithub
+    fontawesomeIcon: faGithub,
+    color: "#333"
   }
 ];
 

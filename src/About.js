@@ -7,28 +7,9 @@ import SectionTitle from "./SectionTitle";
 import SectionHeading from "./SectionHeading";
 import SectionText from "./SectionText";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SocialLink from "./SocialLink";
-import socialLinkData from "./SocialLinkData";
+import SocialLinks from "./SocialLink";
 
 function About(props) {
-  // About用のリンクアイコンのJSX
-  // ariaLabelがそのままlink__textになる
-  const socialLinksForAbout = socialLinkData.map(item => {
-    return (
-      <SocialLink
-        href={item.hrefLink}
-        ariaLabel={item.ariaLabel}
-        key={item.hrefLink}
-      >
-        <FontAwesomeIcon
-          className="link__icon"
-          icon={item.fontawesomeIcon}
-        ></FontAwesomeIcon>
-        <span className="link__text">{item.ariaLabel}</span>
-      </SocialLink>
-    );
-  });
   return (
     <Section id="about" className="about">
       <SectionContainer>
@@ -46,7 +27,7 @@ function About(props) {
             <wbr />
           </SectionText>
           <SectionHeading>LINKS</SectionHeading>
-          <div className="link">{socialLinksForAbout}</div>
+          <SocialLinks />
         </SectionContent>
         <SectionContent className="section__content--bg-image"></SectionContent>
       </SectionContainer>

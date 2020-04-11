@@ -26,41 +26,6 @@ $youtube-color: #c4302b;
 $github-color: #333;
 
 
-.link {
-  display: flex;
-  align-items: center;
-
-  &__item {
-    margin-right: 8px;
-
-    @include for-sm {
-      margin-right: 24px;
-    }
-  }
-
-  &__icon {
-    font-size: 1.8rem;
-    margin-right: 8px;
-  }
-
-  &__text {
-    font-size: 1.8rem;
-    color: black;
-  }
-}
-
-.fa-twitter {
-  color: $twitter-color;
-}
-
-.fa-youtube {
-  color: $youtube-color;
-}
-
-.fa-github {
-  color: $github-color;
-}
-
 .hero {
   background-color: $material-color-teal-300;
   display: flex;

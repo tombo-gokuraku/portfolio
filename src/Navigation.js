@@ -54,7 +54,7 @@ const NavigationLink = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8px;
+  padding: 16px;
   font-size: 1.6rem;
   color: #333;
 

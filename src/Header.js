@@ -3,13 +3,11 @@ import styled from "styled-components";
 
 import breaks from "./style/styled-breaks";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navigation from "./Navigation";
-import SocialLink from "./SocialLink";
-import socialLinkData from "./SocialLinkData";
+import SocialLinks from "./SocialLink";
 
 const StyledHeader = styled.header`
-  padding: 0 16px;
+  padding: 8px 16px;
   display: flex;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.8);
@@ -39,23 +37,8 @@ const HeaderTitle = styled.h1`
 `;
 
 function Header(props) {
-  // Header用のリンクアイコンのJSX
-  const socialLinksForHeader = socialLinkData.map(item => {
-    return (
-      <SocialLink
-        href={item.hrefLink}
-        ariaLabel={item.ariaLabel}
-        key={item.hrefLink}
-      >
-        <FontAwesomeIcon
-          className="link__icon"
-          icon={item.fontawesomeIcon}
-        ></FontAwesomeIcon>
-      </SocialLink>
-    );
-  });
   return (
-    <StyledHeader className="header">
+    <StyledHeader>
       <HeaderTextContainer>
         <HeaderTitle>Tombo Gokuraku</HeaderTitle>
         <HeaderTitle sub as="span">
@@ -63,8 +46,7 @@ function Header(props) {
         </HeaderTitle>
       </HeaderTextContainer>
       <Navigation />
-
-      <div className="link">{socialLinksForHeader}</div>
+      <SocialLinks notext />
     </StyledHeader>
   );
 }
