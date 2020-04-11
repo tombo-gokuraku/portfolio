@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@import-normalize;
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 @mixin for-xs {
   @media (min-width: 0) { @content; }
@@ -30,26 +27,6 @@ $twitter-color: #00acee;
 $youtube-color: #c4302b;
 $github-color: #333;
 
-html {
-  font-size: 62.5%;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Raleway, sans-serif;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-}
 
 .header {
   padding: 0 16px;
