@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @mixin for-xs {
   @media (min-width: 0) { @content; }
 }
@@ -27,41 +25,6 @@ $twitter-color: #00acee;
 $youtube-color: #c4302b;
 $github-color: #333;
 
-
-.header {
-  padding: 0 16px;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.8);
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-
-  @include for-sm {
-    padding: 0 32px;
-  }
-
-  &__title {
-    display: flex;
-    align-items: center;
-
-    &__main {
-      font-size: 2rem;
-      margin-right: 16px;
-    }
-
-    &__sub {
-      display: none;
-      font-size: 1.6rem;
-      margin-right: 16px;
-      font-weight: 300;
-
-      @include for-lg {
-        display: block;
-      }
-    }
-  }
-}
 
 .navigation {
   // bottom-navigationと統合する

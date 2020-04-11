@@ -47,11 +47,11 @@ create-react-appを使って、Reactで作り直した
 515m
 
 #### normalize.css, createGlobalStyleを使ってCSS Resetをかける
-30m
+30m->42m
 https://pagepro.co/blog/moving-best-scss-practices-to-styled-components-part-1/
 
 #### Header
-30+45+45=120m
+30+45+45=120m->12
 
 ##### Navigation
 45m
