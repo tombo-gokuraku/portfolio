@@ -51,13 +51,13 @@ create-react-appを使って、Reactで作り直した
 https://pagepro.co/blog/moving-best-scss-practices-to-styled-components-part-1/
 
 #### Header
-30+45+45=120m->12
+30+45+45=120m->12+26+106=144m
 
 ##### Navigation
 45m->5+21=26m
 
 ##### SocialLink
-45m=4+32+25+
+45m=4+32+25+25+20=106m
 
 #### Hero
 30m
