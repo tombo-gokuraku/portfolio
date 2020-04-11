@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Colors from "./style/colors";
 import breaks from "./style/styled-breaks";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

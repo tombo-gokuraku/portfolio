@@ -6,67 +6,113 @@ import {
   faBlog,
   faComment
 } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
+
+import Colors from "./style/colors";
+import breaks from "./style/styled-breaks";
+
+const StyledNavigation = styled.nav`
+  // bottom-navigationと統合する
+  // 960px(for-md)より大きい場合は普通のNavigation
+  // 小さい場合はBottom Navigation
+
+  padding: 0 32px;
+  display: flex;
+  align-items: stretch; //headerいっぱいにnavigation__menuを広げる
+  background-color: ${Colors.materialTeal300};
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  ${breaks.md`
+    position: static;
+    background-color: transparent;
+    width: auto;
+    flex-grow: 1;
+  `}
+`;
+
+const NavigationMenu = styled.ul`
+  display: flex; // navigation__itemを横に並べる
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+`;
+
+const NavigationItem = styled.li`
+  flex-grow: 1; // navigation__itemをmenuいっぱいになるまで伸ばす
+
+  &:hover {
+    background-color: ${Colors.materialTeal100};
+  }
+`;
+
+const NavigationLink = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  font-size: 1.6rem;
+  color: #333;
+
+  ${breaks.md`
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+      font-weight: bold;
+      color: black;
+    `}
+`;
+
+const NavigationIcon = styled(FontAwesomeIcon)`
+  font-size: 2.4rem;
+  color: #333;
+  margin-bottom: 4px;
+
+  ${breaks.md`
+    display: none;
+  `}
+`;
 
 function Navigation() {
   return (
-    <nav className="navigation">
-      <ul className="navigation__menu">
-        <li className="navigation__item">
-          <a
-            className="navigation__link"
-            href="#about"
-            aria-label="go to ABOUT"
-          >
-            <FontAwesomeIcon
-              className="navigation__icon"
-              icon={faAddressCard}
-            ></FontAwesomeIcon>
+    <StyledNavigation>
+      <NavigationMenu>
+        <NavigationItem>
+          <NavigationLink href="#about" aria-label="go to ABOUT">
+            <NavigationIcon icon={faAddressCard}></NavigationIcon>
             ABOUT
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a
-            className="navigation__link"
-            href="#skills"
-            aria-label="go to SKILLS"
-          >
-            <FontAwesomeIcon
-              className="navigation__icon"
-              icon={faTools}
-            ></FontAwesomeIcon>
+          </NavigationLink>
+        </NavigationItem>
+        <NavigationItem>
+          <NavigationLink href="#skills" aria-label="go to SKILLS">
+            <NavigationIcon icon={faTools}></NavigationIcon>
             SKILLS
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a
-            className="navigation__link"
+          </NavigationLink>
+        </NavigationItem>
+        <NavigationItem>
+          <NavigationLink
             href="https://tombomemo.com/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="go to BLOG"
           >
-            <FontAwesomeIcon
-              className="navigation__icon"
-              icon={faBlog}
-            ></FontAwesomeIcon>
+            <NavigationIcon icon={faBlog}></NavigationIcon>
             BLOG
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a
-            className="navigation__link"
-            href="#contact"
-            aria-label="go to CONTACT"
-          >
-            <FontAwesomeIcon
-              className="navigation__icon"
-              icon={faComment}
-            ></FontAwesomeIcon>
+          </NavigationLink>
+        </NavigationItem>
+        <NavigationItem>
+          <NavigationLink href="#contact" aria-label="go to CONTACT">
+            <NavigationIcon icon={faComment}></NavigationIcon>
             CONTACT
-          </a>
-        </li>
-      </ul>
-    </nav>
+          </NavigationLink>
+        </NavigationItem>
+      </NavigationMenu>
+    </StyledNavigation>
   );
 }
 

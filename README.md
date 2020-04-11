@@ -54,7 +54,7 @@ https://pagepro.co/blog/moving-best-scss-practices-to-styled-components-part-1/
 30+45+45=120m->12
 
 ##### Navigation
-45m
+45m->5+21=26m
 
 ##### SocialLink
 45m
