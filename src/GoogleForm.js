@@ -1,5 +1,7 @@
 import React from "react";
 
+import { SectionHeading } from "./Section";
+
 class GoogleForm extends React.Component {
   constructor(props) {
     super(props);
@@ -39,7 +41,7 @@ class GoogleForm extends React.Component {
           target="hidden_iframe"
           className="form"
         >
-          <h3 className="section__heading">お問い合わせ</h3>
+          <SectionHeading>お問い合わせ</SectionHeading>
           <label htmlFor="entry.872297108">メールアドレス:</label>
           <input
             type="email"

@@ -98,26 +98,26 @@ $github-color: #333;
   //   // }
   // }
 
-  &__title {
-    font-size: 3rem;
-    margin-bottom: 12px;
+  // &__title {
+  //   font-size: 3rem;
+  //   margin-bottom: 12px;
+  //
+  //   @include for-md {
+  //     font-size: 6rem;
+  //     margin-bottom: 16px;
+  //   }
+  // }
 
-    @include for-md {
-      font-size: 6rem;
-      margin-bottom: 16px;
-    }
-  }
-
-  &__heading {
-    font-size: 2rem;
-    margin-bottom: 8px;
-
-    @include for-md {
-      font-size: 4rem;
-      margin-bottom: 16px;
-      padding-top: 8px;
-    }
-  }
+  // &__heading {
+  //   font-size: 2rem;
+  //   margin-bottom: 8px;
+  //
+  //   @include for-md {
+  //     font-size: 4rem;
+  //     margin-bottom: 16px;
+  //     padding-top: 8px;
+  //   }
+  // }
 
   &__text {
     font-size: 1.2rem;

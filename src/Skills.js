@@ -5,9 +5,9 @@ import {
   SectionContainer,
   SectionContent,
   SectionBgIcon,
-  SectionTitle
+  SectionTitle,
+  SectionHeading
 } from "./Section";
-import SectionHeading from "./SectionHeading";
 import SectionText from "./SectionText";
 
 import { faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";

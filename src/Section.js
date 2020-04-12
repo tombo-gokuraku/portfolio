@@ -105,3 +105,14 @@ export const SectionTitle = styled.h2`
     margin-bottom: 16px;
   `}
 `;
+
+export const SectionHeading = styled.h3`
+  font-size: 2rem;
+  margin-bottom: 8px;
+
+  ${breaks.md`
+      font-size: 4rem;
+      margin-bottom: 16px;
+      padding-top: 8px;
+  `}
+`;

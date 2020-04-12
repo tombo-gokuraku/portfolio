@@ -5,9 +5,9 @@ import {
   SectionContainer,
   SectionContent,
   SectionBgImage,
-  SectionTitle
+  SectionTitle,
+  SectionHeading
 } from "./Section";
-import SectionHeading from "./SectionHeading";
 import SectionText from "./SectionText";
 
 import SocialLinks from "./SocialLink";
