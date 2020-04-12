@@ -65,7 +65,7 @@ Reset DOMにスタイリングするのに手間取った
 https://styled-components.com/docs/basics#styling-any-component
 
 #### Hero
-30m
+30m->27m
 
 #### Section
 45m
