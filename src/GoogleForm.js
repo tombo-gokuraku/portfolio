@@ -1,5 +1,7 @@
 import React from "react";
+import styled from "styled-components";
 
+import Colors from "./style/colors";
 import { SectionHeading } from "./Section";
 
 class GoogleForm extends React.Component {
@@ -33,17 +35,16 @@ class GoogleForm extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <form
+        <Form
           name="inqform"
           id="inqform"
           action="https://docs.google.com/forms/d/e/1FAIpQLSdx4N9cWfy-Ny2d6mub4hR1crMSZXDL9TnYrxnM9S4slkG5sA/formResponse?"
           onSubmit={this.handleSubmit}
           target="hidden_iframe"
-          className="form"
         >
           <SectionHeading>お問い合わせ</SectionHeading>
           <label htmlFor="entry.872297108">メールアドレス:</label>
-          <input
+          <Input
             type="email"
             value={this.state["entry.872297108"]}
             name="entry.872297108"
@@ -51,10 +52,9 @@ class GoogleForm extends React.Component {
             placeholder="メールアドレス"
             required
             onChange={this.handleInputChange}
-            className="form__input"
           />
           <label htmlFor="entry.814221295">お名前:</label>
-          <input
+          <Input
             type="text"
             value={this.state["entry.814221295"]}
             name="entry.814221295"
@@ -62,10 +62,10 @@ class GoogleForm extends React.Component {
             placeholder="お名前"
             required
             onChange={this.handleInputChange}
-            className="form__input"
           />
           <label htmlFor="entry.733628667">お問い合わせ内容:</label>
-          <textarea
+          <Input
+            as="textarea"
             name="entry.733628667"
             id="entry.733628667"
             rows="6"
@@ -73,9 +73,8 @@ class GoogleForm extends React.Component {
             required
             onChange={this.handleInputChange}
             value={this.state["entry.733628667"]}
-            className="form__input"
           />
-          <input
+          <Submit
             type="submit"
             name=""
             id="submit"
@@ -85,9 +84,8 @@ class GoogleForm extends React.Component {
                 ? { opacity: 0.8, boxShadow: "none" }
                 : { opacity: 1.0 }
             }
-            className="form__submit"
           />
-        </form>
+        </Form>
         {/* <!-- リダイレクトをブロックする --> */}
         <iframe
           title="hidden_iframe"
@@ -99,5 +97,32 @@ class GoogleForm extends React.Component {
     );
   }
 }
+
+const Form = styled.form`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.6rem;
+`;
+
+const Input = styled.input`
+  font-size: 1.6rem;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  padding: 8px;
+`;
+
+const Submit = styled.input`
+  align-self: center;
+  width: 200px;
+  color: #333;
+  background-color: ${Colors.materialTeal300};
+  font-size: 1.6rem;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(30, 30, 30, 0.5);
+`;
 
 export default GoogleForm;

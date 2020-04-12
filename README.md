@@ -78,10 +78,10 @@ https://styled-components.com/docs/basics#styling-any-component
 30m->1m
 
 #### Contact
-30+45=75m->23+
+30+45=75m->23+17=40m
 
 ##### GoogleForm
-45m
+45m->17m
 
 #### Footer
 5m

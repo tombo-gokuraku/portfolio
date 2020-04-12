@@ -25,33 +25,6 @@ $twitter-color: #00acee;
 $youtube-color: #c4302b;
 $github-color: #333;
 
-.form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 1.6rem;
-
-  &__input {
-    font-size: 1.6rem;
-    border: 2px solid #eee;
-    border-radius: 5px;
-    margin-bottom: 12px;
-    padding: 8px;
-  }
-
-  &__submit {
-    align-self: center;
-    width: 200px;
-    color: #333;
-    background-color: $material-color-teal-300;
-    font-size: 1.6rem;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(30, 30, 30, 0.5);
-  }
-}
-
 .footer {
   text-align: center;
   font-size: 1.2rem;
