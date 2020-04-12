@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cc128dd0.chunk.css",
-    "main.js": "/portfolio/static/js/main.42a97651.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.42a97651.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.c06f98b5.chunk.css",
+    "main.js": "/portfolio/static/js/main.6723a589.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6723a589.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b37861ed.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b37861ed.js.map",
-    "static/js/2.914ad977.chunk.js": "/portfolio/static/js/2.914ad977.chunk.js",
-    "static/js/2.914ad977.chunk.js.map": "/portfolio/static/js/2.914ad977.chunk.js.map",
+    "static/js/2.b8489f08.chunk.js": "/portfolio/static/js/2.b8489f08.chunk.js",
+    "static/js/2.b8489f08.chunk.js.map": "/portfolio/static/js/2.b8489f08.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.33ccf9728cea8fe806f7769e59b36ef2.js": "/portfolio/precache-manifest.33ccf9728cea8fe806f7769e59b36ef2.js",
+    "precache-manifest.d687f71db7f149518d756a2c75209a6d.js": "/portfolio/precache-manifest.d687f71db7f149518d756a2c75209a6d.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.cc128dd0.chunk.css.map": "/portfolio/static/css/main.cc128dd0.chunk.css.map",
-    "static/js/2.914ad977.chunk.js.LICENSE.txt": "/portfolio/static/js/2.914ad977.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/portfolio/static/media/branko-stancevic-GI1hwOGqGtE-unsplash_resize.6abd8a75.jpg",
+    "static/css/main.c06f98b5.chunk.css.map": "/portfolio/static/css/main.c06f98b5.chunk.css.map",
+    "static/js/2.b8489f08.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b8489f08.chunk.js.LICENSE.txt",
+    "static/media/Raleway-Regular.ttf": "/portfolio/static/media/Raleway-Regular.9942588a.ttf",
+    "static/media/branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg": "/portfolio/static/media/branko-stancevic-GI1hwOGqGtE-unsplash_resize.6abd8a75.jpg",
     "static/media/tombo_icon_red_resized.png": "/portfolio/static/media/tombo_icon_red_resized.d423be1e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b37861ed.js",
-    "static/js/2.914ad977.chunk.js",
-    "static/css/main.cc128dd0.chunk.css",
-    "static/js/main.42a97651.chunk.js"
+    "static/js/2.b8489f08.chunk.js",
+    "static/css/main.c06f98b5.chunk.css",
+    "static/js/main.6723a589.chunk.js"
   ]
 }
