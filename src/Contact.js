@@ -1,6 +1,6 @@
 import React from "react";
 
-import Section from "./Section";
+import { Section } from "./Section";
 import SectionTitle from "./SectionTitle";
 import SectionText from "./SectionText";
 

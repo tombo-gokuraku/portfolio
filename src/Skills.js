@@ -1,13 +1,15 @@
 import React from "react";
 
-import Section from "./Section";
-import SectionContainer from "./SectionContainer";
-import SectionContent from "./SectionContent";
+import {
+  Section,
+  SectionContainer,
+  SectionContent,
+  SectionBgIcon
+} from "./Section";
 import SectionTitle from "./SectionTitle";
 import SectionHeading from "./SectionHeading";
 import SectionText from "./SectionText";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 
 function Skills(props) {
@@ -35,10 +37,7 @@ function Skills(props) {
             プロジェクトにてデザインとコーディングを担当しています。
             <wbr />
           </SectionText>
-          <FontAwesomeIcon
-            className="section__content--bg-icon"
-            icon={faCode}
-          ></FontAwesomeIcon>
+          <SectionBgIcon icon={faCode} />
         </SectionContent>
         <SectionContent>
           <SectionHeading>Design</SectionHeading>
@@ -56,10 +55,7 @@ function Skills(props) {
             Webサイト作成なども手がけています。
             <wbr />
           </SectionText>
-          <FontAwesomeIcon
-            className="section__content--bg-icon"
-            icon={faPaintBrush}
-          ></FontAwesomeIcon>
+          <SectionBgIcon icon={faPaintBrush} />
         </SectionContent>
       </SectionContainer>
     </Section>

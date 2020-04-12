@@ -1,13 +1,18 @@
 import React from "react";
 
-import Section from "./Section";
-import SectionContainer from "./SectionContainer";
-import SectionContent from "./SectionContent";
+import {
+  Section,
+  SectionContainer,
+  SectionContent,
+  SectionBgImage
+} from "./Section";
 import SectionTitle from "./SectionTitle";
 import SectionHeading from "./SectionHeading";
 import SectionText from "./SectionText";
 
 import SocialLinks from "./SocialLink";
+
+import codeImage from "./assets/branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg";
 
 function About(props) {
   return (
@@ -29,7 +34,7 @@ function About(props) {
           <SectionHeading>LINKS</SectionHeading>
           <SocialLinks />
         </SectionContent>
-        <SectionContent className="section__content--bg-image"></SectionContent>
+        <SectionBgImage src={codeImage} alt="コーディング画面" />
       </SectionContainer>
     </Section>
   );
