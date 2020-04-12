@@ -14,7 +14,7 @@ import { faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 
 function Skills(props) {
   return (
-    <Section id="skills" className="skills">
+    <Section id="skills">
       <SectionTitle>SKILLS</SectionTitle>
       <SectionContainer>
         <SectionContent>

@@ -16,7 +16,7 @@ import codeImage from "./assets/branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg
 
 function About(props) {
   return (
-    <Section id="about" className="about">
+    <Section id="about">
       <SectionContainer>
         <SectionContent>
           <SectionTitle>ABOUT</SectionTitle>

@@ -1,22 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import breaks from "./style/styled-breaks";
 import Colors from "./style/colors";
-
-// function Section(props) {
-//   return (
-//     <section
-//       id={props.id}
-//       className={
-//         props.className === undefined ? "section" : props.className + " section"
-//       }
-//     >
-//       {props.children}
-//     </section>
-//   );
-// }
 
 export const Section = styled.section`
   max-width: 1440px;

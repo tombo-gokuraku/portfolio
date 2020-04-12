@@ -72,13 +72,13 @@ https://styled-components.com/docs/basics#styling-any-component
 * Section関連のコンポーネントをまとめて1つのファイルにする
 
 #### About
-30m
+30m->1m
 
 #### Skills
-30m
+30m->1m
 
 #### Contact
-30+45=75m
+30+45=75m->23+
 
 ##### GoogleForm
 45m
