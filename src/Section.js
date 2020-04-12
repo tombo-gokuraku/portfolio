@@ -96,4 +96,12 @@ export const SectionBgIcon = styled(FontAwesomeIcon)`
   `}
 `;
 
-export default Section;
+export const SectionTitle = styled.h2`
+  font-size: 3rem;
+  margin-bottom: 12px;
+
+  ${breaks.md`
+    font-size: 6rem;
+    margin-bottom: 16px;
+  `}
+`;
