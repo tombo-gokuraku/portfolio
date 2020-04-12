@@ -1,5 +1,5 @@
 import React from "react";
-import tomboImage from "./tombo_icon_red_resized.png";
+import tomboImage from "./assets/tombo_icon_red_resized.png";
 
 function Hero(props) {
   return (
