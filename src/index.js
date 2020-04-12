@@ -37,8 +37,8 @@ const GlobalStyle = createGlobalStyle`
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalStyle />
     <GlobalFonts />
+    <GlobalStyle />
     <App />
   </React.StrictMode>,
   document.getElementById("root")
