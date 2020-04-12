@@ -84,7 +84,7 @@ https://styled-components.com/docs/basics#styling-any-component
 45m->17m
 
 #### Footer
-5m
+5m->5m
 
 #### GitHub Pagesにホスティング
 15m

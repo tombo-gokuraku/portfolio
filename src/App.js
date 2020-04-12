@@ -6,8 +6,6 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-import "./App.scss";
-
 function App() {
   return (
     <div className="App">
