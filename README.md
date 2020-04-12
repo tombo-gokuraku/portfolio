@@ -68,7 +68,7 @@ https://styled-components.com/docs/basics#styling-any-component
 30m->27m
 
 #### Section
-45m->
+45m->86m
 * Section関連のコンポーネントをまとめて1つのファイルにする
 
 #### About
