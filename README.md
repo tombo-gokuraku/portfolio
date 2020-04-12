@@ -41,53 +41,10 @@ SASS(SCSS)でスタイリングし直した
 ### v1.2
 create-react-appを使って、Reactで作り直した
 
+### v1.3
+styled-componentsを使って、スタイリングをやり直した
+
 ## Todo
-
-### v1.3(styled-componentsでスタイリング)
-515m
-
-#### normalize.css, createGlobalStyleを使ってCSS Resetをかける
-30m->42m
-https://pagepro.co/blog/moving-best-scss-practices-to-styled-components-part-1/
-
-#### fontの設定
-30m->27m
-
-#### Header
-30+45+45=120m->12+26+106=144m
-
-##### Navigation
-45m->5+21=26m
-
-##### SocialLink
-45m=4+32+25+25+20=106m
-Reset DOMにスタイリングするのに手間取った
-https://styled-components.com/docs/basics#styling-any-component
-
-#### Hero
-30m->27m
-
-#### Section
-45m->86m
-* Section関連のコンポーネントをまとめて1つのファイルにする
-
-#### About
-30m->1m
-
-#### Skills
-30m->1m
-
-#### Contact
-30+45=75m->23+17=40m
-
-##### GoogleForm
-45m->17m
-
-#### Footer
-5m->5m
-
-#### GitHub Pagesにホスティング
-15m
 
 ### v1.4(Netlifyにホスティング)
 * create-react-appをNetlifyにホスティングできるようにする
@@ -97,3 +54,6 @@ https://styled-components.com/docs/basics#styling-any-component
 ### v1.5(GatsbyでSSG)
 
 ### v1.6(デザインのリメイク)
+
+### v1.7(下層ページにブログを取り込む)
+GatsbyでCMS付きサイトが作れるようになって、独自ドメインの取得とか、Adsense、SEO周りのことが分かってからやる

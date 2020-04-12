@@ -302,3 +302,54 @@ https://web.dev/add-manifest-react/
 https://stackoverflow.com/questions/41676054/how-to-add-fonts-to-create-react-app-based-projects
 https://create-react-app.dev/docs/adding-images-fonts-and-files/
 https://scotch.io/@micwanyoike/how-to-add-fonts-to-a-react-project
+
+
+### v1.3(styled-componentsでスタイリング)
+515m=42+27+144+27+86+1+1+40+5+5=378
+計画錯誤率: 378/515=0.73
+目標より早く終わったのは良いが、Sectionコンポーネントのスタイリングのタスクが予定の2倍近くになったのは良くなかった。何かの問題に詰まったというよりは単純に工数の見積もりが甘かった。元Sectionコンポーネントだけでなく、その関連コンポーネントにどれくらい時間がかかりそうか、もう少し突っ込んで計画しておくべきだった。
+逆にSectionコンポーネントのスタイリングが上手くいったお陰でAboutやSkillsは単純な置き換えで全てが解決した点は良かった。
+
+
+#### normalize.css, createGlobalStyleを使ってCSS Resetをかける
+30m->42m
+https://pagepro.co/blog/moving-best-scss-practices-to-styled-components-part-1/
+
+#### fontの設定
+30m->27m
+
+#### Header
+30+45+45=120m->12+26+106=144m
+
+##### Navigation
+45m->5+21=26m
+
+##### SocialLink
+45m=4+32+25+25+20=106m
+Reset DOMにスタイリングするのに手間取った
+https://styled-components.com/docs/basics#styling-any-component
+
+#### Hero
+30m->27m
+
+#### Section
+45m->86m
+* Section関連のコンポーネントをまとめて1つのファイルにする
+
+#### About
+30m->1m
+
+#### Skills
+30m->1m
+
+#### Contact
+30+45=75m->23+17=40m
+
+##### GoogleForm
+45m->17m
+
+#### Footer
+5m->5m
+
+#### GitHub Pagesにホスティング
+15m->5m
