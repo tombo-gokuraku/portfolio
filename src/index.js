@@ -7,10 +7,10 @@ import * as serviceWorker from "./serviceWorker";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
+import GlobalFonts from "./fonts/fonts";
+
 const GlobalStyle = createGlobalStyle`
   ${reset}
-
-  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
   html {
     font-size: 62.5%;
@@ -38,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
+    <GlobalFonts />
     <App />
   </React.StrictMode>,
   document.getElementById("root")
