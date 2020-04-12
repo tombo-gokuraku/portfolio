@@ -119,19 +119,19 @@ $github-color: #333;
   //   }
   // }
 
-  &__text {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    letter-spacing: 0.4rem;
-    line-height: 1.6;
-
-    @include for-md {
-      font-size: 2rem;
-      margin-bottom: 16px;
-      letter-spacing: 0.3rem;
-      line-height: 1.5;
-    }
-  }
+  // &__text {
+  //   font-size: 1.2rem;
+  //   margin-bottom: 8px;
+  //   letter-spacing: 0.4rem;
+  //   line-height: 1.6;
+  //
+  //   @include for-md {
+  //     font-size: 2rem;
+  //     margin-bottom: 16px;
+  //     letter-spacing: 0.3rem;
+  //     line-height: 1.5;
+  //   }
+  // }
 }
 
 .twitter-highlight {

@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Section, SectionTitle } from "./Section";
-import SectionText from "./SectionText";
+import { Section, SectionTitle, SectionText } from "./Section";
 
 import GoogleForm from "./GoogleForm";
 

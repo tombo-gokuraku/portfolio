@@ -116,3 +116,17 @@ export const SectionHeading = styled.h3`
       padding-top: 8px;
   `}
 `;
+
+export const SectionText = styled.p`
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.4rem;
+  line-height: 1.6;
+
+  ${breaks.md`
+    font-size: 2rem;
+    margin-bottom: 16px;
+    letter-spacing: 0.3rem;
+    line-height: 1.5;
+  `}
+`;
