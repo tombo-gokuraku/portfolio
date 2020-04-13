@@ -16,7 +16,7 @@ const StyledNavigation = styled.nav`
   // 960px(for-md)より大きい場合は普通のNavigation
   // 小さい場合はBottom Navigation
 
-  padding: 0 32px;
+  padding: 0 8px;
   display: flex;
   align-items: stretch; //headerいっぱいにnavigation__menuを広げる
   background-color: ${Colors.materialTeal300};
@@ -54,8 +54,9 @@ const NavigationLink = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
-  font-size: 1.6rem;
+  padding: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #333;
 
   ${breaks.md`
@@ -63,13 +64,12 @@ const NavigationLink = styled.a`
       justify-content: center;
       text-align: center;
       height: 100%;
-      font-weight: bold;
       color: black;
     `}
 `;
 
 const NavigationIcon = styled(FontAwesomeIcon)`
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 4px;
 
