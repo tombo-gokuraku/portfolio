@@ -35,7 +35,9 @@ const SocialLinks = styled(SocialLinkContainer)`
   align-items: center;
 `;
 
-const SocialLinkItem = styled.a`
+const SocialLinkItem = styled.a.attrs(props => ({
+  "aria-label": props.ariaLabel
+}))`
   margin-right: 8px;
 
   ${breaks.sm`
