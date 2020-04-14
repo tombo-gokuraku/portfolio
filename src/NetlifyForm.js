@@ -53,7 +53,7 @@ class NetlifyForm extends React.Component {
     return (
       <React.Fragment>
         <Form onSubmit={this.handleSubmit} action="/">
-          <input type="hidden" name="form-name" value="inqform" />
+          {/* <input type="hidden" name="form-name" value="inqform" /> */}
           <SectionHeading>お問い合わせ</SectionHeading>
           <label htmlFor="email">メールアドレス:</label>
           <Input
