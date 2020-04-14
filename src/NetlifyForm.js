@@ -36,10 +36,9 @@ class NetlifyForm extends React.Component {
     return (
       <React.Fragment>
         <Form
-          //name="inqform"
-          //id="inqform"
           method="POST"
           data-netlify="true"
+          action="/"
           onSubmit={this.handleSubmit}
         >
           <input type="hidden" name="form-name" value="inqform" />
