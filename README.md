@@ -53,7 +53,7 @@ styled-componentsを使って、スタイリングをやり直した
 #### Netlifyのホスティング設定をする
 15m->25m
 #### FormをNetlifyに送るように変更する
-30m->
+30m->71+
 
 ### v1.5(GatsbyでSSG)
 
