@@ -36,10 +36,12 @@ export const SectionContent = styled.div`
   flex-direction: column;
   flex-grow: 1;
   position: relative;
+  margin-bottom: 16px;
 
   ${breaks.md`
     width:50%;
     margin-right: 16px;
+    margin-bottom: 0;
   `}
 `;
 

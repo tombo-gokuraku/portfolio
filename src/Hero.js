@@ -44,7 +44,7 @@ const HeroContainer = styled.div`
 
 const HeroText = styled.h2`
   // largeを指定した時に微妙にフォントサイズが大きくなるようにする
-  font-size: ${props => (props.large ? 1.8 + 0.4 : 1.8)}rem;
+  font-size: ${props => (props.large ? 1.4 + 0.4 : 1.4)}rem;
   ${breaks.sm`
     font-size: ${props => (props.large ? 2.8 + 0.4 : 2.8)}rem;
   `}

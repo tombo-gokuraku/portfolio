@@ -16,6 +16,10 @@ const StyledHeader = styled.header`
   z-index: 10;
 
   ${breaks.sm`
+    padding: 8 32px;
+  `}
+
+  ${breaks.md`
     padding: 0 32px;
   `}
 `;
@@ -26,12 +30,21 @@ const HeaderTextContainer = styled.div`
 `;
 
 const HeaderTitle = styled.h1`
-  font-size: ${props => (props.sub ? "1.6rem" : "2rem")};
+  font-size: ${props => (props.sub ? "1.4rem" : "1.6rem")};
   font-weight: ${props => (props.sub ? "300" : "")};
   display: ${props => (props.sub ? "none" : "")};
   margin-right: 16px;
 
+  ${breaks.sm`
+    font-size: 1.8rem;
+  `}
+
+  ${breaks.md`
+    font-size: 2rem;
+  `}
+
   ${breaks.lg`
+    font-size: ${props => (props.sub ? "1.6rem" : "2rem")};
     display: ${props => (props.sub ? "block" : "")}
   `}
 `;

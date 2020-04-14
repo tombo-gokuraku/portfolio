@@ -59,13 +59,22 @@ const NavigationLink = styled.a`
   font-weight: bold;
   color: #333;
 
+  ${breaks.sm`
+    font-size: 1.6rem;
+  `}
+
   ${breaks.md`
-      flex-direction: row;
-      justify-content: center;
-      text-align: center;
-      height: 100%;
-      color: black;
-    `}
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    color: black;
+    font-size: 1.8rem;
+  `}
+
+  ${breaks.lg`
+    font-size: 2rem;
+  `}
 `;
 
 const NavigationIcon = styled(FontAwesomeIcon)`

@@ -46,14 +46,22 @@ const SocialLinkItem = styled.a.attrs(props => ({
 `;
 
 const SocialLinkIcon = styled(FontAwesomeIcon)`
-  font-size: 1.8rem;
-  margin-right: 8px;
+  font-size: 1.4rem;
+  margin-right: 4px;
   color: ${props => props.color || "black"};
+
+  ${breaks.md`
+    font-size: 1.8rem;
+  `}
 `;
 
 const SocialLinkText = styled.span`
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: black;
+
+  ${breaks.md`
+    font-size: 1.8rem;
+  `}
 `;
 
 export default SocialLinks;
