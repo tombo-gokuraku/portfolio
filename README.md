@@ -46,16 +46,18 @@ styled-componentsを使って、スタイリングをやり直した
 
 ## Todo
 
-### v1.4(Netlifyにホスティング)
-75m->
-#### create-react-appをNetlifyにホスティングできるようにする
-30m->90m
-#### Netlifyのホスティング設定をする
-15m->25m
-#### FormをNetlifyに送るように変更する
-30m->71+
-
 ### v1.5(GatsbyでSSG)
+225m
+
+#### Gatsbyのチュートリアルをやる
+90m
+
+#### GatsbyでポートフォリオサイトをNetlifyにSSGする
+90m
+
+#### GatsbyでポートフォリオサイトをGitHub PagesにSSGする(おまけ)
+45m
+
 
 ### v1.6(デザインのリメイク)
 

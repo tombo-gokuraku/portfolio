@@ -353,3 +353,16 @@ https://styled-components.com/docs/basics#styling-any-component
 
 #### GitHub Pagesにホスティング
 15m->5m
+
+### v1.4(Netlifyにホスティング)
+75m->90+25+162=277m
+計画錯誤率: 277/75=3.69
+formって難しいね...
+NetlifyFormの仕様に振り回された
+
+#### create-react-appをNetlifyにホスティングできるようにする
+30m->90m
+#### Netlifyのホスティング設定をする
+15m->25m
+#### FormをNetlifyに送るように変更する
+30m->71+91=162m
