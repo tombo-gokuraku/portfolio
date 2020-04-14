@@ -88,7 +88,7 @@ class NetlifyForm extends React.Component {
           />
           <Submit
             type="submit"
-            name=""
+            //name=""
             id="submit"
             value={this.state.submitted ? "送信済み" : "送信"}
             style={
