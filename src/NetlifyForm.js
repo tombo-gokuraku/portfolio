@@ -4,6 +4,13 @@ import styled from "styled-components";
 import Colors from "./style/colors";
 import { SectionHeading } from "./Section";
 
+// URIをエンコードする関数
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 class NetlifyForm extends React.Component {
   constructor(props) {
     super(props);
@@ -27,20 +34,25 @@ class NetlifyForm extends React.Component {
   }
 
   handleSubmit(event) {
-    this.setState({
-      submitted: true
-    });
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => {
+        this.setState({
+          submitted: true
+        });
+      })
+      .catch(error => alert(error));
+
+    event.preventDefault();
   }
 
   render() {
     return (
       <React.Fragment>
-        <Form
-          method="POST"
-          data-netlify="true"
-          action="/#"
-          onSubmit={this.handleSubmit}
-        >
+        <Form method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="inqform" />
           <SectionHeading>お問い合わせ</SectionHeading>
           <label htmlFor="email">メールアドレス:</label>
