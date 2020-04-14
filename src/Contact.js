@@ -5,7 +5,7 @@ import Colors from "./style/colors";
 
 import { Section, SectionTitle, SectionText } from "./Section";
 
-import GoogleForm from "./GoogleForm";
+import NetlifyForm from "./NetlifyForm";
 
 function Contact(props) {
   return (
@@ -19,7 +19,7 @@ function Contact(props) {
         </a>
         でご連絡ください。
       </SectionText>
-      <GoogleForm />
+      <NetlifyForm />
     </Section>
   );
 }
