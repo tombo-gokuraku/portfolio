@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Colors from "./style/colors";
+import Colors from "../style/colors";
 
 import { Section, SectionTitle, SectionText } from "./Section";
 

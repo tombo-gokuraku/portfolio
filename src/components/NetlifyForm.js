@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-import Colors from "./style/colors";
+import Colors from "../style/colors";
 import { SectionHeading } from "./Section";
 
 // URIをエンコードする関数
-const encode = data => {
+const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 };
 
@@ -18,7 +18,7 @@ class NetlifyForm extends React.Component {
       email: "",
       name: "",
       content: "",
-      submitted: false
+      submitted: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -29,7 +29,7 @@ class NetlifyForm extends React.Component {
     const value = target.value;
     const name = target.name;
     this.setState({
-      [name]: value
+      [name]: value,
     });
   }
 
@@ -37,14 +37,14 @@ class NetlifyForm extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "inqform", ...this.state })
+      body: encode({ "form-name": "inqform", ...this.state }),
     })
       .then(() => {
         this.setState({
-          submitted: true
+          submitted: true,
         });
       })
-      .catch(error => alert(error));
+      .catch((error) => alert(error));
 
     event.preventDefault();
   }

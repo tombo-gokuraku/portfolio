@@ -4,12 +4,12 @@ import {
   faAddressCard,
   faTools,
   faBlog,
-  faComment
+  faComment,
 } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
-import Colors from "./style/colors";
-import breaks from "./style/styled-breaks";
+import Colors from "../style/colors";
+import breaks from "../style/styled-breaks";
 
 const StyledNavigation = styled.nav`
   // bottom-navigationと統合する

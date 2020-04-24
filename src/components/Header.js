@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import breaks from "./style/styled-breaks";
+import breaks from "../style/styled-breaks";
 
 import Navigation from "./Navigation";
 import SocialLinks from "./SocialLink";
@@ -30,9 +30,9 @@ const HeaderTextContainer = styled.div`
 `;
 
 const HeaderTitle = styled.h1`
-  font-size: ${props => (props.sub ? "1.4rem" : "1.6rem")};
-  font-weight: ${props => (props.sub ? "300" : "")};
-  display: ${props => (props.sub ? "none" : "")};
+  font-size: ${(props) => (props.sub ? "1.4rem" : "1.6rem")};
+  font-weight: ${(props) => (props.sub ? "300" : "")};
+  display: ${(props) => (props.sub ? "none" : "")};
   margin-right: 16px;
 
   ${breaks.sm`
@@ -44,8 +44,8 @@ const HeaderTitle = styled.h1`
   `}
 
   ${breaks.lg`
-    font-size: ${props => (props.sub ? "1.6rem" : "2rem")};
-    display: ${props => (props.sub ? "block" : "")}
+    font-size: ${(props) => (props.sub ? "1.6rem" : "2rem")};
+    display: ${(props) => (props.sub ? "block" : "")}
   `}
 `;
 

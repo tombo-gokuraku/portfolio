@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Colors from "./style/colors";
+import Colors from "../style/colors";
 import { SectionHeading } from "./Section";
 
 class GoogleForm extends React.Component {
@@ -11,7 +11,7 @@ class GoogleForm extends React.Component {
       "entry.872297108": "",
       "entry.814221295": "",
       "entry.733628667": "",
-      submitted: false
+      submitted: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -22,13 +22,13 @@ class GoogleForm extends React.Component {
     const value = target.value;
     const name = target.name;
     this.setState({
-      [name]: value
+      [name]: value,
     });
   }
 
   handleSubmit(event) {
     this.setState({
-      submitted: true
+      submitted: true,
     });
   }
 

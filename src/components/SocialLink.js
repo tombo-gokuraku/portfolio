@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import breaks from "./style/styled-breaks";
+import breaks from "../style/styled-breaks";
 import socialLinkData from "./SocialLinkData";
 
 const SocialLinkContainer = ({ className, ...props }) => {
-  const socialLinks = socialLinkData.map(item => {
+  const socialLinks = socialLinkData.map((item) => {
     return (
       <SocialLinkItem
         href={item.hrefLink}
@@ -35,8 +35,8 @@ const SocialLinks = styled(SocialLinkContainer)`
   align-items: center;
 `;
 
-const SocialLinkItem = styled.a.attrs(props => ({
-  "aria-label": props.ariaLabel
+const SocialLinkItem = styled.a.attrs((props) => ({
+  "aria-label": props.ariaLabel,
 }))`
   margin-right: 8px;
 
@@ -48,7 +48,7 @@ const SocialLinkItem = styled.a.attrs(props => ({
 const SocialLinkIcon = styled(FontAwesomeIcon)`
   font-size: 1.4rem;
   margin-right: 4px;
-  color: ${props => props.color || "black"};
+  color: ${(props) => props.color || "black"};
 
   ${breaks.md`
     font-size: 1.8rem;

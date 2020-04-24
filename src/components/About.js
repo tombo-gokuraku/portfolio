@@ -7,12 +7,12 @@ import {
   SectionBgImage,
   SectionTitle,
   SectionHeading,
-  SectionText
+  SectionText,
 } from "./Section";
 
 import SocialLinks from "./SocialLink";
 
-import codeImage from "./assets/branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg";
+import codeImage from "../assets/branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg";
 
 function About(props) {
   return (

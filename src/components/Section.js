@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import breaks from "./style/styled-breaks";
-import Colors from "./style/colors";
+import breaks from "../style/styled-breaks";
+import Colors from "../style/colors";
 
 export const Section = styled.section`
   max-width: 1440px;

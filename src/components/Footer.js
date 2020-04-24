@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import breaks from "./style/styled-breaks";
+import breaks from "../style/styled-breaks";
 
 function Footer(props) {
   return <StyledFooter>©2020 TOMBO GOKURAKU PORTFOLIO.</StyledFooter>;

@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import breaks from "./style/styled-breaks";
-import Colors from "./style/colors";
-import tomboImage from "./assets/tombo_icon_red_resized.png";
+import breaks from "../style/styled-breaks";
+import Colors from "../style/colors";
+import tomboImage from "../assets/tombo_icon_red_resized.png";
 
 function Hero(props) {
   return (
@@ -32,7 +32,7 @@ const HeroSection = styled.section`
 `;
 
 const HeroContainer = styled.div`
-  flex-grow: ${props => props.grow}
+  flex-grow: ${(props) => props.grow}
   line-height: 1.8;
   letter-spacing: 0.4rem;
 
@@ -44,17 +44,17 @@ const HeroContainer = styled.div`
 
 const HeroText = styled.h2`
   // largeを指定した時に微妙にフォントサイズが大きくなるようにする
-  font-size: ${props => (props.large ? 1.4 + 0.4 : 1.4)}rem;
+  font-size: ${(props) => (props.large ? 1.4 + 0.4 : 1.4)}rem;
   ${breaks.sm`
-    font-size: ${props => (props.large ? 2.8 + 0.4 : 2.8)}rem;
+    font-size: ${(props) => (props.large ? 2.8 + 0.4 : 2.8)}rem;
   `}
 
   ${breaks.md`
-    font-size: ${props => (props.large ? 3.6 + 0.4 : 3.6)}rem;
+    font-size: ${(props) => (props.large ? 3.6 + 0.4 : 3.6)}rem;
   `}
 
   ${breaks.lg`
-    font-size: ${props => (props.large ? 4.0 + 0.4 : 4.0)}rem;
+    font-size: ${(props) => (props.large ? 4.0 + 0.4 : 4.0)}rem;
   `}
 `;
 
