@@ -44,13 +44,19 @@ create-react-appを使って、Reactで作り直した
 ### v1.3
 styled-componentsを使って、スタイリングをやり直した
 
+### v1.4
+サイトをNetlifyにホスティングした。
+FormをGoogleFormからNetlifyFormに変更した。
+
 ## Todo
 
 ### v1.5(GatsbyでSSG)
 225m
 
 #### Gatsbyのチュートリアルをやる
-90m
+90m->60+107+90+58+87+89+96=587m
+チュートリアルが思ったよりも長く、環境構築も難しかった。
+まだLinter/Formatterもあんまり設定できていない
 
 #### GatsbyでポートフォリオサイトをNetlifyにSSGする
 90m
