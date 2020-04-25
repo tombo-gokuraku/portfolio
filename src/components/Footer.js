@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import breaks from "../style/styled-breaks";
 
-function Footer(props) {
+function Footer() {
   return <StyledFooter>©2020 TOMBO GOKURAKU PORTFOLIO.</StyledFooter>;
 }
 

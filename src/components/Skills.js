@@ -7,12 +7,12 @@ import {
   SectionBgIcon,
   SectionTitle,
   SectionHeading,
-  SectionText
+  SectionText,
 } from "./Section";
 
 import { faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 
-function Skills(props) {
+function Skills() {
   return (
     <Section id="skills">
       <SectionTitle>SKILLS</SectionTitle>

@@ -14,7 +14,7 @@ import SocialLinks from "./SocialLink";
 
 import codeImage from "../assets/branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg";
 
-function About(props) {
+function About() {
   return (
     <Section id="about">
       <SectionContainer>

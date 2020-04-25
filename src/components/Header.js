@@ -49,7 +49,7 @@ const HeaderTitle = styled.h1`
   `}
 `;
 
-function Header(props) {
+function Header() {
   return (
     <StyledHeader>
       <HeaderTextContainer>

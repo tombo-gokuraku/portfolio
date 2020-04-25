@@ -7,7 +7,7 @@ import { Section, SectionTitle, SectionText } from "./Section";
 
 import NetlifyForm from "./NetlifyForm";
 
-function Contact(props) {
+function Contact() {
   return (
     <Section id="contact">
       <SectionTitle>CONTACT</SectionTitle>

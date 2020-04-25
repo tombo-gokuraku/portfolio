@@ -59,7 +59,7 @@ FormをGoogleFormからNetlifyFormに変更した。
 まだLinter/Formatterもあんまり設定できていない
 
 #### GatsbyでポートフォリオサイトをNetlifyにSSGする
-90m
+90m->100+89+
 
 #### GatsbyでポートフォリオサイトをGitHub PagesにSSGする(おまけ)
 45m
@@ -67,5 +67,7 @@ FormをGoogleFormからNetlifyFormに変更した。
 
 ### v1.6(デザインのリメイク)
 
-### v1.7(下層ページにブログを取り込む)
+### v1.7(GoogleAnalyticsを導入する)
+
+### v1.8(下層ページにブログを取り込む)
 GatsbyでCMS付きサイトが作れるようになって、独自ドメインの取得とか、Adsense、SEO周りのことが分かってからやる

@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
 
 import breaks from "../style/styled-breaks";
 import socialLinkData from "./SocialLinkData";
 
-const SocialLinkContainer = ({ className, ...props }) => {
+const SocialLinkContainer = (props) => {
   const socialLinks = socialLinkData.map((item) => {
     return (
       <SocialLinkItem
@@ -27,7 +28,13 @@ const SocialLinkContainer = ({ className, ...props }) => {
     );
   });
 
-  return <div className={className}>{socialLinks}</div>;
+  // React DOMにスタイリングするにはclassNameを渡す必要がある
+  return <div className={props.className}>{socialLinks}</div>;
+};
+
+SocialLinkContainer.propTypes = {
+  notext: PropTypes.any,
+  className: PropTypes.string,
 };
 
 const SocialLinks = styled(SocialLinkContainer)`

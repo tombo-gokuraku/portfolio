@@ -5,7 +5,7 @@ import breaks from "../style/styled-breaks";
 import Colors from "../style/colors";
 import tomboImage from "../assets/tombo_icon_red_resized.png";
 
-function Hero(props) {
+function Hero() {
   return (
     <HeroSection>
       <HeroContainer grow="2">
