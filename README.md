@@ -72,7 +72,7 @@ FormをGoogleFormからNetlifyFormに変更した。
 ##### SEOコンポーネントを作成し、title, metadateを入力する
 15m->14m
 ##### PWAに対応する
-15m
+15m->7m
 ##### Netlifyにホスティングする
 ##### Incremental Buildの設定をする
 
