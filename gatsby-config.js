@@ -1,4 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    title: "tombo gokuraku portfolio",
+    description: "tombo gokuraku Web Engineer",
+    author: "tombo gokuraku",
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     {
@@ -12,5 +17,6 @@ module.exports = {
         },
       },
     },
+    "gatsby-plugin-react-helmet",
   ],
 };

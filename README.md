@@ -59,17 +59,21 @@ FormをGoogleFormからNetlifyFormに変更した。
 まだLinter/Formatterもあんまり設定できていない
 
 #### GatsbyでポートフォリオサイトをNetlifyにSSGする
-90m->100+89+
+90m->100+149+
 
 ##### Gatsby環境構築
-90m->
+90m->100m
 
 ##### ESLintの設定
-90m->
+90m->89+60=149m
 
 ##### App.jsからLayout.jsに改名
+5m->5m
 ##### SEOコンポーネントを作成し、title, metadateを入力する
+15m->14m
 ##### PWAに対応する
+##### Netlifyにホスティングする
+##### Incremental Buildの設定をする
 
 #### GatsbyでポートフォリオサイトをGitHub PagesにSSGする(おまけ)
 45m
