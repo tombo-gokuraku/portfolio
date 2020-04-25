@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.2.1",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.20.30",
+    "gatsby-plugin-manifest": "^2.3.7",
     "gatsby-plugin-react-helmet": "^3.2.5",
     "gatsby-plugin-styled-components": "^3.2.4",
     "node-sass": "^4.13.1",
