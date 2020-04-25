@@ -9,26 +9,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `gatsby develop`
+development modeでアプリケーションを起動する
+[http://localhost:8000/](http://localhost:8000/)で確認できる
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `gatsby build`
+アプリケーションをプロダクション用にビルドする
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run deploy`
-GitHub Pagesにmasterブランチのソースをbuildして`gh-pages`ブランチとしてホスティングする。
+### `gatsby serve`
+プロダクション用ビルドを[http://localhost:9000/](http://localhost:9000/)にホスティングする
+Lighthouseなどを実行して、パフォーマンスなどを確認する時に使う
 
 ## Change Log
 
@@ -74,7 +64,13 @@ FormをGoogleFormからNetlifyFormに変更した。
 ##### PWAに対応する
 15m->7m
 ##### Netlifyにホスティングする
+45m->25m
+* NetlifyのBuild Settingsを変更する
+* package.jsonのscriptsをGatsby向けに変更する
+* README.mdのAvailable Scriptsも変更する
+
 ##### Incremental Buildの設定をする
+60m
 
 #### GatsbyでポートフォリオサイトをGitHub PagesにSSGする(おまけ)
 45m
