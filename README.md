@@ -1,9 +1,7 @@
 # tombo gokuraku portfolio
 tombo gokurakuのポートフォリオサイト
 
-**[myportfolio](https://tombo-gokuraku.github.io/portfolio/)**
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**[myportfolio](https://tombo-portfolio.netlify.app/)**
 
 ## Available Scripts
 
@@ -38,40 +36,10 @@ styled-componentsを使って、スタイリングをやり直した
 サイトをNetlifyにホスティングした。
 FormをGoogleFormからNetlifyFormに変更した。
 
+### v1.5
+GatsbyでポートフォリオサイトをSSGして、Netlifyにホスティングした。
+
 ## Todo
-
-### v1.5(GatsbyでSSG)
-225m
-
-#### Gatsbyのチュートリアルをやる
-90m->60+107+90+58+87+89+96=587m
-チュートリアルが思ったよりも長く、環境構築も難しかった。
-まだLinter/Formatterもあんまり設定できていない
-
-#### GatsbyでポートフォリオサイトをNetlifyにSSGする
-90m->100+149+
-
-##### Gatsby環境構築
-90m->100m
-
-##### ESLintの設定
-90m->89+60=149m
-
-##### App.jsからLayout.jsに改名
-5m->5m
-##### SEOコンポーネントを作成し、title, metadateを入力する
-15m->14m
-##### PWAに対応する
-15m->7m
-##### Netlifyにホスティングする
-45m->25m
-* NetlifyのBuild Settingsを変更する
-* package.jsonのscriptsをGatsby向けに変更する
-* README.mdのAvailable Scriptsも変更する
-
-##### Incremental Buildの設定をする
-60m->20+
-
 
 ### v1.6(デザインのリメイク)
 

@@ -366,3 +366,39 @@ NetlifyFormの仕様に振り回された
 15m->25m
 #### FormをNetlifyに送るように変更する
 30m->71+91=162m
+
+### v1.5(GatsbyでSSG)
+225m->587+333=920m
+計画錯誤率: 920/225=4.09
+チュートリアルが思ったよりも長かった。
+ESlintの設定でそこそこ躓いた。
+ホスティング自体はそれほど難しくなかった。
+
+#### Gatsbyのチュートリアルをやる
+90m->60+107+90+58+87+89+96=587m
+チュートリアルが思ったよりも長く、環境構築も難しかった。
+まだLinter/Formatterもあんまり設定できていない
+
+#### GatsbyでポートフォリオサイトをNetlifyにSSGする
+90m->100+149+5+14+7+25+33=333m
+
+##### Gatsby環境構築
+90m->100m
+
+##### ESLintの設定
+90m->89+60=149m
+
+##### App.jsからLayout.jsに改名
+5m->5m
+##### SEOコンポーネントを作成し、title, metadateを入力する
+15m->14m
+##### PWAに対応する
+15m->7m
+##### Netlifyにホスティングする
+45m->25m
+* NetlifyのBuild Settingsを変更する
+* package.jsonのscriptsをGatsby向けに変更する
+* README.mdのAvailable Scriptsも変更する
+
+##### Incremental Buildの設定をする
+60m->20+13=33m
