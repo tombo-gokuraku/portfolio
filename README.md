@@ -70,10 +70,7 @@ FormをGoogleFormからNetlifyFormに変更した。
 * README.mdのAvailable Scriptsも変更する
 
 ##### Incremental Buildの設定をする
-60m
-
-#### GatsbyでポートフォリオサイトをGitHub PagesにSSGする(おまけ)
-45m
+60m->20+
 
 
 ### v1.6(デザインのリメイク)
