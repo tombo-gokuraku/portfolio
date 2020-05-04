@@ -85,6 +85,7 @@ export const SectionBgIcon = styled(FontAwesomeIcon)`
 `;
 
 export const SectionTitle = styled.h2`
+  color: white;
   font-size: 3rem;
   margin-bottom: 12px;
 

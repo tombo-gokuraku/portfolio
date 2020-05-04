@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./Header";
-import Hero from "./Hero";
-import About from "./About";
-import Skills from "./Skills";
-import Contact from "./Contact";
-import Footer from "./Footer";
+// import Hero from "./Hero";
+// import About from "./About";
+// import Skills from "./Skills";
+// import Contact from "./Contact";
+import { SectionTitle } from "./Section";
+import { FullPage, FullPageChild } from "./FullPage";
 
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
@@ -14,9 +14,14 @@ import GlobalFonts from "../fonts/fonts";
 const GlobalStyle = createGlobalStyle`
   ${reset}
 
+  html,body,h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0;
+  }
+
   html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
+    /* overflow: hidden; */
   }
 
   *,
@@ -27,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: Raleway, sans-serif;
+    background-color: #263238;
   }
 
   a:link,
@@ -43,14 +49,20 @@ function Layout() {
     <React.Fragment>
       <GlobalFonts />
       <GlobalStyle />
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Contact />
-      </main>
-      <Footer />
+      <FullPage as="main">
+        <FullPageChild as="section" id="hero">
+          <SectionTitle>Hero</SectionTitle>
+        </FullPageChild>
+        <FullPageChild as="section" id="about">
+          <SectionTitle>About</SectionTitle>
+        </FullPageChild>
+        <FullPageChild as="section" id="works">
+          <SectionTitle>Works</SectionTitle>
+        </FullPageChild>
+        <FullPageChild as="section" id="contact">
+          <SectionTitle>Contact</SectionTitle>
+        </FullPageChild>
+      </FullPage>
     </React.Fragment>
   );
 }
