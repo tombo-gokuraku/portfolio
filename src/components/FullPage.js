@@ -55,10 +55,16 @@ export class FullPage extends React.Component {
 
 export const FullPageContainer = styled.div`
   height: 100vh;
+  width: 100vw;
+  overflow: auto;
+
+  // スクロールバーを消すための処理
+  //スクロールバーを100vw+17pxの位置に描画し、かつcontent-boxでスクロールバーをはみ出させて、画面外から出す
+  padding-right: 17px;
+  box-sizing: content-box;
+
   scroll-snap-type: y mandatory;
   scroll-snap-stop: always;
-  overflow-y: auto;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 `;
 
