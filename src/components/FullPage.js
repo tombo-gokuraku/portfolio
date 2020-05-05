@@ -5,20 +5,45 @@ import PropTypes from "prop-types";
 export class FullPage extends React.Component {
   constructor(props) {
     super(props);
+    this.handleScroll = this.handleScroll.bind(this);
+    this.state = {
+      activeChildIndex: 0,
+    };
+  }
+
+  countFullPageChildren() {
+    return this.props.children.filter((child) => child.type === FullPageChild)
+      .length;
+  }
+
+  // スクロールの度に現在のスクロール位置から表示されているFullPageChildを特定し、インデックスを更新する
+  handleScroll(event) {
+    let currentChildIndex = (
+      event.target.scrollTop /
+      (event.target.scrollHeight / this.countFullPageChildren())
+    ).toFixed(0);
+    this.setState({
+      activeChildIndex: currentChildIndex,
+    });
   }
 
   render() {
-    // console.log(this.props.children);
-    const controllerButtons = this.props.children.map((child) => {
+    const fullPageChildren = this.props.children.filter(
+      (child) => child.type === FullPageChild
+    );
+    const controllerButtons = fullPageChildren.map((child, index) => {
       return (
         <ControllerItem key={child.props.id}>
-          <ControllerButton href={"#" + child.props.id} />
+          <ControllerButton
+            href={"#" + child.props.id}
+            isActive={index === Number(this.state.activeChildIndex)}
+          />
         </ControllerItem>
       );
     });
 
     return (
-      <FullPageContainer as={this.props.as}>
+      <FullPageContainer as={this.props.as} onScroll={this.handleScroll}>
         <nav>
           <ControllerContainer>{controllerButtons}</ControllerContainer>
         </nav>
@@ -61,9 +86,9 @@ export const ControllerButton = styled.a`
   height: 16px;
   margin: 26px 0;
   border-radius: 50%;
-  border: solid 4px #4fc3f7;
 
-  background-color: #f7844f;
+  // アクティブな場合は色を変える
+  border: solid 4px ${(props) => (props.isActive ? "#f7844f" : "#4fc3f7")};
 
   // アイテム間の線を描く
   &::after {
