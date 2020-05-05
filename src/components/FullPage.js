@@ -57,7 +57,8 @@ export const FullPageContainer = styled.div`
   height: 100vh;
   scroll-snap-type: y mandatory;
   scroll-snap-stop: always;
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 `;
 
