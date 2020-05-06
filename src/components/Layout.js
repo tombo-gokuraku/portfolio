@@ -5,6 +5,7 @@ import React from "react";
 // import Contact from "./Contact";
 import { SectionTitle } from "./Section";
 import { FullPage, FullPageChild } from "./FullPage";
+import { SkillMap } from "./SkillMap";
 
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
@@ -54,6 +55,7 @@ function Layout() {
         </FullPageChild>
         <FullPageChild as="section" id="about">
           <SectionTitle>About</SectionTitle>
+          <SkillMap />
         </FullPageChild>
         <FullPageChild as="section" id="works">
           <SectionTitle>Works</SectionTitle>
