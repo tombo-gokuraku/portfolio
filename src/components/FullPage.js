@@ -106,16 +106,18 @@ export const ControllerButton = styled.a`
   border-radius: 50%;
 
   // アクティブな場合は色を変える
-  border: solid 4px ${(props) => (props.isActive ? "#f7844f" : "#4fc3f7")};
+  border: solid 4px
+    ${(props) =>
+      props.isActive ? props.theme.secondary : props.theme.primaryDark};
 
   // アイテム間の線を描く
   &::after {
     content: "";
     display: block;
-    background-color: #4fc3f7;
+    background-color: ${(props) => props.theme.primaryDark};
     height: 54px;
     width: 4px;
-    margin-top: 11px;
+    margin-top: 12px;
   }
 
   // 最後のControllerButtonだけItem間の線を表示しない

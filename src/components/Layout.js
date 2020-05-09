@@ -1,4 +1,8 @@
 import React from "react";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import reset from "styled-reset";
+import GlobalFonts from "../fonts/fonts";
+
 // import Hero from "./Hero";
 // import About from "./About";
 // import Skills from "./Skills";
@@ -7,10 +11,13 @@ import { SectionTitle } from "./Section";
 import { FullPage, FullPageChild } from "./FullPage";
 import { SkillMap } from "./SkillMap";
 
-import { createGlobalStyle } from "styled-components";
-import reset from "styled-reset";
-
-import GlobalFonts from "../fonts/fonts";
+// themeを定義
+const theme = {
+  backgroundColor: "#263238",
+  primary: "#4fc3f7",
+  primaryDark: "#01579B",
+  secondary: "#f7844f",
+};
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -32,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: Orbitron, sans-serif;
-    background-color: #263238;
+    background-color: ${(props) => props.theme.backgroundColor};
   }
 
   a:link,
@@ -47,23 +54,25 @@ const GlobalStyle = createGlobalStyle`
 function Layout() {
   return (
     <React.Fragment>
-      <GlobalFonts />
-      <GlobalStyle />
-      <FullPage as="main">
-        <FullPageChild as="section" id="hero">
-          <SectionTitle>Hero</SectionTitle>
-        </FullPageChild>
-        <FullPageChild as="section" id="about">
-          <SectionTitle>About</SectionTitle>
-          <SkillMap />
-        </FullPageChild>
-        <FullPageChild as="section" id="works">
-          <SectionTitle>Works</SectionTitle>
-        </FullPageChild>
-        <FullPageChild as="section" id="contact">
-          <SectionTitle>Contact</SectionTitle>
-        </FullPageChild>
-      </FullPage>
+      <ThemeProvider theme={theme}>
+        <GlobalFonts />
+        <GlobalStyle />
+        <FullPage as="main">
+          <FullPageChild as="section" id="hero">
+            <SectionTitle>Hero</SectionTitle>
+          </FullPageChild>
+          <FullPageChild as="section" id="about">
+            <SectionTitle>About</SectionTitle>
+            <SkillMap />
+          </FullPageChild>
+          <FullPageChild as="section" id="works">
+            <SectionTitle>Works</SectionTitle>
+          </FullPageChild>
+          <FullPageChild as="section" id="contact">
+            <SectionTitle>Contact</SectionTitle>
+          </FullPageChild>
+        </FullPage>
+      </ThemeProvider>
     </React.Fragment>
   );
 }
