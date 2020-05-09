@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import PropTypes from "prop-types";
+
+const GlobalStyle = createGlobalStyle`
+  html {
+    // スクロールバーを消す
+    overflow: hidden;
+  }
+`;
 
 export class FullPage extends React.Component {
   constructor(props) {
@@ -43,12 +51,15 @@ export class FullPage extends React.Component {
     });
 
     return (
-      <FullPageContainer as={this.props.as} onScroll={this.handleScroll}>
-        <nav>
-          <ControllerContainer>{controllerButtons}</ControllerContainer>
-        </nav>
-        {this.props.children}
-      </FullPageContainer>
+      <React.Fragment>
+        <GlobalStyle />
+        <FullPageContainer as={this.props.as} onScroll={this.handleScroll}>
+          <nav>
+            <ControllerContainer>{controllerButtons}</ControllerContainer>
+          </nav>
+          {this.props.children}
+        </FullPageContainer>
+      </React.Fragment>
     );
   }
 }
