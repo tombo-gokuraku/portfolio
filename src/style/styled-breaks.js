@@ -1,21 +1,12 @@
 //styled-breaks.js
-import { css } from "styled-components";
+import { generateMedia } from "styled-media-query";
 
-const breakpoints = {
+const breaks = generateMedia({
   xs: "0",
   sm: "600px",
   md: "960px",
   lg: "1280px",
-  xl: "1920px"
-};
-
-const breaks = Object.keys(breakpoints).reduce((accumulator, label) => {
-  accumulator[label] = (...args) => css`
-    @media (min-width: ${breakpoints[label]}) {
-      ${css(...args)};
-    }
-  `;
-  return accumulator;
-}, {});
+  xl: "1920px",
+});
 
 export default breaks;

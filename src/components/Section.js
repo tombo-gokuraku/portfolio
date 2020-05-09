@@ -9,11 +9,11 @@ export const Section = styled.section`
   margin: 0 auto 32px;
   padding: 32px 16px;
 
-  ${breaks.sm`
+  ${breaks.greaterThan("sm")`
     padding: 64px 32px;
   `}
 
-  ${breaks.md`
+  ${breaks.greaterThan("md")`
     margin: 0 auto 64px;
     padding: 64px;
   `}
@@ -26,7 +26,7 @@ export const SectionContainer = styled.div`
   flex-wrap: wrap;
   margin-bottom: 16px;
 
-  ${breaks.md`
+  ${breaks.greaterThan("md")`
     flex-wrap: nowrap;
   `}
 `;
@@ -38,7 +38,7 @@ export const SectionContent = styled.div`
   position: relative;
   margin-bottom: 16px;
 
-  ${breaks.md`
+  ${breaks.greaterThan("md")`
     width:50%;
     margin-right: 16px;
     margin-bottom: 0;
@@ -48,7 +48,7 @@ export const SectionContent = styled.div`
 export const SectionBgImage = styled.img`
   display: none;
 
-  ${breaks.md`
+  ${breaks.greaterThan("md")`
     display: flex;
     flex-grow: 1;
     width: 50%;
@@ -73,13 +73,13 @@ export const SectionBgIcon = styled(FontAwesomeIcon)`
   color: ${Colors.materialTeal500};
   opacity: 0.3;
 
-  ${breaks.sm`
+  ${breaks.greaterThan("sm")`
     font-size: 12rem;
   `}
-  ${breaks.md`
+  ${breaks.greaterThan("md")`
     font-size: 18rem;
   `}
-  ${breaks.lg`
+  ${breaks.greaterThan("lg")`
     font-size: 20rem;
   `}
 `;
@@ -89,7 +89,7 @@ export const SectionTitle = styled.h2`
   font-size: 3rem;
   margin-bottom: 12px;
 
-  ${breaks.md`
+  ${breaks.greaterThan("md")`
     font-size: 6rem;
     margin-bottom: 16px;
   `}
@@ -99,7 +99,7 @@ export const SectionHeading = styled.h3`
   font-size: 2rem;
   margin-bottom: 8px;
 
-  ${breaks.md`
+  ${breaks.greaterThan("md")`
       font-size: 4rem;
       margin-bottom: 16px;
       padding-top: 8px;
@@ -112,7 +112,7 @@ export const SectionText = styled.p`
   letter-spacing: 0.4rem;
   line-height: 1.6;
 
-  ${breaks.md`
+  ${breaks.greaterThan("md")`
     font-size: 2rem;
     margin-bottom: 16px;
     letter-spacing: 0.3rem;
