@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: Raleway, sans-serif;
+    font-family: Orbitron, sans-serif;
     background-color: #263238;
   }
 

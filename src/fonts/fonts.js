@@ -1,9 +1,22 @@
 import { createGlobalStyle } from "styled-components";
 
-import Raleway from "./Raleway-Regular.ttf";
+import OrbitronRegular from "./Orbitron-Regular.ttf";
+import OrbitronBold from "./Orbitron-Bold.ttf";
+import Makinas4Square from "./Makinas-4-Square.otf";
 
 export default createGlobalStyle`
   @font-face {
-    font-family: Raleway;
-    src: local('Raleway'), url(${Raleway}) format('truetype');
+    font-family: Orbitron;
+    src: local('Orbitron'), url(${OrbitronRegular}) format('truetype');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: Orbitron;
+    src: local('Orbitron'), url(${OrbitronBold}) format('truetype');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: Makinas4Square;
+    src: local('Makinas4Square'), url(${Makinas4Square}) format('opentype');
+  }
 `;
