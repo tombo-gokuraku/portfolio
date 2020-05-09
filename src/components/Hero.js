@@ -25,6 +25,7 @@ const Flex = styled.div`
 
   ${breaks.greaterThan("md")`
     flex-wrap: nowrap;
+    margin: 0 48px;
   `}
 `;
 

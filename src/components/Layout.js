@@ -62,7 +62,7 @@ function Layout() {
       <ThemeProvider theme={theme}>
         <GlobalFonts />
         <GlobalStyle />
-        <FullPage as="main">
+        <FullPage as="main" child={FullPageChildFlex}>
           <FullPageChildFlex as="section" id="hero">
             <Hero />
           </FullPageChildFlex>

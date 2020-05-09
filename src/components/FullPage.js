@@ -20,8 +20,9 @@ export class FullPage extends React.Component {
   }
 
   countFullPageChildren() {
-    return this.props.children.filter((child) => child.type === FullPageChild)
-      .length;
+    return this.props.children.filter(
+      (child) => child.type === this.props.child
+    ).length;
   }
 
   // スクロールの度に現在のスクロール位置から表示されているFullPageChildを特定し、インデックスを更新する
@@ -37,7 +38,7 @@ export class FullPage extends React.Component {
 
   render() {
     const fullPageChildren = this.props.children.filter(
-      (child) => child.type === FullPageChild
+      (child) => child.type === this.props.child
     );
     const controllerButtons = fullPageChildren.map((child, index) => {
       return (
@@ -126,7 +127,12 @@ export const ControllerButton = styled.a`
   }
 `;
 
+FullPage.defaultProps = {
+  child: FullPageChild,
+};
+
 FullPage.propTypes = {
   children: PropTypes.arrayOf(PropTypes.object),
+  child: PropTypes.object,
   as: PropTypes.string,
 };
