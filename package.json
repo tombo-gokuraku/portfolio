@@ -12,7 +12,7 @@
     "@testing-library/user-event": "^7.2.1",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.20.30",
-    "gatsby-cli": "^2.11.21",
+    "gatsby-cli": "^2.12.15",
     "gatsby-plugin-manifest": "^2.3.7",
     "gatsby-plugin-offline": "^3.1.5",
     "gatsby-plugin-react-helmet": "^3.2.5",
@@ -23,7 +23,8 @@
     "react-helmet": "^6.0.0",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0",
-    "styled-reset": "^4.1.2"
+    "styled-reset": "^4.1.2",
+    "styled-theming": "^2.2.0"
   },
   "scripts": {
     "develop": "gatsby develop",
