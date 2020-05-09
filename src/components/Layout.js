@@ -1,9 +1,9 @@
 import React from "react";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import reset from "styled-reset";
 import GlobalFonts from "../fonts/fonts";
 
-// import Hero from "./Hero";
+import Hero from "./Hero";
 // import About from "./About";
 // import Skills from "./Skills";
 // import Contact from "./Contact";
@@ -15,6 +15,7 @@ import { SkillMap } from "./SkillMap";
 const theme = {
   backgroundColor: "#263238",
   primary: "#4fc3f7",
+  primaryLight: "#E1F5FE",
   primaryDark: "#01579B",
   secondary: "#f7844f",
 };
@@ -51,6 +52,10 @@ const GlobalStyle = createGlobalStyle`
 
 `;
 
+const FullPageChildFlex = styled(FullPageChild)`
+  display: flex;
+`;
+
 function Layout() {
   return (
     <React.Fragment>
@@ -58,19 +63,19 @@ function Layout() {
         <GlobalFonts />
         <GlobalStyle />
         <FullPage as="main">
-          <FullPageChild as="section" id="hero">
-            <SectionTitle>Hero</SectionTitle>
-          </FullPageChild>
-          <FullPageChild as="section" id="about">
+          <FullPageChildFlex as="section" id="hero">
+            <Hero />
+          </FullPageChildFlex>
+          <FullPageChildFlex as="section" id="about">
             <SectionTitle>About</SectionTitle>
             <SkillMap />
-          </FullPageChild>
-          <FullPageChild as="section" id="works">
+          </FullPageChildFlex>
+          <FullPageChildFlex as="section" id="works">
             <SectionTitle>Works</SectionTitle>
-          </FullPageChild>
-          <FullPageChild as="section" id="contact">
+          </FullPageChildFlex>
+          <FullPageChildFlex as="section" id="contact">
             <SectionTitle>Contact</SectionTitle>
-          </FullPageChild>
+          </FullPageChildFlex>
         </FullPage>
       </ThemeProvider>
     </React.Fragment>

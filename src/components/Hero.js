@@ -2,65 +2,62 @@ import React from "react";
 import styled from "styled-components";
 
 import breaks from "../style/styled-breaks";
-import Colors from "../style/colors";
-import tomboImage from "../assets/tombo_icon_red_resized.png";
+import tomboImage from "../images/TomboHeroImage.svg";
 
 function Hero() {
   return (
-    <HeroSection>
-      <HeroContainer grow="2">
-        <HeroText large>Web Engineer && VTuber</HeroText>
-        <HeroText>Tombo Gokuraku</HeroText>
-      </HeroContainer>
-      <HeroContainer grow="1">
-        <HeroImage src={tomboImage} alt="トンボの画像" />
-      </HeroContainer>
-    </HeroSection>
+    <Flex>
+      <HeroText>
+        Tombo <br /> Gokuraku <br /> Web Engineer
+      </HeroText>
+      <HeroImage src={tomboImage} alt="トンボの画像" />
+    </Flex>
   );
 }
 
-const HeroSection = styled.section`
-  background-color: ${Colors.materialTeal300};
+const Flex = styled.div`
+  flex-grow: 1;
+  margin: 0 36px;
+
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 48px 16px 32px;
+  flex-wrap: wrap;
 
-  ${breaks.md`
-    padding: 96px 64px 32px;
+  ${breaks.greaterThan("md")`
+    flex-wrap: nowrap;
   `}
 `;
 
-const HeroContainer = styled.div`
-  flex-grow: ${(props) => props.grow}
-  line-height: 1.8;
-  letter-spacing: 0.4rem;
+const HeroText = styled.h1`
+  flex-grow: 1;
+  color: ${(props) => props.theme.primaryLight};
 
-  ${breaks.md`
-    line-height: 1.5;
-    letter-spacing: 0.5rem;
-  `}
-`;
+  line-height: 72px;
+  letter-spacing: 2px;
+  font-size: 3.6rem;
 
-const HeroText = styled.h2`
-  // largeを指定した時に微妙にフォントサイズが大きくなるようにする
-  font-size: ${(props) => (props.large ? 1.4 + 0.4 : 1.4)}rem;
-  ${breaks.sm`
-    font-size: ${(props) => (props.large ? 2.8 + 0.4 : 2.8)}rem;
+  ${breaks.greaterThan("sm")`
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-size: 4.8rem;
   `}
 
-  ${breaks.md`
-    font-size: ${(props) => (props.large ? 3.6 + 0.4 : 3.6)}rem;
+  ${breaks.greaterThan("md")`
+    line-height: 88px;
+    letter-spacing: 6px;
+    font-size: 5.6rem;
   `}
 
-  ${breaks.lg`
-    font-size: ${(props) => (props.large ? 4.0 + 0.4 : 4.0)}rem;
+  ${breaks.greaterThan("lg")`
+    line-height: 96px;
+    letter-spacing: 8px;
+    font-size: 6.4rem;
   `}
 `;
 
 const HeroImage = styled.img`
-  width: 100%;
-  max-width: 250px;
+  flex-grow: 1;
+  max-width: 100%;
 `;
 
 export default Hero;
