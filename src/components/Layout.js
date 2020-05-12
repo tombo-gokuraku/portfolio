@@ -6,8 +6,7 @@ import GlobalFonts from "../fonts/fonts";
 import Hero from "./Hero";
 import About from "./About";
 import Works from "./Works";
-// import Contact from "./Contact";
-import { SectionTitle } from "./Section";
+import Contact from "./Contact";
 import { FullPage, FullPageChild } from "./FullPage";
 
 // themeを定義
@@ -38,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: Orbitron, sans-serif;
+    font-family: Orbitron, Makinas4Square, sans-serif;
     background-color: ${(props) => props.theme.backgroundColor};
   }
 
@@ -72,7 +71,7 @@ function Layout() {
             <Works />
           </FullPageChildFlex>
           <FullPageChildFlex as="section" id="contact">
-            <SectionTitle>Contact</SectionTitle>
+            <Contact />
           </FullPageChildFlex>
         </FullPage>
       </ThemeProvider>

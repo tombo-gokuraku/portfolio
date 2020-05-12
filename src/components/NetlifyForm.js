@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Colors from "../style/colors";
-import { SectionHeading } from "./Section";
-
 // URIをエンコードする関数
 const encode = (data) => {
   return Object.keys(data)
@@ -54,8 +51,8 @@ class NetlifyForm extends React.Component {
       <React.Fragment>
         <Form onSubmit={this.handleSubmit} action="/">
           {/* <input type="hidden" name="form-name" value="inqform" /> */}
-          <SectionHeading>お問い合わせ</SectionHeading>
-          <label htmlFor="email">メールアドレス:</label>
+          {/* <SectionHeading>お問い合わせ</SectionHeading> */}
+          <Label htmlFor="email">メールアドレス:</Label>
           <Input
             type="email"
             value={this.state["email"]}
@@ -65,7 +62,7 @@ class NetlifyForm extends React.Component {
             required
             onChange={this.handleInputChange}
           />
-          <label htmlFor="name">お名前:</label>
+          <Label htmlFor="name">お名前:</Label>
           <Input
             type="text"
             value={this.state["name"]}
@@ -75,7 +72,7 @@ class NetlifyForm extends React.Component {
             required
             onChange={this.handleInputChange}
           />
-          <label htmlFor="content">お問い合わせ内容:</label>
+          <Label htmlFor="content">お問い合わせ内容:</Label>
           <Input
             as="textarea"
             name="content"
@@ -108,25 +105,28 @@ const Form = styled.form`
   justify-content: center;
   flex-direction: column;
   font-size: 1.6rem;
+  width: 100%;
+`;
+
+const Label = styled.label`
+  color: ${(props) => props.theme.primaryLight};
+  margin-bottom: 4px;
 `;
 
 const Input = styled.input`
   font-size: 1.6rem;
-  border: 2px solid #eee;
-  border-radius: 5px;
-  margin-bottom: 12px;
+  color: ${(props) => props.theme.primaryLight};
+  background-color: transparent;
+  border: solid 2px ${(props) => props.theme.primary};
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 16px;
   padding: 8px;
 `;
 
-const Submit = styled.input`
+const Submit = styled(Input)`
   align-self: center;
   width: 200px;
-  color: #333;
-  background-color: ${Colors.materialTeal300};
-  font-size: 1.6rem;
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(30, 30, 30, 0.5);
 `;
 
