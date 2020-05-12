@@ -4,7 +4,7 @@ import breaks from "../style/styled-breaks";
 
 export const SectionContainer = styled.div`
   flex-grow: 1;
-  margin: 0 36px;
+  margin: 0 32px;
 
   display: flex;
   flex-direction: row;
@@ -23,7 +23,7 @@ export const SectionContent = styled.div`
   /* display: flex; */
   /* flex-direction: column; */
   /* flex-grow: 1; */
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 
   ${breaks.greaterThan("md")`
     flex-basis: 50%;
@@ -35,8 +35,8 @@ export const SectionContent = styled.div`
 export const SectionTitle = styled.h2`
   flex-basis: 100%;
   color: ${(props) => props.theme.primaryLight};
-  font-size: 3rem;
-  margin-bottom: 12px;
+  font-size: 2rem;
+  margin-bottom: 4px;
 
   ${breaks.greaterThan("md")`
     font-size: 6rem;
@@ -59,7 +59,7 @@ export const SectionHeading = styled.h3`
 export const SectionText = styled.p`
   color: ${(props) => props.theme.primaryLight};
   font-size: 1.2rem;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
   letter-spacing: 0.4rem;
   line-height: 1.6;
 
