@@ -9,7 +9,7 @@ function Contact() {
   return (
     <React.Fragment>
       <SectionContainer>
-        <SectionTitle>CONTACT</SectionTitle>
+        <SectionTitle>Contact</SectionTitle>
         <NetlifyForm />
       </SectionContainer>
     </React.Fragment>
