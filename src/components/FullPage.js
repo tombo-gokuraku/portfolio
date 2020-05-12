@@ -46,7 +46,7 @@ export class FullPage extends React.Component {
           <ControllerButton
             href={"#" + child.props.id}
             isActive={index === Number(this.state.activeChildIndex)}
-            aria-label={"go to " + child.props.id}
+            ariaLabel={"go to " + child.props.id}
           />
         </ControllerItem>
       );
@@ -69,7 +69,8 @@ export class FullPage extends React.Component {
 export const FullPageContainer = styled.div`
   height: 100vh;
   width: 100vw;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   // スクロールバーを消すための処理
   //スクロールバーを100vw+17pxの位置に描画し、かつcontent-boxでスクロールバーをはみ出させて、画面外から出す
@@ -99,7 +100,9 @@ export const ControllerContainer = styled.ul`
 
 export const ControllerItem = styled.li``;
 
-export const ControllerButton = styled.a`
+export const ControllerButton = styled.a.attrs((props) => ({
+  "aria-label": props.ariaLabel,
+}))`
   display: flex;
   justify-content: center;
   width: 16px;
