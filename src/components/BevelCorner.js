@@ -59,16 +59,6 @@ export class BevelCorner extends React.Component {
     return (
       <BavelCornerContainer ref={this.text} onClick={this.updateShape}>
         {this.props.children}
-        <BavelBorderContainer
-          width={this.state.boxWidth}
-          height={this.state.boxHeight}
-          strokeWidth={this.props.strokeWidth}
-        >
-          <BavelBorder
-            d={this.state.bevelPoints}
-            strokeWidth={this.props.strokeWidth}
-          />
-        </BavelBorderContainer>
       </BavelCornerContainer>
     );
   }
@@ -78,37 +68,32 @@ const BavelCornerContainer = styled.span`
   position: relative;
   color: ${(props) => props.theme.primaryLight};
   font-size: 4rem;
-  padding: 4px;
+  padding: 4px 8px;
   text-align: center;
-`;
 
-const BavelBorderContainer = styled.svg.attrs((props) => ({
-  width: `${props.width + props.strokeWidth}px`,
-  height: `${props.height + props.strokeWidth}px`,
-  // viewBox: "0 0 100% 100%",
-  fill: "none",
-  xmlns: "http://www.w3.org/2000/svg",
-}))`
-  position: absolute;
-  top: -${(props) => props.strokeWidth / 2}px;
-  left: -${(props) => props.strokeWidth / 2}px;
-  width: ${(props) => {
-    props.width + props.strokeWidth;
-  }}px;
-  height: ${(props) => {
-    props.height + props.strokeWidth;
-  }}px;
-  // width: ${(props) => props.width};
-  // height: ${(props) => props.height};
-`;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  }
 
-const BavelBorder = styled.path.attrs((props) => ({
-  stroke: props.theme.primary,
-  d: props.d,
-}))`
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    z-index: -1;
+    width: 95%;
+    height: 95%;
+    background-color: blue;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  }
 `;
 
 BevelCorner.defaultProps = {
