@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 import reset from "styled-reset";
 import GlobalFonts from "../fonts/fonts";
 
@@ -50,29 +50,25 @@ const GlobalStyle = createGlobalStyle`
 
 `;
 
-const FullPageChildFlex = styled(FullPageChild)`
-  display: flex;
-`;
-
 function Layout() {
   return (
     <React.Fragment>
       <ThemeProvider theme={theme}>
         <GlobalFonts />
         <GlobalStyle />
-        <FullPage as="main" child={FullPageChildFlex}>
-          <FullPageChildFlex as="section" id="hero">
+        <FullPage as="main">
+          <FullPageChild as="section" id="hero">
             <Hero />
-          </FullPageChildFlex>
-          <FullPageChildFlex as="section" id="about">
+          </FullPageChild>
+          <FullPageChild as="section" id="about">
             <About />
-          </FullPageChildFlex>
-          <FullPageChildFlex as="section" id="works">
+          </FullPageChild>
+          <FullPageChild as="section" id="works">
             <Works />
-          </FullPageChildFlex>
-          <FullPageChildFlex as="section" id="contact">
+          </FullPageChild>
+          <FullPageChild as="section" id="contact">
             <Contact />
-          </FullPageChildFlex>
+          </FullPageChild>
         </FullPage>
       </ThemeProvider>
     </React.Fragment>
