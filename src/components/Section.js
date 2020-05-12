@@ -4,7 +4,8 @@ import breaks from "../style/styled-breaks";
 
 export const SectionContainer = styled.div`
   flex-grow: 1;
-  margin: 0 32px;
+  padding: 0 32px;
+  max-width: 100%;
 
   display: flex;
   flex-direction: row;
@@ -15,7 +16,7 @@ export const SectionContainer = styled.div`
 
   ${breaks.greaterThan("md")`
     // flex-wrap: nowrap;
-    margin: 0 48px;
+    padding: 0 48px;
   `}
 `;
 
@@ -23,6 +24,8 @@ export const SectionContent = styled.div`
   /* display: flex; */
   /* flex-direction: column; */
   /* flex-grow: 1; */
+  /* margin: 0px 28px 8px; */
+  /* padding: 0 28px; */
   margin-bottom: 8px;
 
   ${breaks.greaterThan("md")`
@@ -36,7 +39,7 @@ export const SectionTitle = styled.h2`
   flex-basis: 100%;
   color: ${(props) => props.theme.primaryLight};
   font-size: 2rem;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 
   ${breaks.greaterThan("md")`
     font-size: 6rem;
@@ -59,14 +62,29 @@ export const SectionHeading = styled.h3`
 export const SectionText = styled.p`
   color: ${(props) => props.theme.primaryLight};
   font-size: 1.2rem;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
   letter-spacing: 0.4rem;
-  line-height: 1.6;
+  line-height: 1.2;
+
+  ${breaks.greaterThan("sm")`
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.6rem;
+    line-height: 1.4;
+  `}
 
   ${breaks.greaterThan("md")`
-    font-size: 2rem;
-    margin-bottom: 16px;
-    letter-spacing: 0.3rem;
-    line-height: 1.5;
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    letter-spacing: 0.6rem;
+    line-height: 1.6;
   `}
+
+  ${breaks.greaterThan("lg")`
+    font-size: 1.8rem;
+    margin-bottom: 14px;
+    letter-spacing: 0.6rem;
+    line-height: 1.8;
+  `}
+
 `;
