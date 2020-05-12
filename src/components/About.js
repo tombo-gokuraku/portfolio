@@ -1,43 +1,61 @@
 import React from "react";
+import styled from "styled-components";
+import breaks from "../style/styled-breaks";
 
 import {
-  Section,
   SectionContainer,
   SectionContent,
-  SectionBgImage,
   SectionTitle,
-  SectionHeading,
   SectionText,
 } from "./Section";
 
-import SocialLinks from "./SocialLink";
-
-import codeImage from "../assets/branko-stancevic-GI1hwOGqGtE-unsplash_resize.jpg";
+import Item from "./Item";
 
 function About() {
   return (
-    <Section id="about">
+    <React.Fragment>
       <SectionContainer>
+        <SectionTitle>About</SectionTitle>
         <SectionContent>
-          <SectionTitle>ABOUT</SectionTitle>
-          <SectionHeading>Tombo Gokuraku</SectionHeading>
           <SectionText>
-            大企業を目指して大学院に進学し、
-            <wbr />
-            情報工学・ロボティクスを専攻するも、無い内定
-            <br />
-            オリジナルアプリを作るという野望を叶えるため、
-            <wbr />
-            Web系エンジニア && VTuberとして転生
-            <wbr />
+            大学院にてロボット工学を専攻し、C/C++,
+            PythonでROSを用いてロボットを操る。 アイディアをすぐに形にできるWebの魅力に取り憑かれ、レファレンスとGitHubを片手に、持ち前の自走力でプログラミングスクールに通わず、独学でWebプログラミングを学ぶ。 好きなエディタはNeoVim、趣味はアニメ鑑賞。
           </SectionText>
-          <SectionHeading>LINKS</SectionHeading>
-          <SocialLinks />
         </SectionContent>
-        <SectionBgImage src={codeImage} alt="コーディング画面" />
+        <SectionContent>
+          <Flex>
+            <Item main>Skills</Item>
+            <Item>Ubuntu</Item>
+            <Item>NeoVim</Item>
+            <Item>tmux</Item>
+            <Item>Git</Item>
+            <Item>Figma</Item>
+            <Item>Gimp</Item>
+            <Item>C/C++</Item>
+            <Item>Python</Item>
+            <Item>HTML</Item>
+            <Item>CSS</Item>
+            <Item>JavaScript</Item>
+            <Item>React</Item>
+            <Item>Vue</Item>
+          </Flex>
+        </SectionContent>
       </SectionContainer>
-    </Section>
+    </React.Fragment>
   );
 }
+
+const Flex = styled.div`
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  ${breaks.greaterThan("md")`
+    // flex-wrap: nowrap;
+    // margin: 0 48px;
+  `}
+`;
 
 export default About;
