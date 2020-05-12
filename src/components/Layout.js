@@ -4,12 +4,11 @@ import reset from "styled-reset";
 import GlobalFonts from "../fonts/fonts";
 
 import Hero from "./Hero";
-// import About from "./About";
+import About from "./About";
 // import Skills from "./Skills";
 // import Contact from "./Contact";
 import { SectionTitle } from "./Section";
 import { FullPage, FullPageChild } from "./FullPage";
-import { SkillMap } from "./SkillMap";
 
 // themeを定義
 const theme = {
@@ -67,8 +66,7 @@ function Layout() {
             <Hero />
           </FullPageChildFlex>
           <FullPageChildFlex as="section" id="about">
-            <SectionTitle>About</SectionTitle>
-            <SkillMap />
+            <About />
           </FullPageChildFlex>
           <FullPageChildFlex as="section" id="works">
             <SectionTitle>Works</SectionTitle>
