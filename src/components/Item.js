@@ -5,6 +5,7 @@ const Item = styled.div`
   flex-basis: ${(props) => (props.main ? "100%" : "auto")};
   font-size: ${(props) => (props.main ? "1.2" : "1.0")}rem;
   font-weight: ${(props) => (props.main ? "bold" : "normal")};
+  letter-spacing: ${(props) => (props.main ? "4px" : "2px")};
   color: ${(props) => props.theme.primaryLight};
   border: solid 2px ${(props) => props.theme.primary};
   border-radius: 8px;
@@ -14,6 +15,7 @@ const Item = styled.div`
 
   ${breaks.greaterThan("sm")`
     font-size: ${(props) => (props.main ? "1.6" : "1.4")}rem;
+    letter-spacing: ${(props) => (props.main ? "4px" : "2px")};
     margin: 8px 12px;
   `}
 

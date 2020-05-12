@@ -15,7 +15,6 @@ export const SectionContainer = styled.div`
   flex-wrap: wrap;
 
   ${breaks.greaterThan("md")`
-    // flex-wrap: nowrap;
     padding: 0 48px;
   `}
 `;
@@ -28,9 +27,12 @@ export const SectionContent = styled.div`
   /* padding: 0 28px; */
   margin-bottom: 8px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   ${breaks.greaterThan("md")`
     flex-basis: 50%;
-    // margin-right: 16px;
     margin-bottom: 0;
   `}
 `;
@@ -38,12 +40,20 @@ export const SectionContent = styled.div`
 export const SectionTitle = styled.h2`
   flex-basis: 100%;
   color: ${(props) => props.theme.primaryLight};
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 8px;
 
-  ${breaks.greaterThan("md")`
-    font-size: 6rem;
+  ${breaks.greaterThan("sm")`
+    font-size: 3rem;
     margin-bottom: 16px;
+  `}
+
+  ${breaks.greaterThan("md")`
+    font-size: 4rem;
+  `}
+
+  ${breaks.greaterThan("lg")`
+    font-size: 5rem;
   `}
 `;
 
