@@ -46,6 +46,7 @@ export class FullPage extends React.Component {
           <ControllerButton
             href={"#" + child.props.id}
             isActive={index === Number(this.state.activeChildIndex)}
+            aria-label={"go to " + child.props.id}
           />
         </ControllerItem>
       );
