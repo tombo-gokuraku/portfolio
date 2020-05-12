@@ -5,7 +5,7 @@ import GlobalFonts from "../fonts/fonts";
 
 import Hero from "./Hero";
 import About from "./About";
-// import Skills from "./Skills";
+import Works from "./Works";
 // import Contact from "./Contact";
 import { SectionTitle } from "./Section";
 import { FullPage, FullPageChild } from "./FullPage";
@@ -69,7 +69,7 @@ function Layout() {
             <About />
           </FullPageChildFlex>
           <FullPageChildFlex as="section" id="works">
-            <SectionTitle>Works</SectionTitle>
+            <Works />
           </FullPageChildFlex>
           <FullPageChildFlex as="section" id="contact">
             <SectionTitle>Contact</SectionTitle>
