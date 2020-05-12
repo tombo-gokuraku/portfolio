@@ -24,7 +24,7 @@ function Works() {
       <StylesForReactResponsiveCarousel />
       <SectionContainer>
         <SectionTitle>Works</SectionTitle>
-        <Carousel>
+        <Carousel showThumbs={false}>
           <SectionContent>
             <Img src={portfolio_1_6} />
             <SectionText>
@@ -84,22 +84,8 @@ const StylesForReactResponsiveCarousel = createGlobalStyle`
     background-color: transparent;
   }
 
-  /* .carousel .control-arrow { */
-  /*   opacity: 0; */
-  /*  */
-  /*   ${breaks.greaterThan("md")` */
-  /*     &:hover { */
-  /*       opacity: 1; */
-  /*     } */
-  /*   `} */
-  /* } */
-
   // remove unnecessary element
   .carousel-status {
-    display: none;
-  }
-
-  .thumbs-wrapper {
     display: none;
   }
 `;
@@ -116,6 +102,7 @@ const Flex = styled.div`
 const Img = styled.img`
   width: 100%;
   max-width: 500px;
+  margin-bottom: 8px;
 `;
 
 export default Works;
