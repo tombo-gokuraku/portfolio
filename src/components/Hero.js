@@ -31,6 +31,7 @@ const Flex = styled.div`
 
 const HeroText = styled.h1`
   flex-grow: 1;
+  flex-basis: 50%;
   color: ${(props) => props.theme.primaryLight};
 
   line-height: 72px;
@@ -58,7 +59,9 @@ const HeroText = styled.h1`
 
 const HeroImage = styled.img`
   flex-grow: 1;
-  max-width: 100%;
+  flex-basis: 50%;
+  width: 100%;
+  height: auto;
 `;
 
 export default Hero;

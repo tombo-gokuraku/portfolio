@@ -1,91 +1,40 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import breaks from "../style/styled-breaks";
-import Colors from "../style/colors";
-
-export const Section = styled.section`
-  max-width: 1440px;
-  margin: 0 auto 32px;
-  padding: 32px 16px;
-
-  ${breaks.greaterThan("sm")`
-    padding: 64px 32px;
-  `}
-
-  ${breaks.greaterThan("md")`
-    margin: 0 auto 64px;
-    padding: 64px;
-  `}
-`;
 
 export const SectionContainer = styled.div`
+  flex-grow: 1;
+  margin: 0 36px;
+
   display: flex;
-  align-items: stretch;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 16px;
 
   ${breaks.greaterThan("md")`
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
+    margin: 0 48px;
   `}
 `;
 
 export const SectionContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  position: relative;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex-grow: 1; */
   margin-bottom: 16px;
 
   ${breaks.greaterThan("md")`
-    width:50%;
-    margin-right: 16px;
+    flex-basis: 50%;
+    // margin-right: 16px;
     margin-bottom: 0;
   `}
 `;
 
-export const SectionBgImage = styled.img`
-  display: none;
-
-  ${breaks.greaterThan("md")`
-    display: flex;
-    flex-grow: 1;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    opacity: 0.7;
-    filter: blur(2px);
-    object-fit: cover;
-  `}
-`;
-
-export const SectionBgIcon = styled(FontAwesomeIcon)`
-  position: absolute;
-  left: 0;
-  top: 25%;
-  // react-fontawesomeが追加する.svg-inline--fa.fa-w-20 {width: 1.25em;} を上書きするため
-  && {
-    width: 100%;
-  }
-  font-size: 14rem;
-  text-align: center;
-  color: ${Colors.materialTeal500};
-  opacity: 0.3;
-
-  ${breaks.greaterThan("sm")`
-    font-size: 12rem;
-  `}
-  ${breaks.greaterThan("md")`
-    font-size: 18rem;
-  `}
-  ${breaks.greaterThan("lg")`
-    font-size: 20rem;
-  `}
-`;
-
 export const SectionTitle = styled.h2`
-  color: white;
+  flex-basis: 100%;
+  color: ${(props) => props.theme.primaryLight};
   font-size: 3rem;
   margin-bottom: 12px;
 
@@ -96,6 +45,7 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionHeading = styled.h3`
+  color: ${(props) => props.theme.primaryLight};
   font-size: 2rem;
   margin-bottom: 8px;
 
@@ -107,6 +57,7 @@ export const SectionHeading = styled.h3`
 `;
 
 export const SectionText = styled.p`
+  color: ${(props) => props.theme.primaryLight};
   font-size: 1.2rem;
   margin-bottom: 8px;
   letter-spacing: 0.4rem;
