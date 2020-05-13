@@ -2,9 +2,6 @@
   publish = "public"
 
 [[plugins]]
-  package = "netlify-plugin-gatsby-cache"
-
-[[plugins]]
   package = "netlify-plugin-subfont"
 
   [plugins.inputs]
@@ -28,3 +25,6 @@
   # Inline generated font subsets into their respective @font-face blocks
   # When set to `false` external font files will be created
   inlineFonts = false
+
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
