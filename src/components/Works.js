@@ -25,7 +25,7 @@ function Works() {
         <SectionTitle>Works</SectionTitle>
         <Carousel showThumbs={false}>
           <SectionContent>
-            <Img src={portfolio_1_6} />
+            <Img src={portfolio_1_6} alt={"ポートフォリオサイト version 1.6"} />
             <SectionText>
               電子回路をテーマにしたポートフォリオ。Figmaでデザインを行い、Reactとstyled-componentsを使ってコンポーネントを作成した。スクロールジャックしない自作のFullPageSliderが特色!{" "}
             </SectionText>
@@ -40,7 +40,7 @@ function Works() {
             </Flex>
           </SectionContent>
           <SectionContent>
-            <Img src={portfolio_1_1} />
+            <Img src={portfolio_1_1} alt={"ポートフォリオサイト version 1.1"} />
             <SectionText>
               STUDIOでデザインし、HTMLとSASS(SCSS)を使って作成したポートフォリオサイト。GoogleFormをスタイリングするために、カスタマイズしているのが特徴!
             </SectionText>
@@ -53,7 +53,10 @@ function Works() {
             </Flex>
           </SectionContent>
           <SectionContent>
-            <Img src={singlepageLayout} />
+            <Img
+              src={singlepageLayout}
+              alt={"シングルページレイアウトサイト"}
+            />
             <SectionText>
               HTML、Vanilla
               CSSを使って作成したサイト。透過させた背景画像と交互にハイライトさせたセクションが特色!
@@ -98,7 +101,9 @@ const Flex = styled.div`
   margin-bottom: 24px;
 `;
 
-const Img = styled.img`
+const Img = styled.img.attrs(() => ({
+  loading: "lazy",
+}))`
   width: 100%;
   max-width: 500px;
   margin: 0 auto 8px;
