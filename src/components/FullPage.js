@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import PropTypes from "prop-types";
+import breaks from "../style/styled-breaks";
 
 import backgroundImage from "../images/BackgroundPCB.svg";
 
@@ -74,15 +75,16 @@ export const FullPageContainer = styled.div`
   width: 100vw;
   overflow-y: auto;
   overflow-x: hidden;
-
-  // スクロールバーを消すための処理
-  //スクロールバーを100vw+17pxの位置に描画し、かつcontent-boxでスクロールバーをはみ出させて、画面外から出す
-  padding-right: 17px;
-  box-sizing: content-box;
-
   scroll-snap-type: y mandatory;
   scroll-snap-stop: always;
   scroll-behavior: smooth;
+
+  ${breaks.greaterThan("md")`
+    // スクロールバーを消すための処理
+    //スクロールバーを100vw+17pxの位置に描画し、かつcontent-boxでスクロールバーをはみ出させて、画面外から出す
+    padding-right: 17px;
+    box-sizing: content-box;
+  `}
 
   // 背景画像を固定するため
   position: relative;
