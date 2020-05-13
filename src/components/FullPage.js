@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import PropTypes from "prop-types";
 
+import backgroundImage from "../images/BackgroundPCB.svg";
+
 const GlobalStyle = createGlobalStyle`
   html {
     // スクロールバーを消す
@@ -60,6 +62,7 @@ export class FullPage extends React.Component {
             <ControllerContainer>{controllerButtons}</ControllerContainer>
           </nav>
           {this.props.children}
+          <Background childrenNumber={this.countFullPageChildren()} />
         </FullPageContainer>
       </React.Fragment>
     );
@@ -80,12 +83,42 @@ export const FullPageContainer = styled.div`
   scroll-snap-type: y mandatory;
   scroll-snap-stop: always;
   scroll-behavior: smooth;
+
+  // 背景画像を固定するため
+  position: relative;
 `;
 
 export const FullPageChild = styled.div`
+  display: flex;
+
   scroll-snap-align: start;
   width: 100vw;
   height: 100vh;
+`;
+
+const Background = styled.div`
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: ${(props) => props.childrenNumber * 100}vh;
+  background: no-repeat
+    radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.3) -20%,
+      #4fc3f7 0%,
+      rgba(255, 255, 255, 0.3) 20%
+    );
+  opacity: 0.2;
+  /* animation-name: ripple-circuit; */
+  /* animation-duration: 5s; */
+  /* animation-iteration-count: infinite; */
+
+  mask-image: url(${backgroundImage});
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: cover;
 `;
 
 export const ControllerContainer = styled.ul`
