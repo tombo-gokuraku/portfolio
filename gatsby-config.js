@@ -24,14 +24,23 @@ module.exports = {
         name: `tombo gokuraku portfolio`,
         short_name: `Tombo`,
         start_url: `/`,
-        background_color: `#6b37bf`,
-        theme_color: `#6b37bf`,
+        background_color: `#263238`,
+        theme_color: `#4FC3F7`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `src/assets/logo512.png`, // This path is relative to the root of the site.
+        icon: `src/images/TomboHeroImage.svg`, // This path is relative to the root of the site.
       },
     },
     "gatsby-plugin-offline",
+    {
+      resolve: `gatsby-plugin-subfont`,
+      options: {
+        silent: true,
+        fallback: false,
+        inlineFonts: true,
+        inlineCss: true,
+      },
+    },
   ],
 };
