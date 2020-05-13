@@ -101,9 +101,7 @@ const Flex = styled.div`
   margin-bottom: 24px;
 `;
 
-const Img = styled.img.attrs(() => ({
-  loading: "lazy",
-}))`
+const Img = styled.img`
   width: 100%;
   max-width: 500px;
   margin: 0 auto 8px;
