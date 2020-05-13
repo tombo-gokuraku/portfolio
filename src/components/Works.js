@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
-import breaks from "../style/styled-breaks";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -102,7 +101,7 @@ const Flex = styled.div`
 const Img = styled.img`
   width: 100%;
   max-width: 500px;
-  margin-bottom: 8px;
+  margin: 0 auto 8px;
 `;
 
 export default Works;
