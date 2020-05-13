@@ -5,7 +5,9 @@ import breaks from "../style/styled-breaks";
 export const SectionContainer = styled.div`
   flex-grow: 1;
   padding: 0 32px;
-  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
 
   display: flex;
   flex-direction: row;
