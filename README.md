@@ -39,11 +39,14 @@ FormをGoogleFormからNetlifyFormに変更した。
 ### v1.5
 GatsbyでポートフォリオサイトをSSGして、Netlifyにホスティングした。
 
+### v1.6(サイトデザインのリメイク)
+Figmaで全体的にデザインをやり直した。
+https://www.figma.com/file/KTduI6aBqpYPRfQzGXKnXA/Portfolio?node-id=0%3A1h
+電気回路をテーマにしたデザインで作った。レイアウトはFullPageSliderにした。
+
 ## Todo
-
-### v1.6(デザインのリメイク)
-
-### v1.7(GoogleAnalyticsを導入する)
-
-### v1.8(下層ページにブログを取り込む)
-GatsbyでCMS付きサイトが作れるようになって、独自ドメインの取得とか、Adsense、SEO周りのことが分かってからやる
+### v1.7(マインドマップでSkillやTech Stackを並べる)
+### v1.8(下層ページ(`/works/`)にWorksに関する詳細な説明を追加する)
+### v2.0(CMSと連携して、下層ページにブログを作成する)
+### v2.1(GoogleAnalyticsを導入する)
+### v2.2(Adsenseを導入する)
