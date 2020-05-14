@@ -18,6 +18,8 @@ function Hero() {
 const Flex = styled.div`
   flex-grow: 1;
   padding: 0 36px;
+  max-width: 1536px;
+  margin: 0 auto;
 
   display: flex;
   justify-content: space-around;
