@@ -42,5 +42,6 @@ module.exports = {
         inlineCss: true,
       },
     },
+    "gatsby-plugin-webpack-bundle-analyser-v2",
   ],
 };
